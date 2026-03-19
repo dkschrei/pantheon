@@ -31,7 +31,7 @@ Progress auto-tracked in `historian/.progress`.
 - [x] Aristotle — logic, first principles, categories
 - [x] René Descartes — systematic doubt, clear ideas
 - [x] Marcus Aurelius — Stoic practice, journaling for clarity
-- [ ] Seneca — time management, letters on urgency
+- [x] Seneca — time management, letters on urgency
 - [ ] Sun Tzu — asymmetric advantage, terrain analysis
 - [ ] Niccolò Machiavelli — political realism, power dynamics
 - [ ] Immanuel Kant — categorical imperative, duty-based reasoning
