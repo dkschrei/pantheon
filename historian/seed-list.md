@@ -33,7 +33,7 @@ Progress auto-tracked in `historian/.progress`.
 - [x] Marcus Aurelius — Stoic practice, journaling for clarity
 - [x] Seneca — time management, letters on urgency
 - [x] Sun Tzu — asymmetric advantage, terrain analysis
-- [ ] Niccolò Machiavelli — political realism, power dynamics
+- [x] Niccolò Machiavelli — political realism, power dynamics
 - [ ] Immanuel Kant — categorical imperative, duty-based reasoning
 - [ ] Karl Popper — falsifiability, open society
 
