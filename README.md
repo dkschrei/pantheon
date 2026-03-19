@@ -34,7 +34,7 @@ See [`PATTERNS.md`](PATTERNS.md) for the full dispatch table.
 
 | Trigger | Pattern | Genius |
 |---------|---------|--------|
-| *"Why the \*\*\*\* did you just do that?"* | Andon Cord | Toyota |
+| frustration signal / *"Why the \*\*\*\* did you just do that?"* | Andon Cord | Toyota |
 | Any build/automate/create request | Musk Filter | Elon Musk |
 | "Why isn't this working" / stuck debugger | Feynman Clarity Test | Richard Feynman |
 
