@@ -12,7 +12,7 @@ Progress auto-tracked in `historian/.progress`.
 - [x] Andy Grove — Intel, high-output management
 - [x] Jony Ive — Apple industrial design
 - [x] Taiichi Ohno — Toyota Production System
-- [ ] Sam Altman — Y Combinator, OpenAI
+- [x] Sam Altman — Y Combinator, OpenAI
 - [ ] Marc Andreessen — Netscape, software-eats-the-world thesis
 
 ## Scientists (10)
