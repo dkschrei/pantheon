@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Historian Phase 1 — Build Loop
 # Usage: bash historian/loop.sh
-# Interactive: pauses after each hero for review
+# Autonomous: runs all heroes without pausing
 set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
@@ -25,9 +25,6 @@ for hero in "${HEROES[@]}"; do
   sed "s/{HERO}/$hero/g" "$PROMPT_TPL"
   echo "--- END PROMPT ---"
   echo ""
-  echo "Execute the prompt above, write gem files, then press ENTER..."
-  read -r
-
   echo "$hero" >> "$PROGRESS"
   HERO_ESCAPED=$(printf '%s\n' "$hero" | sed 's/[[\.*^$()+?{|]/\\&/g')
   sed "s/- \[ \] ${HERO_ESCAPED}/- [x] ${hero}/" "$SEED" > "${SEED}.tmp" && mv "${SEED}.tmp" "$SEED"
