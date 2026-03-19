@@ -93,7 +93,7 @@ The patterns in this library are not new. They have been sitting in history book
 - [x] Andon Cord Protocol (Toyota / Taiichi Ohno)
 - [x] Musk Filter (Elon Musk)
 - [x] Feynman Clarity Test (Richard Feynman)
-- [ ] 22-27 more gems via Historian agent research loop
+- [ ] 22-27 more gems in development via Historian agent research loop (targeted for v1.0 launch)
 - [ ] Public launch + community contributions open
 
 3-gem preview available now via install above.
