@@ -8,6 +8,7 @@
 | `/pantheon-andon-cord` | andon-cord | engineering | frustration signal |
 | `/pantheon-feynman-clarity` | feynman-clarity | debugging | I don't understand why |
 | `/pantheon-musk-filter` | musk-filter | engineering | build request |
+| `/pantheon-taste-gate` | taste-gate | decision-making | feature list growing |
 
 ---
 

@@ -5,7 +5,7 @@ Progress auto-tracked in `historian/.progress`.
 
 ## Modern Builders (10)
 - [x] Elon Musk — SpaceX, Tesla, Neuralink
-- [ ] Steve Jobs — Apple, Pixar
+- [x] Steve Jobs — Apple, Pixar
 - [ ] Jeff Bezos — Amazon, Blue Origin
 - [ ] Tony Fadell — iPod, iPhone, Nest
 - [ ] Andrej Karpathy — Tesla AI, OpenAI, educator
