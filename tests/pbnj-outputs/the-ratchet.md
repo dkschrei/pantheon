@@ -4,7 +4,7 @@
 
 **Output:**
 
-## The Ratchet: PB&J Sandwich System
+Build 60 sandwiches. Fix every friction point along the way. Then stop — review what works, trim the scraps, keep the bones. Resume from a lighter floor.
 
 **Scenario:** You've made 200 sandwiches. The process has grown. It now takes 12 minutes.
 
