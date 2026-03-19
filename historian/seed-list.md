@@ -38,7 +38,7 @@ Progress auto-tracked in `historian/.progress`.
 - [x] Karl Popper — falsifiability, open society
 
 ## Industrial Pioneers (6)
-- [ ] Henry Ford — assembly line, waste elimination, accessibility
+- [x] Henry Ford — assembly line, waste elimination, accessibility
 - [ ] Frederick Winslow Taylor — scientific management, time-motion study
 - [ ] Andrew Carnegie — vertical integration, systematic philanthropy
 - [ ] W. Edwards Deming — quality systems, PDCA cycle
