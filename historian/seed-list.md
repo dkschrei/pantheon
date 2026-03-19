@@ -34,7 +34,7 @@ Progress auto-tracked in `historian/.progress`.
 - [x] Seneca — time management, letters on urgency
 - [x] Sun Tzu — asymmetric advantage, terrain analysis
 - [x] Niccolò Machiavelli — political realism, power dynamics
-- [ ] Immanuel Kant — categorical imperative, duty-based reasoning
+- [x] Immanuel Kant — categorical imperative, duty-based reasoning
 - [ ] Karl Popper — falsifiability, open society
 
 ## Industrial Pioneers (6)

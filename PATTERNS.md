@@ -11,6 +11,7 @@
 | `/pantheon-carve-at-joints` | carve-at-joints | engineering | messy domain with no clear categories |
 | `/pantheon-complementarity` | complementarity | engineering | two valid but contradictory frameworks |
 | `/pantheon-constraint-saturation` | constraint-saturation | engineering | predicting unknown structure |
+| `/pantheon-copernican-inversion` | copernican-inversion | philosophy | irresolvable debate |
 | `/pantheon-eat-the-world` | eat-the-world | engineering | technology exists but isn't reaching users |
 | `/pantheon-feynman-clarity` | feynman-clarity | debugging | I don't understand why |
 | `/pantheon-gedankenexperiment` | gedankenexperiment | engineering | two trusted principles contradict |
