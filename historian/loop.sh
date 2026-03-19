@@ -48,9 +48,10 @@ for hero in "${HEROES[@]}"; do
     bash tests/pbnj-test.sh "$new_pattern" 2>/dev/null || echo "  WARNING: PB&J test failed for $new_pattern"
   done
   bash scripts/generate-pbnj.sh
+  bash scripts/generate-practitioners.sh
 
   if ! git diff --quiet || ! git diff --staged --quiet; then
-    git add patterns/ commands/ PATTERNS.md PBNJ.md historian/seed-list.md historian/.progress tests/pbnj-outputs/
+    git add patterns/ commands/ PATTERNS.md PBNJ.md PRACTITIONERS.md historian/seed-list.md historian/.progress tests/pbnj-outputs/
     git commit -m "feat(patterns): $hero gem added"
     git push
     echo "✓ Committed + pushed: $hero"

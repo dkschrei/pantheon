@@ -45,6 +45,8 @@ See [`PATTERNS.md`](PATTERNS.md) for the full dispatch table.
 
 See [`PBNJ.md`](PBNJ.md) for the PB&J test — every pattern applied to the same problem so you can see exactly what each one does.
 
+See [`PRACTITIONERS.md`](PRACTITIONERS.md) for the practitioner index — every historical figure mapped to the patterns they inspired.
+
 ---
 
 ## Pattern Format
