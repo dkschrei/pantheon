@@ -34,11 +34,16 @@ See [`PATTERNS.md`](PATTERNS.md) for the full dispatch table.
 
 | Trigger | Pattern | Genius |
 |---------|---------|--------|
-| Frustration signal / repeated failure | Andon Cord | Toyota |
+| *"Why the \*\*\*\* did you just do that?"* | Andon Cord | Toyota |
 | Any build/automate/create request | Musk Filter | Elon Musk |
 | "Why isn't this working" / stuck debugger | Feynman Clarity Test | Richard Feynman |
 
-v0.1 — 3 of 10 patterns complete. Building in stealth. Public launch when all 10 are ready.
+> **Ever had that moment?** The one where your AI agent does something so wrong you swear out loud at your terminal.
+> That word — the one you almost never use — is the most precisely calibrated frustration signal in human communication.
+> Toyota solved this in 1960 with a physical cord anyone could pull to stop the entire production line.
+> Pantheon installs that cord into your AI.
+
+See [`PBNJ.md`](PBNJ.md) for the PB&J test — every pattern applied to the same problem so you can see exactly what each one does.
 
 ---
 
