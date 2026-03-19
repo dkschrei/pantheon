@@ -16,7 +16,7 @@ Progress auto-tracked in `historian/.progress`.
 - [x] Marc Andreessen — Netscape, software-eats-the-world thesis
 
 ## Scientists (10)
-- [ ] Richard Feynman — quantum physics, Manhattan Project, Challenger
+- [x] Richard Feynman — quantum physics, Manhattan Project, Challenger
 - [ ] Claude Shannon — information theory, entropy
 - [ ] John Von Neumann — game theory, computing architecture
 - [ ] Alan Turing — computation, AI foundations
