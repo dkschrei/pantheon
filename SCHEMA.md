@@ -8,47 +8,69 @@ Platform adapters live at `patterns/{name}/adapters/{platform}.md`.
 
 ## pattern.md Format
 
+Each file has two zones: **Protocol** (TLDR — always at the top) and **The Book** (depth layer — always at the bottom). Readers use whichever zone they have time for.
+
+YAML frontmatter is required — it powers the index, the graph, and the Historian agent's merge logic.
+
 ```markdown
-# {Genius Name} — {Pattern Name}
+---
+name: {pattern-slug}
+aliases: [hero-name-pattern, alternate-label, historical-name]
+domain: [engineering, decision-making, philosophy, leadership, creativity, systems]
+trigger: [specific trigger phrase, situation, or keyword]
+practitioners:
+  - name: {Hero Name}
+    era: {start-year}-{end-year or present}
+    application: {one line — what they built or solved using this pattern}
+events:
+  - name: {Historical Event Name}
+    year: {year or range}
+    gem-role: {applied | violated} — {one line of what happened}
+lineage: {origin-name} → {intermediate} → {modern-hero}
+origin-earliest: {name}-{year}bc or {year}
+origin-modern: {name}-{year}
+---
 
-**Domain**: {The class of problems this pattern solves}
-**Trigger contexts**:
-  - {Situation 1 where this pattern should fire}
-  - {Situation 2}
-  - {Situation 3}
+# {Pattern Name}
+
+## Protocol  ← TLDR zone (always at the top)
+
+**Trigger:** {precise condition — specific enough that a reader knows immediately whether it applies}
+**Steps:**
+1. {executable step — no vague advice}
+2. {executable step}
+3. {executable step}
+**Anti-pattern:** {the specific failure mode this prevents — one sentence}
+**Hard rule:** {if one exists — a line that cannot be crossed}
 
 ---
 
-## The Pattern
+## The Book  ← depth zone (always at the bottom)
 
-{The distilled mental model in 2-3 sentences. What the genius actually does differently.
-Not biography — the move.}
+### The Pattern
+{The distilled mental model in 2-3 sentences. What the genius actually does differently. Not biography — the move.}
 
----
+### Protocol (extended)
+{Full step-by-step with rationale for each step}
 
-## Protocol
+### Anti-Pattern (extended)
+{What it looks like in practice when this fires wrong. Real failure modes with examples.}
 
-{Numbered steps. Concrete and executable. No vague advice.}
-
----
-
-## Anti-Pattern
-
-{What happens when this pattern is NOT applied — the specific failure mode it prevents.
-Name the failure, describe what it looks like in practice.}
-
----
-
-## Examples
-
+### Examples
 {Real incidents where this pattern applied or was violated. Specific > generic.}
 
----
+### Practitioners
+{Each practitioner: who they are, how they applied this gem, what they built}
 
-## Origin
+### Historical Events
+{Real moments in history where this gem was deployed or violated — with outcomes}
 
-{Who the genius is, where this pattern comes from, why it works.
-1-2 paragraphs. Historical grounding, not motivational framing.}
+### Lineage
+{The chain of transmission: origin → evolution → modern hero.
+How did this idea travel through time to its most prominent practitioner?}
+
+### Origin
+{Earliest known source. Historical grounding, not hype. 1-2 paragraphs.}
 ```
 
 ---
