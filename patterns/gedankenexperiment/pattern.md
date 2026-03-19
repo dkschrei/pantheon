@@ -13,6 +13,9 @@ practitioners:
   - name: Niels Bohr
     era: 1913-1962
     application: Used thought experiments (complementarity arguments, double-slit reasoning) to define the limits of quantum measurement
+  - name: Stephen Hawking
+    era: 1965-2018
+    application: Collided general relativity with quantum mechanics at extreme physical boundaries — black hole event horizons, singularities, the Big Bang — extracting Hawking radiation, the information paradox, and the no-boundary proposal
 events:
   - name: Chasing a beam of light
     year: 1895
@@ -29,7 +32,16 @@ events:
   - name: Galileo's falling bodies
     year: 1590
     gem-role: applied — Galileo imagined tying a heavy and light ball together; Aristotle's theory predicts the pair both falls faster (more mass) and slower (light ball drags heavy one), a contradiction that disproves the theory without any experiment
-lineage: Galileo-1590 → Newton-1687 → Mach-1883 → Einstein-1905
+  - name: Hawking radiation
+    year: 1974
+    gem-role: applied — Hawking applied quantum field theory to the event horizon of a black hole, where GR predicts nothing escapes and QM predicts vacuum fluctuations create particle pairs; the collision revealed that black holes radiate, connecting thermodynamics, gravity, and quantum mechanics
+  - name: Black hole information paradox
+    year: 1976
+    gem-role: applied — Hawking followed the Gedankenexperiment to its hardest consequence: if black holes radiate thermally and eventually evaporate, the quantum information of everything that fell in is destroyed — violating unitarity, a bedrock principle of quantum mechanics; the contradiction forced three decades of theoretical physics and remains partially unresolved
+  - name: No-boundary proposal
+    year: 1983
+    gem-role: applied — Hawking and Hartle collided GR (which predicts a singularity at the Big Bang) with quantum mechanics (which forbids infinities) by proposing that in imaginary time the universe has no boundary or beginning — dissolving the singularity contradiction by reframing the geometry of spacetime itself
+lineage: Galileo-1590 → Newton-1687 → Mach-1883 → Einstein-1905 → Hawking-1974
 origin-earliest: Galileo-1590
 origin-modern: Einstein-1905
 ---
@@ -97,6 +109,8 @@ This is distinct from Feynman's clarity test (which diagnoses existing confusion
 
 **Niels Bohr (1885–1962).** Einstein's great interlocutor. Bohr used thought experiments defensively — constructing scenarios to show that Einstein's attacks on quantum mechanics contained hidden assumptions. The Bohr-Einstein debates (1927–1935) are the greatest thought-experiment duel in the history of science. Bohr's complementarity principle emerged from sustained engagement with Einstein's Gedankenexperiments.
 
+**Stephen Hawking (1942–2018).** Hawking's variant of the Gedankenexperiment was to use extreme physical regimes — not imagined everyday scenarios — as collision arenas. Where Einstein imagined elevators and trains, Hawking went to black hole event horizons, the Big Bang singularity, and the endpoints of gravitational collapse. The two principles he collided were always the same: general relativity and quantum mechanics. His method: go to the boundary where both theories must apply simultaneously, apply both rigorously, and mine the contradiction. This produced Hawking radiation (1974), the black hole information paradox (1976), and the no-boundary proposal (1983). Hawking's physical disability may have sharpened this approach — unable to write equations after the mid-1960s, he developed extraordinary geometric and visual reasoning, constructing spacetime scenarios in his mind with a precision that compensated for the missing blackboard. His thought experiments were not illustrations; they were his primary instruments of discovery, exactly as Einstein's were.
+
 ### Historical Events
 
 **Solvay Conference debates (1927, 1930).** Einstein presented increasingly ingenious thought experiments designed to violate the Heisenberg uncertainty principle. At the 1930 conference, he proposed a box that weighs a photon to determine both its energy and the time of its escape — seemingly violating energy-time uncertainty. Bohr spent a sleepless night and found the flaw: Einstein had forgotten that his own general relativity (gravitational time dilation from the weighing) restored the uncertainty relation. The thought experiment designed to break quantum mechanics instead revealed a deeper connection between quantum theory and gravity.
@@ -105,9 +119,15 @@ This is distinct from Feynman's clarity test (which diagnoses existing confusion
 
 **Einstein's "happiest thought" (1907).** Working at the patent office, Einstein realized that a person falling from a roof would not feel their own weight. This simple scenario — so simple it seems trivial — contains the equivalence principle, which is the entire physical content of general relativity. The most consequential thought experiment in physics was imagining someone falling.
 
+**Hawking radiation (1974).** Hawking asked: what happens when you apply quantum field theory at the event horizon of a black hole? General relativity says the event horizon is a point of no return — nothing escapes. Quantum mechanics says the vacuum is alive with particle-antiparticle pairs. At the horizon, these two principles collide: a virtual pair created at the boundary can be split, one particle falling in and the other escaping. Following both theories to their logical end, Hawking showed that black holes must radiate — they have a temperature, they obey thermodynamics, and they eventually evaporate. A thought experiment at a physical extreme unified three branches of physics.
+
+**The information paradox (1976).** Hawking followed his own result to its most uncomfortable conclusion. If a black hole radiates thermally (random, featureless radiation) and eventually evaporates completely, then the quantum information of everything that fell in is permanently destroyed. But quantum mechanics demands that information is conserved (unitarity). Hawking took the contradiction seriously and declared quantum mechanics must be modified — a position he held for nearly 30 years, forcing an entire generation of theorists (including Susskind, 't Hooft, and Maldacena) to find the resolution. He conceded the bet to Preskill in 2004, but the thought experiment had already reshaped theoretical physics.
+
+**The no-boundary proposal (1983).** Hawking and Hartle confronted the ultimate collision: general relativity predicts a singularity at the Big Bang (infinite density, undefined physics), while quantum mechanics forbids physical infinities. Their resolution was to propose that in imaginary time, the universe has no boundary — spacetime is finite but has no edge, like the surface of a sphere. The thought experiment dissolved the singularity by reframing the question: there is no "before" the Big Bang because time itself has a different geometry near the origin.
+
 ### Lineage
 
-**Galileo (1590)** established the thought experiment as a tool for physics — showing that pure reasoning from a concrete scenario can disprove empirical claims without any observation. **Newton (1687)** used thought experiments extensively (the rotating bucket, the cannonball orbit) but primarily to illustrate rather than discover. **Ernst Mach (1883)** critiqued Newton's thought experiments, exposing hidden assumptions in Newtonian mechanics (absolute space, absolute time) — Mach's critique was the philosophical ground Einstein built on. **Einstein (1905 onward)** perfected the method: the thought experiment as a precision instrument for exposing contradictions between accepted principles, forcing theoretical revolutions. No one before or since has used the technique with such consistent productivity.
+**Galileo (1590)** established the thought experiment as a tool for physics — showing that pure reasoning from a concrete scenario can disprove empirical claims without any observation. **Newton (1687)** used thought experiments extensively (the rotating bucket, the cannonball orbit) but primarily to illustrate rather than discover. **Ernst Mach (1883)** critiqued Newton's thought experiments, exposing hidden assumptions in Newtonian mechanics (absolute space, absolute time) — Mach's critique was the philosophical ground Einstein built on. **Einstein (1905 onward)** perfected the method: the thought experiment as a precision instrument for exposing contradictions between accepted principles, forcing theoretical revolutions. **Hawking (1974 onward)** extended the technique to its most extreme arena: the boundaries of spacetime itself. Where Einstein collided principles using imagined everyday scenarios, Hawking collided entire theories — general relativity and quantum mechanics — at physical extremes where both must apply but cannot coexist. The method was identical; the stakes were higher.
 
 ### Origin
 

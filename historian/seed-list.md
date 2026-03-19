@@ -25,7 +25,7 @@ Progress auto-tracked in `historian/.progress`.
 - [x] Marie Curie — radioactivity research under extreme constraint
 - [x] Linus Pauling — chemical bonding, vitamin C controversy
 - [x] Niels Bohr — complementarity, quantum mechanics
-- [ ] Stephen Hawking — physics communication under physical constraint
+- [x] Stephen Hawking — physics communication under physical constraint
 
 ## Philosophers & Strategists (8)
 - [ ] Aristotle — logic, first principles, categories
