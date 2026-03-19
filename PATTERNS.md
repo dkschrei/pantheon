@@ -9,6 +9,7 @@
 | `/pantheon-feynman-clarity` | feynman-clarity | debugging | I don't understand why |
 | `/pantheon-musk-filter` | musk-filter | engineering | build request |
 | `/pantheon-pain-blindness` | pain-blindness | engineering | nobody likes this but everyone uses it |
+| `/pantheon-scratch-build` | scratch-build | engineering | facing a complex system you need to master |
 | `/pantheon-taste-gate` | taste-gate | decision-making | feature list growing |
 | `/pantheon-two-way-door` | two-way-door | decision-making | decision paralysis |
 
