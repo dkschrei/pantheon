@@ -33,6 +33,7 @@
 | `/pantheon-strip-to-structure` | strip-to-structure | engineering | stuck in domain complexity |
 | `/pantheon-structural-unlock` | structural-unlock | leadership | structural bottleneck |
 | `/pantheon-taste-gate` | taste-gate | decision-making | feature list growing |
+| `/pantheon-the-ratchet` | the-ratchet | systems | inner loop velocity decreasing |
 | `/pantheon-time-and-motion` | time-and-motion | engineering | optimize process |
 | `/pantheon-two-way-door` | two-way-door | decision-making | decision paralysis |
 | `/pantheon-vertical-integration` | vertical-integration | engineering | supply chain dependency |
