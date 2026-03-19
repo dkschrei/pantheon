@@ -55,4 +55,4 @@ Restart Claude Code after installing.
 
 ---
 
-*github.com/dkschrei/pantheon — v0.1 private*
+*github.com/dkschrei/pantheon*

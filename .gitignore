@@ -1,3 +1,6 @@
+# Internal build scaffolding — not user-facing
+docs/
+
 .DS_Store
 *.swp
 *.swo
