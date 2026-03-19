@@ -16,6 +16,7 @@
 | `/pantheon-gedankenexperiment` | gedankenexperiment | engineering | two trusted principles contradict |
 | `/pantheon-inflection-point` | inflection-point | decision-making | strategic shift |
 | `/pantheon-material-honesty` | material-honesty | engineering | design review |
+| `/pantheon-methodical-doubt` | methodical-doubt | philosophy | inherited assumptions |
 | `/pantheon-mind-forge` | mind-forge | engineering | complex system design |
 | `/pantheon-musk-filter` | musk-filter | engineering | build request |
 | `/pantheon-ohno-circle` | ohno-circle | engineering | premature solution |
