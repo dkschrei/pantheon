@@ -13,6 +13,7 @@
 | `/pantheon-constraint-saturation` | constraint-saturation | engineering | predicting unknown structure |
 | `/pantheon-copernican-inversion` | copernican-inversion | philosophy | irresolvable debate |
 | `/pantheon-eat-the-world` | eat-the-world | engineering | technology exists but isn't reaching users |
+| `/pantheon-falsification` | falsification | philosophy | theory feels too comfortable |
 | `/pantheon-feynman-clarity` | feynman-clarity | debugging | I don't understand why |
 | `/pantheon-gedankenexperiment` | gedankenexperiment | engineering | two trusted principles contradict |
 | `/pantheon-imperial-self-correction` | imperial-self-correction | leadership | emotional reaction driving a decision |

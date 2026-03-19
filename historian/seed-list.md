@@ -35,7 +35,7 @@ Progress auto-tracked in `historian/.progress`.
 - [x] Sun Tzu — asymmetric advantage, terrain analysis
 - [x] Niccolò Machiavelli — political realism, power dynamics
 - [x] Immanuel Kant — categorical imperative, duty-based reasoning
-- [ ] Karl Popper — falsifiability, open society
+- [x] Karl Popper — falsifiability, open society
 
 ## Industrial Pioneers (6)
 - [ ] Henry Ford — assembly line, waste elimination, accessibility
