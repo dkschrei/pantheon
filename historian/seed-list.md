@@ -28,7 +28,7 @@ Progress auto-tracked in `historian/.progress`.
 - [x] Stephen Hawking — physics communication under physical constraint
 
 ## Philosophers & Strategists (8)
-- [ ] Aristotle — logic, first principles, categories
+- [x] Aristotle — logic, first principles, categories
 - [ ] René Descartes — systematic doubt, clear ideas
 - [ ] Marcus Aurelius — Stoic practice, journaling for clarity
 - [ ] Seneca — time management, letters on urgency
