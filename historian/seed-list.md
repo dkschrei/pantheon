@@ -30,7 +30,7 @@ Progress auto-tracked in `historian/.progress`.
 ## Philosophers & Strategists (8)
 - [x] Aristotle — logic, first principles, categories
 - [x] René Descartes — systematic doubt, clear ideas
-- [ ] Marcus Aurelius — Stoic practice, journaling for clarity
+- [x] Marcus Aurelius — Stoic practice, journaling for clarity
 - [ ] Seneca — time management, letters on urgency
 - [ ] Sun Tzu — asymmetric advantage, terrain analysis
 - [ ] Niccolò Machiavelli — political realism, power dynamics

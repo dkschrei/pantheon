@@ -14,6 +14,7 @@
 | `/pantheon-eat-the-world` | eat-the-world | engineering | technology exists but isn't reaching users |
 | `/pantheon-feynman-clarity` | feynman-clarity | debugging | I don't understand why |
 | `/pantheon-gedankenexperiment` | gedankenexperiment | engineering | two trusted principles contradict |
+| `/pantheon-imperial-self-correction` | imperial-self-correction | leadership | emotional reaction driving a decision |
 | `/pantheon-inflection-point` | inflection-point | decision-making | strategic shift |
 | `/pantheon-material-honesty` | material-honesty | engineering | design review |
 | `/pantheon-methodical-doubt` | methodical-doubt | philosophy | inherited assumptions |
