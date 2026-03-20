@@ -268,6 +268,18 @@ _✦ = authored gem (written from live practice)_
 |---------|-----|-------------|
 | [carve-at-joints](patterns/carve-at-joints/pattern.md) | 1735-1778 | Extended Aristotle's biological method into the binomial nomenclature system — kingdom, class, order, genus, species — creating the taxonomy still used today |
 
+## John Locke
+
+| Pattern | Era | Application |
+|---------|-----|-------------|
+| [vessel-and-soul ✦](patterns/vessel-and-soul/pattern.md) | 1632-1704 | First practitioner to document an operational tier-separation system — "A New Method of Making Common-Place Books" (1706) separated fleeting reading impressions from permanent organized insights, influencing Bacon, Milton, and Enlightenment intellectual practice |
+
+## Niklas Luhmann
+
+| Pattern | Era | Application |
+|---------|-----|-------------|
+| [vessel-and-soul ✦](patterns/vessel-and-soul/pattern.md) | 1927-1998 | Zettelkasten slip-box — three explicit tiers (fleeting/literature/permanent) maintained across 47 years produced 58 books and 550+ articles; permanent notes written as standalone arguments, not context-dependent summaries |
+
 ## Niccolò Machiavelli
 
 | Pattern | Era | Application |
@@ -330,6 +342,12 @@ _✦ = authored gem (written from live practice)_
 | Pattern | Era | Application |
 |---------|-----|-------------|
 | [constraint-saturation](patterns/constraint-saturation/pattern.md) | 1928-1994 | Predicted protein secondary structures (alpha helix, beta sheet) and molecular geometries across thousands of compounds by saturating problems with every known physical constraint until only one structure survived |
+
+## Plato
+
+| Pattern | Era | Application |
+|---------|-----|-------------|
+| [vessel-and-soul ✦](patterns/vessel-and-soul/pattern.md) | 428bc-348bc | Theory of Forms — separated permanent ideal archetypes (Forms) from their ephemeral material instances; the earliest rigorous formalization of the vessel/soul distinction applied to all knowledge; the philosopher's task was to extract the permanent Form (soul) from the ephemeral instance (vessel) |
 
 ## Charlotte Perriand
 
@@ -414,4 +432,4 @@ _✦ = authored gem (written from live practice)_
 
 ---
 
-_Total: 66 practitioners · 75 pattern appearances_
+_Total: 69 practitioners · 78 pattern appearances_

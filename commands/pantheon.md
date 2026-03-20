@@ -44,8 +44,20 @@ Executable mental models from history's greatest problem solvers. Drop them into
 | `/pantheon-time-and-motion` | time-and-motion | Frederick Winslow Taylor | optimize process |
 | `/pantheon-two-way-door` | two-way-door | Jeff Bezos | decision paralysis |
 | `/pantheon-vertical-integration` | vertical-integration | Andrew Carnegie | supply chain dependency |
+| `/pantheon-vessel-and-soul` | vessel-and-soul ✦ | Niklas Luhmann | information decay rate unknown |
 
-_✦ = authored gem (written from live practice)_
+_✦ = authored gem — pattern surfaced from lived experience; history grounded after the fact_
+_unmarked = historian gem — pattern surfaced by researching a historical figure; practitioner is the origin_
+
+---
+
+---
+
+## Gem Builder
+
+| Command | Purpose |
+|---------|---------|
+| `/pantheon-gem-builder` | Evaluate a gem candidate — 4 gates + 5 challenges — and build it if it clears all 9 |
 
 ---
 
@@ -72,4 +84,4 @@ Restart Claude Code to activate.
 
 ---
 
-*github.com/dkschrei/pantheon — 32 patterns*
+*github.com/dkschrei/pantheon — 33 patterns*

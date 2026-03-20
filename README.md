@@ -98,22 +98,24 @@ The patterns in this library are not new. They have been sitting in history book
 
 ## Status
 
-**v1.0 — Building. Target: May 6, 2026 (Anthropic Developer Conference, SF)**
+**v0.9 — Feature complete. Public launch: May 6, 2026 (Anthropic Developer Conference, SF)**
 
 - [x] Schema v1.0 — YAML frontmatter + two-zone format (Protocol TLDR + The Book)
-- [x] Andon Cord Protocol (Toyota / Taiichi Ohno)
-- [x] Musk Filter (Elon Musk)
-- [x] Feynman Clarity Test (Richard Feynman)
-- [ ] 22-27 more gems in development via Historian agent research loop (targeted for v1.0 launch)
-- [ ] Public launch + community contributions open
-
-3-gem preview available now via install above.
+- [x] 33 gems — historian path (32) + authored path (1 ✦)
+- [x] 9-criteria quality standard — 4 gates + 5 Pantheon challenges
+- [x] Two gem paths — Historian agent loop + `/pantheon-gem-builder` for authored gems
+- [x] 69 practitioners indexed across 78 pattern appearances
+- [x] PB&J test — all 33 gems validated against the same input
+- [x] Contributing open — see `CONTRIBUTING.md`
+- [ ] Public launch — May 6, 2026
 
 ---
 
 ## Contributing
 
-Coming when public. For now: [open an issue](../../issues) if you have a pattern suggestion. Include the genius, the problem class, and a real example of the pattern in action.
+See [`CONTRIBUTING.md`](CONTRIBUTING.md) for the full standard and both contribution paths.
+
+Two ways in: the **historian path** (research a historical figure's defining move) and the **authored path** (`/pantheon-gem-builder` — patterns surfaced from lived experience). Both clear the same 9-criteria quality standard.
 
 ---
 

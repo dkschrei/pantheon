@@ -29,7 +29,7 @@ events:
 lineage: {origin-name} → {intermediate} → {modern-hero}
 origin-earliest: {name}-{year}bc or {year}
 origin-modern: {name}-{year}
-origin-type: authored | historian
+origin-type: authored | historian  # authored = surfaced from lived experience, ✦ marked; historian = surfaced by researching a historical figure
 ---
 
 # {Pattern Name}

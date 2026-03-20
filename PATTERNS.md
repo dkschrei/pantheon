@@ -37,6 +37,7 @@
 | `/pantheon-time-and-motion` | time-and-motion | engineering | optimize process |
 | `/pantheon-two-way-door` | two-way-door | decision-making | decision paralysis |
 | `/pantheon-vertical-integration` | vertical-integration | engineering | supply chain dependency |
+| `/pantheon-vessel-and-soul` | vessel-and-soul | knowledge-management | information decay rate unknown |
 
 ---
 
