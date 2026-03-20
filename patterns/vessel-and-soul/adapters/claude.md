@@ -49,6 +49,20 @@ Before storing anything, ask:
 
 ---
 
+## Nexus Implementation
+
+If you are running in a Nexus session, the three tiers map directly to Nexus tools:
+
+| Tier | Nexus tool | Decay rate | Lifecycle |
+|------|-----------|-----------|-----------|
+| Fleeting | `/nexus-scratch` | Hours–days | Delete after promoting |
+| Permanent | `/nexus-remember-this` | Forever | Persists across all sessions |
+| Immutable | `recall-log` | Forever, append-only | Milestone audit trail |
+
+The decay rate question is the same. Only the container names change.
+
+---
+
 ## The Promotion Step
 
 When moving information from fleeting to permanent, do not copy the note verbatim. Extract only the transferable insight. The context was scaffolding. The soul is what you keep.
