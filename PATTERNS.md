@@ -37,6 +37,7 @@
 | `/pantheon-outside-view` | outside-view | decision-making | making a prediction |
 | `/pantheon-pain-blindness` | pain-blindness | engineering | nobody likes this but everyone uses it |
 | `/pantheon-phantom-machine` | phantom-machine | engineering | impossible problem |
+| `/pantheon-platform-gravity` | platform-gravity | engineering | emerging compute paradigm with no commercial market yet |
 | `/pantheon-premeditatio` | premeditatio | decision-making | high-stakes uncertainty ahead |
 | `/pantheon-red-bead` | red-bead | systems | blaming workers for defects |
 | `/pantheon-render-to-understand` | render-to-understand | engineering | surface understanding only |

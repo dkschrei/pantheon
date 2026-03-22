@@ -44,6 +44,7 @@ Executable mental models from history's greatest problem solvers. Drop them into
 | `/pantheon-outside-view` | outside-view | — | — |
 | `/pantheon-pain-blindness` | pain-blindness | Tony Fadell | nobody likes this but everyone uses it |
 | `/pantheon-phantom-machine` | phantom-machine | Alan Turing | impossible problem |
+| `/pantheon-platform-gravity` | platform-gravity | — | — |
 | `/pantheon-premeditatio` | premeditatio | Seneca | high-stakes uncertainty ahead |
 | `/pantheon-red-bead` | red-bead | W. Edwards Deming | blaming workers for defects |
 | `/pantheon-render-to-understand` | render-to-understand | Leonardo da Vinci | surface understanding only |
@@ -93,4 +94,4 @@ Restart Claude Code to activate.
 
 ---
 
-*github.com/dkschrei/pantheon — 53 patterns*
+*github.com/dkschrei/pantheon — 54 patterns*
