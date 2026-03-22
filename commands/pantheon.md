@@ -54,6 +54,7 @@ Executable mental models from history's greatest problem solvers. Drop them into
 | `/pantheon-the-combination` | the-combination | John D. Rockefeller | cutthroat competition |
 | `/pantheon-the-endurance` | the-endurance | — | — |
 | `/pantheon-the-fabian` | the-fabian | — | — |
+| `/pantheon-the-fugue` | the-fugue | Johann Sebastian Bach | one idea but don't know where to go |
 | `/pantheon-the-ratchet` | the-ratchet ✦ | Taiichi Ohno | inner loop velocity decreasing |
 | `/pantheon-time-and-motion` | time-and-motion | Frederick Winslow Taylor | optimize process |
 | `/pantheon-two-way-door` | two-way-door | Jeff Bezos | decision paralysis |
@@ -87,4 +88,4 @@ Restart Claude Code to activate.
 
 ---
 
-*github.com/dkschrei/pantheon — 47 patterns*
+*github.com/dkschrei/pantheon — 48 patterns*

@@ -58,7 +58,7 @@ Progress auto-tracked in `historian/.progress`.
 - [x] Michelangelo — constraint as creativity
 - [x] Wolfgang Amadeus Mozart — compositional speed, pattern saturation
 - [x] Pablo Picasso — deconstruction-reconstruction, period focus
-- [ ] Johann Sebastian Bach — structural mastery, constraint-driven variation
+- [x] Johann Sebastian Bach — structural mastery, constraint-driven variation
 
 ## Investors & Economists (5)
 - [ ] Charlie Munger — inversion, mental model lattice

@@ -31,6 +31,12 @@ _✦ = authored gem (written from live practice)_
 |---------|-----|-------------|
 | [imperial-self-correction](patterns/imperial-self-correction/pattern.md) | 161-180 | Governed the Roman Empire through plague, invasion, and betrayal by writing nightly self-corrections that separated his emotional reaction from his executive judgment — producing 12 books of private course-corrections never intended for publication |
 
+## Johann Sebastian Bach
+
+| Pattern | Era | Application |
+|---------|-----|-------------|
+| [the-fugue](patterns/the-fugue/pattern.md) | 1695-1750 | Derived entire large-scale works — The Art of Fugue, The Well-Tempered Clavier, Goldberg Variations — from a single subject or bass line by systematically applying every contrapuntal transformation (inversion, augmentation, diminution, stretto, mirror) the formal system permits, never introducing new material until the seed was genuinely exhausted |
+
 ## Jeff Bezos
 
 | Pattern | Era | Application |
@@ -499,4 +505,4 @@ _✦ = authored gem (written from live practice)_
 
 ---
 
-_Total: 79 practitioners · 95 pattern appearances_
+_Total: 80 practitioners · 96 pattern appearances_
