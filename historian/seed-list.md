@@ -41,7 +41,7 @@ Progress auto-tracked in `historian/.progress`.
 - [x] Henry Ford — assembly line, waste elimination, accessibility
 - [x] Frederick Winslow Taylor — scientific management, time-motion study
 - [x] Andrew Carnegie — vertical integration, systematic philanthropy
-- [ ] W. Edwards Deming — quality systems, PDCA cycle
+- [x] W. Edwards Deming — quality systems, PDCA cycle
 - [ ] Alfred Sloan — decentralized management, GM restructuring
 - [ ] John D. Rockefeller — standard oil, systematic cost reduction
 

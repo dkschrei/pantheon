@@ -35,6 +35,7 @@ Executable mental models from history's greatest problem solvers. Drop them into
 | `/pantheon-pain-blindness` | pain-blindness | Tony Fadell | nobody likes this but everyone uses it |
 | `/pantheon-phantom-machine` | phantom-machine | Alan Turing | impossible problem |
 | `/pantheon-premeditatio` | premeditatio | Seneca | high-stakes uncertainty ahead |
+| `/pantheon-red-bead` | red-bead | W. Edwards Deming | blaming workers for defects |
 | `/pantheon-scratch-build` | scratch-build | — | — |
 | `/pantheon-shape-the-ground` | shape-the-ground | Sun Tzu | facing a confrontation |
 | `/pantheon-strip-to-structure` | strip-to-structure | Claude Shannon | stuck in domain complexity |
@@ -44,20 +45,9 @@ Executable mental models from history's greatest problem solvers. Drop them into
 | `/pantheon-time-and-motion` | time-and-motion | Frederick Winslow Taylor | optimize process |
 | `/pantheon-two-way-door` | two-way-door | Jeff Bezos | decision paralysis |
 | `/pantheon-vertical-integration` | vertical-integration | Andrew Carnegie | supply chain dependency |
-| `/pantheon-vessel-and-soul` | vessel-and-soul ✦ | Niklas Luhmann | information decay rate unknown |
+| `/pantheon-vessel-and-soul` | vessel-and-soul ✦ | Plato | about to store information and unsure where it belongs |
 
-_✦ = authored gem — pattern surfaced from lived experience; history grounded after the fact_
-_unmarked = historian gem — pattern surfaced by researching a historical figure; practitioner is the origin_
-
----
-
----
-
-## Gem Builder
-
-| Command | Purpose |
-|---------|---------|
-| `/pantheon-gem-builder` | Evaluate a gem candidate — 4 gates + 5 challenges — and build it if it clears all 9 |
+_✦ = authored gem (written from live practice)_
 
 ---
 
@@ -84,4 +74,4 @@ Restart Claude Code to activate.
 
 ---
 
-*github.com/dkschrei/pantheon — 33 patterns*
+*github.com/dkschrei/pantheon — 34 patterns*

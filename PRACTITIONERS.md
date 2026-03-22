@@ -109,6 +109,7 @@ _✦ = authored gem (written from live practice)_
 | Pattern | Era | Application |
 |---------|-----|-------------|
 | [ohno-circle](patterns/ohno-circle/pattern.md) | 1950-1993 | Statistical quality control — insisted managers walk the production floor and measure actual processes rather than relying on reports |
+| [red-bead](patterns/red-bead/pattern.md) | 1927-1993 | Taught Japanese and American industry to distinguish systemic variation from special incidents using control charts — shifting quality accountability from workers to management |
 | [time-and-motion](patterns/time-and-motion/pattern.md) | 1950-1993 | Applied measurement-driven process control to Japanese manufacturing, adding statistical rigor to Taylor's stopwatch |
 
 ## René Descartes
@@ -272,13 +273,13 @@ _✦ = authored gem (written from live practice)_
 
 | Pattern | Era | Application |
 |---------|-----|-------------|
-| [vessel-and-soul ✦](patterns/vessel-and-soul/pattern.md) | 1632-1704 | First practitioner to document an operational tier-separation system — "A New Method of Making Common-Place Books" (1706) separated fleeting reading impressions from permanent organized insights, influencing Bacon, Milton, and Enlightenment intellectual practice |
+| [vessel-and-soul ✦](patterns/vessel-and-soul/pattern.md) | 1632-1704 | Commonplace book method — first documented operational system for separating fleeting reading impressions from permanent synthesized insights, published 1706 |
 
 ## Niklas Luhmann
 
 | Pattern | Era | Application |
 |---------|-----|-------------|
-| [vessel-and-soul ✦](patterns/vessel-and-soul/pattern.md) | 1927-1998 | Zettelkasten slip-box — three explicit tiers (fleeting/literature/permanent) maintained across 47 years produced 58 books and 550+ articles; permanent notes written as standalone arguments, not context-dependent summaries |
+| [vessel-and-soul ✦](patterns/vessel-and-soul/pattern.md) | 1927-1998 | Zettelkasten slip-box — three explicit tiers (fleeting/literature/permanent) produced 58 books and 550+ articles over 47 years from a single physical card index |
 
 ## Niccolò Machiavelli
 
@@ -343,17 +344,17 @@ _✦ = authored gem (written from live practice)_
 |---------|-----|-------------|
 | [constraint-saturation](patterns/constraint-saturation/pattern.md) | 1928-1994 | Predicted protein secondary structures (alpha helix, beta sheet) and molecular geometries across thousands of compounds by saturating problems with every known physical constraint until only one structure survived |
 
-## Plato
-
-| Pattern | Era | Application |
-|---------|-----|-------------|
-| [vessel-and-soul ✦](patterns/vessel-and-soul/pattern.md) | 428bc-348bc | Theory of Forms — separated permanent ideal archetypes (Forms) from their ephemeral material instances; the earliest rigorous formalization of the vessel/soul distinction applied to all knowledge; the philosopher's task was to extract the permanent Form (soul) from the ephemeral instance (vessel) |
-
 ## Charlotte Perriand
 
 | Pattern | Era | Application |
 |---------|-----|-------------|
 | [material-honesty](patterns/material-honesty/pattern.md) | 1927-1999 | Furniture design — tubular steel and bentwood used for what they naturally do (bend, support, flex) rather than forced into shapes that deny their properties |
+
+## Plato
+
+| Pattern | Era | Application |
+|---------|-----|-------------|
+| [vessel-and-soul ✦](patterns/vessel-and-soul/pattern.md) | 428bc-348bc | Theory of Forms — separated permanent ideal archetypes (Forms) from their ephemeral material instances; the Form of Justice persists forever, any particular just act decays |
 
 ## Dieter Rams
 
@@ -386,6 +387,12 @@ _✦ = authored gem (written from live practice)_
 |---------|-----|-------------|
 | [strip-to-structure](patterns/strip-to-structure/pattern.md) | 1937-2001 | Founded information theory by stripping meaning from communication and reducing it to bits; connected Boolean algebra to circuit design; unified cryptography with entropy |
 | [the-ratchet ✦](patterns/the-ratchet/pattern.md) | 1916-2001 | Bell Labs — 20+ years of accumulated communications research compressed into information theory (1948); the outer loop that unified an entire field |
+
+## Walter Shewhart
+
+| Pattern | Era | Application |
+|---------|-----|-------------|
+| [red-bead](patterns/red-bead/pattern.md) | 1891-1967 | Invented the control chart and the original common-cause/special-cause framework at Bell Labs, which Deming extended into a full management philosophy |
 
 ## Socrates
 
@@ -424,6 +431,12 @@ _✦ = authored gem (written from live practice)_
 |---------|-----|-------------|
 | [mind-forge](patterns/mind-forge/pattern.md) | 1452-1519 | Engineered flying machines, hydraulic systems, and anatomical studies through exhaustive mental and drawn simulation centuries before buildable technology existed |
 
+## Donald Wheeler
+
+| Pattern | Era | Application |
+|---------|-----|-------------|
+| [red-bead](patterns/red-bead/pattern.md) | 1942-present | Extended Deming's SPC work into modern process behavior charts and "Understanding Variation" (1993) — making control chart interpretation accessible beyond statisticians |
+
 ## Arno Penzias & Robert Wilson
 
 | Pattern | Era | Application |
@@ -432,4 +445,4 @@ _✦ = authored gem (written from live practice)_
 
 ---
 
-_Total: 69 practitioners · 78 pattern appearances_
+_Total: 71 practitioners · 81 pattern appearances_
