@@ -46,7 +46,7 @@ events:
     year: 1938
     gem-role: violated — After signing the Munich Agreement surrendering the Sudetenland to Hitler, Chamberlain returned to London and declared "peace for our time." He used language to perform a future that was false — not because he lied, but because his words were wishful description rather than manufactured certainty grounded in structural reality. The language dissolved British will to prepare for war at the exact moment preparation was essential. The contrast with Churchill is the clearest possible demonstration of what the pattern requires: the performed future must be grounded in structural reality, or it collapses.
     practitioner: Neville Chamberlain
-    outcome: "Peace for our time" eroded British will to rearm at the critical moment; when Germany invaded Poland eleven months later, Chamberlain's credibility was destroyed, his government fell in May 1940, and the false declaration became the definitive historical example of performed language collapsing under structural reality.
+    outcome: '"Peace for our time" eroded British will to rearm at the critical moment; when Germany invaded Poland eleven months later, Chamberlain''s credibility was destroyed, his government fell in May 1940, and the false declaration became the definitive historical example of performed language collapsing under structural reality.'
 lineage: Pericles-431bc → Cicero-52bc → Lincoln-1863 → Churchill-1940 → King-1963
 origin-earliest: Pericles-431bc
 origin-modern: Churchill-1940

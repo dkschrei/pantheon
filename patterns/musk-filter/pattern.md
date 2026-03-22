@@ -23,7 +23,7 @@ events:
     year: 2026
     gem-role: violated — agent applied loop automation (Step 5) without questioning whether the loop should exist (Step 1); result: token burn, no improvement
     practitioner: Nexus agent
-    outcome: The agent burned tokens running a circular loop that produced no real improvement to conventions.md, demonstrating the canonical failure mode: automation of an unvalidated process produces a faster version of a broken process.
+    outcome: "The agent burned tokens running a circular loop that produced no real improvement to conventions.md, demonstrating the canonical failure mode: automation of an unvalidated process produces a faster version of a broken process."
   - name: Ford Model T price reduction
     year: 1908-1916
     gem-role: applied — eliminated every non-essential manufacturing step until Model T reached $290
