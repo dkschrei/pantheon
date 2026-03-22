@@ -1,6 +1,6 @@
 import React, { useMemo, useState, useRef, useEffect } from 'react';
 
-export default function Header({ gems, practitioners, filterType, setFilterType, filterValue, setFilterValue, onSearchSelect }) {
+export default function Header({ gems, practitioners, filterType, setFilterType, filterValue, setFilterValue, onSearchSelect, activeTab, onTabChange }) {
   const [query, setQuery] = useState('');
   const [showResults, setShowResults] = useState(false);
   const searchRef = useRef();
@@ -98,6 +98,22 @@ export default function Header({ gems, practitioners, filterType, setFilterType,
     <header className="bg-pantheon-card border-b border-pantheon-border px-4 py-3 flex flex-col sm:flex-row sm:items-center sm:justify-between flex-shrink-0 gap-2">
       <div className="flex items-center gap-4 flex-shrink-0">
         <h1 className="font-display text-xl text-pantheon-accent tracking-wide">PANTHEON</h1>
+        <div className="h-6 w-px bg-pantheon-border" />
+        {/* Tab switcher */}
+        <div className="flex gap-1">
+          <button
+            onClick={() => onTabChange('graph')}
+            className={`px-3 py-1 text-xs rounded transition-colors ${activeTab === 'graph' ? 'bg-pantheon-accent/20 text-pantheon-accent' : 'text-pantheon-muted hover:text-pantheon-text'}`}
+          >
+            Graph
+          </button>
+          <button
+            onClick={() => onTabChange('historian')}
+            className={`px-3 py-1 text-xs rounded transition-colors ${activeTab === 'historian' ? 'bg-pantheon-accent/20 text-pantheon-accent' : 'text-pantheon-muted hover:text-pantheon-text'}`}
+          >
+            Historian
+          </button>
+        </div>
         <div className="h-6 w-px bg-pantheon-border" />
         <div className="flex items-center gap-2 text-sm text-pantheon-muted">
           <span className="inline-block w-3 h-3 rotate-45 bg-pantheon-gem" /> {gems.length} gems

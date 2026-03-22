@@ -4,6 +4,7 @@
  * This eliminates the need for a runtime GraphQL server.
  */
 import { readFileSync, writeFileSync, mkdirSync } from 'fs';
+import { execFileSync } from 'child_process';
 import { glob } from 'glob';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
@@ -43,6 +44,20 @@ function fixYaml(raw) {
   return raw;
 }
 
+function getGitDiscoveryDate(filePath) {
+  try {
+    const result = execFileSync(
+      'git', ['log', '--follow', '--diff-filter=A', '--format=%ai', '--', filePath],
+      { cwd: join(__dirname, '../..'), encoding: 'utf8' }
+    );
+    const dates = result.trim().split('\n').filter(Boolean);
+    const earliest = dates[dates.length - 1];
+    return earliest ? earliest.split(' ')[0] : null; // YYYY-MM-DD
+  } catch {
+    return null;
+  }
+}
+
 function parseGemRole(str) {
   if (!str) return { role: null, description: null };
   str = String(str);
@@ -61,9 +76,16 @@ const files = glob.sync('*/pattern.md', { cwd: PATTERNS_DIR });
 const parseErrors = [];
 const gems = files.flatMap(file => {
   try {
-    const raw = readFileSync(join(PATTERNS_DIR, file), 'utf8');
+    const filePath = join(PATTERNS_DIR, file);
+    const raw = readFileSync(filePath, 'utf8');
     const { data, content } = matter(fixYaml(raw));
     const name = data.name || file.split('/')[0];
+    const events = (data.events || []).map(e => {
+      const { role, description } = parseGemRole(e['gem-role']);
+      const magnitude = e.magnitude != null ? Number(e.magnitude) : null;
+      return { name: e.name || '', year: e.year != null ? String(e.year) : null, role, description, magnitude };
+    });
+    const gemScore = events.reduce((sum, e) => sum + (e.magnitude || 0), 0);
     return [{
       name,
       aliases: data.aliases || [],
@@ -72,16 +94,15 @@ const gems = files.flatMap(file => {
       lineage: data.lineage || null,
       originType: data['origin-type'] || null,
       authoredBy: data['authored-by'] || null,
+      discoveredAt: getGitDiscoveryDate(filePath),
       description: extractDescription(content),
+      gemScore,
       practitioners: (data.practitioners || []).map(p => ({
         name: p.name || '',
         era: p.era != null ? String(p.era) : null,
         application: p.application || null,
       })),
-      events: (data.events || []).map(e => {
-        const { role, description } = parseGemRole(e['gem-role']);
-        return { name: e.name || '', year: e.year != null ? String(e.year) : null, role, description };
-      }),
+      events,
     }];
   } catch (err) {
     parseErrors.push({ file, error: err.message });

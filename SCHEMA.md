@@ -26,6 +26,7 @@ events:
   - name: {Historical Event Name}
     year: {year or range}
     gem-role: {applied | violated} — {one line of what happened}
+    magnitude: {1-5}  # 1=Notable 2=Significant 3=Major 4=Historic 5=Civilizational
 lineage: {origin-name} → {intermediate} → {modern-hero}
 origin-earliest: {name}-{year}bc or {year}
 origin-modern: {name}-{year}
@@ -104,3 +105,16 @@ Keep the protocol executable — Claude follows it step by step.}
 4. **Examples must be real** — invented examples are weaker than real incidents. If you don't have one, note it as (pending) and add one when it fires.
 5. **Origin is history, not hype** — cite where the pattern comes from. No hagiography.
 6. **One genius, one domain** — patterns should have a clear owner and a specific problem class. Avoid patterns that "apply to everything."
+7. **Magnitude is mandatory on every event** — assign `magnitude: 1–5` when adding any event. This is a judgment call, not a formula. Score the *impact of the event on human history*, not just on the gem's domain. A violation scored at 4 is still a 4 — failures that reshaped industries count.
+
+### Magnitude Scale
+
+| Score | Label | Applies when... |
+|---|---|---|
+| 1 | Notable | Outcome affected one organization or a small domain |
+| 2 | Significant | Reshaped an industry or national economy |
+| 3 | Major | Altered multiple industries or a generation's thinking |
+| 4 | Historic | Permanently changed civilization's trajectory |
+| 5 | Civilizational | Among the most consequential events in recorded history |
+
+**Gem score** = sum of all event magnitudes. This is the primary quality signal: a gem with high total magnitude is a proven universal pattern, validated by history that matters. A gem with low total magnitude is a candidate — the Historian is still building the case. As the library matures, new research should mostly add events (and magnitude) to existing gems rather than create new ones. That convergence is the sign the library is working.

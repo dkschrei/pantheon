@@ -3,9 +3,11 @@ import gemsData from './data/gems.json';
 import ForceGraph from './ForceGraph';
 import Sidebar from './Sidebar';
 import Header from './Header';
+import Historian from './Historian';
 
 export default function App() {
   const { gems, practitioners } = gemsData;
+  const [activeTab, setActiveTab] = useState('graph');
   const [selectedNode, setSelectedNode] = useState(null);
   const [filterType, setFilterType] = useState('all');
   const [filterValue, setFilterValue] = useState('');
@@ -19,6 +21,7 @@ export default function App() {
   }, []);
 
   const handleSearchSelect = (result) => {
+    setActiveTab('graph');
     setSelectedNode(result);
   };
 
@@ -32,24 +35,32 @@ export default function App() {
         filterValue={filterValue}
         setFilterValue={setFilterValue}
         onSearchSelect={handleSearchSelect}
+        activeTab={activeTab}
+        onTabChange={setActiveTab}
       />
       <div className="flex flex-1 overflow-hidden relative">
-        <div className="flex-1 relative">
-          <ForceGraph
-            data={graphData}
-            onNodeClick={setSelectedNode}
-            selectedNode={selectedNode}
-          />
-        </div>
-        <Sidebar
-          selectedNode={selectedNode}
-          gems={gems}
-          practitioners={practitioners}
-          onClose={() => setSelectedNode(null)}
-          onNavigate={setSelectedNode}
-          sidebarOpen={sidebarOpen}
-          onToggleSidebar={() => setSidebarOpen(o => !o)}
-        />
+        {activeTab === 'graph' ? (
+          <>
+            <div className="flex-1 relative">
+              <ForceGraph
+                data={graphData}
+                onNodeClick={setSelectedNode}
+                selectedNode={selectedNode}
+              />
+            </div>
+            <Sidebar
+              selectedNode={selectedNode}
+              gems={gems}
+              practitioners={practitioners}
+              onClose={() => setSelectedNode(null)}
+              onNavigate={setSelectedNode}
+              sidebarOpen={sidebarOpen}
+              onToggleSidebar={() => setSidebarOpen(o => !o)}
+            />
+          </>
+        ) : (
+          <Historian gems={gems} />
+        )}
       </div>
     </div>
   );

@@ -59,6 +59,11 @@ The pattern.md frontmatter is parsed by a strict YAML parser. Violations break t
    gem-role: 'applied — Huang launched CUDA in 2006 and invested $12B over the next decade'
    ```
 
+2b. **Add `magnitude: N` to every event** — integer 1–5, no quoting needed. Score the historical impact of the event itself, not just its relevance to the gem. See SCHEMA.md for the scale. This is a judgment call — make a defensible choice and move on.
+   ```yaml
+   magnitude: 4
+   ```
+
 3. **Only use schema-defined fields** in frontmatter. The valid fields are: `name`, `aliases`, `domain`, `trigger`, `practitioners` (with sub-fields: `name`, `era`, `application`), `events` (with sub-fields: `name`, `year`, `gem-role`), `lineage`, `origin-earliest`, `origin-modern`, `origin-type`. Do NOT add extra fields like `outcome`, `practitioner`, `context`, `result`, or any other invented sub-fields.
 
 4. **Escape single quotes inside single-quoted values** by doubling them: `'it''s fine'`
