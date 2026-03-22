@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import gemsData from './data/gems.json';
 import ForceGraph from './ForceGraph';
 import Sidebar from './Sidebar';
@@ -9,7 +9,14 @@ export default function App() {
   const [selectedNode, setSelectedNode] = useState(null);
   const [filterType, setFilterType] = useState('all');
   const [filterValue, setFilterValue] = useState('');
+  const [sidebarOpen, setSidebarOpen] = useState(() => window.innerWidth >= 640);
   const graphData = buildGraphData(gems, filterType, filterValue);
+
+  useEffect(() => {
+    const handleResize = () => setSidebarOpen(window.innerWidth >= 640);
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   const handleSearchSelect = (result) => {
     setSelectedNode(result);
@@ -26,7 +33,7 @@ export default function App() {
         setFilterValue={setFilterValue}
         onSearchSelect={handleSearchSelect}
       />
-      <div className="flex flex-1 overflow-hidden">
+      <div className="flex flex-1 overflow-hidden relative">
         <div className="flex-1 relative">
           <ForceGraph
             data={graphData}
@@ -40,6 +47,8 @@ export default function App() {
           practitioners={practitioners}
           onClose={() => setSelectedNode(null)}
           onNavigate={setSelectedNode}
+          sidebarOpen={sidebarOpen}
+          onToggleSidebar={() => setSidebarOpen(o => !o)}
         />
       </div>
     </div>

@@ -1,9 +1,29 @@
 import React from 'react';
 
-export default function Sidebar({ selectedNode, gems, practitioners, onClose, onNavigate }) {
+function CollapseTab({ onToggle }) {
+  return (
+    <button
+      onClick={onToggle}
+      className="absolute right-0 top-1/2 -translate-y-1/2 z-10 flex items-center justify-center w-5 h-12 bg-pantheon-card border border-pantheon-border border-r-0 rounded-l-md text-pantheon-muted hover:text-pantheon-text transition-colors"
+      title="Open sidebar"
+    >
+      ‹
+    </button>
+  );
+}
+
+export default function Sidebar({ selectedNode, gems, practitioners, onClose, onNavigate, sidebarOpen, onToggleSidebar }) {
+  if (!sidebarOpen) {
+    return <CollapseTab onToggle={onToggleSidebar} />;
+  }
+
   if (!selectedNode) {
     return (
       <aside className="w-80 bg-pantheon-card border-l border-pantheon-border p-5 overflow-y-auto flex-shrink-0">
+        <div className="flex items-center justify-between mb-4">
+          <span className="text-pantheon-muted text-xs uppercase tracking-wider">Sidebar</span>
+          <button onClick={onToggleSidebar} className="text-pantheon-muted hover:text-pantheon-text text-sm leading-none" title="Collapse sidebar">›</button>
+        </div>
         <p className="text-pantheon-muted text-sm">Click a node in the graph to see details.</p>
         <div className="mt-6">
           <h3 className="font-display text-pantheon-accent text-sm mb-3 uppercase tracking-wider">Legend</h3>
@@ -57,7 +77,10 @@ export default function Sidebar({ selectedNode, gems, practitioners, onClose, on
           type === 'practitioner' ? 'text-pantheon-practitioner border-pantheon-practitioner/30' :
           'text-pantheon-event border-pantheon-event/30'
         }`}>{type}</span>
-        <button onClick={onClose} className="text-pantheon-muted hover:text-pantheon-text text-lg leading-none">x</button>
+        <div className="flex items-center gap-2">
+          <button onClick={onToggleSidebar} className="text-pantheon-muted hover:text-pantheon-text text-sm leading-none" title="Collapse sidebar">›</button>
+          <button onClick={onClose} className="text-pantheon-muted hover:text-pantheon-text text-lg leading-none">x</button>
+        </div>
       </div>
       <h2 className="font-display text-lg text-pantheon-accent mb-4">{label}</h2>
       {type === 'gem' && <GemDetail gem={data} onNavigate={onNavigate} />}

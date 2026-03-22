@@ -64,8 +64,8 @@ export default function Header({ gems, practitioners, filterType, setFilterType,
   const typeColor = { gem: 'text-pantheon-gem', practitioner: 'text-pantheon-practitioner', event: 'text-pantheon-event' };
 
   return (
-    <header className="bg-pantheon-card border-b border-pantheon-border px-6 py-3 flex items-center justify-between flex-shrink-0">
-      <div className="flex items-center gap-4">
+    <header className="bg-pantheon-card border-b border-pantheon-border px-4 py-3 flex flex-col sm:flex-row sm:items-center sm:justify-between flex-shrink-0 gap-2">
+      <div className="flex items-center gap-4 flex-shrink-0">
         <h1 className="font-display text-xl text-pantheon-accent tracking-wide">PANTHEON</h1>
         <div className="h-6 w-px bg-pantheon-border" />
         <div className="flex items-center gap-2 text-sm text-pantheon-muted">
@@ -74,7 +74,7 @@ export default function Header({ gems, practitioners, filterType, setFilterType,
           <span className="ml-2 inline-block w-3 h-3 rounded-sm bg-pantheon-event" /> {eventCount} events
         </div>
       </div>
-      <div className="flex items-center gap-3">
+      <div className="flex items-center gap-3 overflow-x-auto pb-1 sm:pb-0 flex-nowrap">
         {/* Global search */}
         <div ref={searchRef} className="relative">
           <input
@@ -83,7 +83,7 @@ export default function Header({ gems, practitioners, filterType, setFilterType,
             value={query}
             onChange={e => { setQuery(e.target.value); setShowResults(true); }}
             onFocus={() => setShowResults(true)}
-            className="bg-pantheon-bg border border-pantheon-border rounded-lg px-3 py-1.5 text-sm w-56 focus:outline-none focus:border-pantheon-accent placeholder:text-pantheon-muted/50"
+            className="bg-pantheon-bg border border-pantheon-border rounded-lg px-3 py-1.5 text-sm w-40 sm:w-56 focus:outline-none focus:border-pantheon-accent placeholder:text-pantheon-muted/50"
           />
           {showResults && searchResults.length > 0 && (
             <div className="absolute top-full mt-1 left-0 w-80 bg-pantheon-card border border-pantheon-border rounded-lg shadow-xl z-50 overflow-hidden">
