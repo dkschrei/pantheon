@@ -1,59 +1,14 @@
 import React, { useState } from 'react';
-import { useQuery, gql } from '@apollo/client';
+import gemsData from './data/gems.json';
 import ForceGraph from './ForceGraph';
 import Sidebar from './Sidebar';
 import Header from './Header';
 
-const GET_ALL_DATA = gql`
-  query GetAllData {
-    gems {
-      name
-      aliases
-      domains
-      triggers
-      lineage
-      originType
-      description
-      practitioners {
-        name
-        era
-        application
-      }
-      events {
-        name
-        year
-        role
-        description
-      }
-    }
-    practitioners {
-      name
-    }
-  }
-`;
-
 export default function App() {
-  const { loading, error, data } = useQuery(GET_ALL_DATA);
+  const { gems, practitioners } = gemsData;
   const [selectedNode, setSelectedNode] = useState(null);
   const [filterType, setFilterType] = useState('all');
   const [filterValue, setFilterValue] = useState('');
-
-  if (loading) return (
-    <div className="h-screen flex items-center justify-center">
-      <div className="text-pantheon-accent font-display text-2xl animate-pulse">Loading Pantheon...</div>
-    </div>
-  );
-
-  if (error) return (
-    <div className="h-screen flex items-center justify-center">
-      <div className="text-red-400">
-        <p className="text-xl mb-2">Failed to connect to API</p>
-        <p className="text-pantheon-muted text-sm">Make sure the GraphQL server is running at localhost:4000</p>
-      </div>
-    </div>
-  );
-
-  const { gems, practitioners } = data;
   const graphData = buildGraphData(gems, filterType, filterValue);
 
   return (

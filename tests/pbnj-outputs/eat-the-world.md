@@ -4,30 +4,21 @@
 
 **Output:**
 
-## Eat the World → PB&J
-
 **1. Name the trapped technology.**
-
-The sandwich works. The problem is that hungry people in the building can't reach it because the kitchen is yours and they don't know it exists.
+The sandwich works. The problem is that a hungry person can't reach it because bread, peanut butter, and jelly are sitting in separate locations with no assembly path connecting them.
 
 **2. Test readiness.**
-
-If someone could walk up and grab a PB&J right now, would they want it? Yes — universal appeal, no allergen edge cases assumed. The technology is ready.
+If someone could access a PB&J right now, would they want it? Yes — proven demand, zero adoption risk. Proceed.
 
 **3. Design the thinnest bridge.**
-
-Don't build a lunch menu. Don't add soup. The minimum access layer: put the assembled sandwich on a plate on the counter with a sticky note that says "free, take it."
-
-That's the bridge. It's almost invisible — the user touches the sandwich directly.
+Minimum viable assembly: two bread slices on a flat surface. Knife loads PB, spreads one slice (15 seconds). Same knife, wipe on bread edge, loads jelly, spreads second slice (15 seconds). Press together. Done. No plates required. No cutting. No presentation layer.
 
 **4. Bias toward speed.**
-
-The window is now. Hunger is time-sensitive. Ship the sandwich in 3 minutes, not a perfect sandwich in 20. A slightly uneven PB ratio eaten beats a symmetrical masterpiece that sits until someone leaves.
+An uneven PB spread eaten in 2 minutes beats a perfectly uniform sandwich assembled in 10. The hunger window is closing. Ship now.
 
 **5. Horizontal expansion.**
-
-The same gap exists for: grilled cheese, apples with peanut butter, crackers with jam. Same distribution mechanism (counter + note), same hungry audience, same barrier removed.
+Same bridge (bread + knife + spread) captures adjacent markets: PB+banana, PB+honey, PB+Nutella. The distribution mechanism transfers instantly — no new technology required.
 
 ---
 
-**Anti-pattern check:** Stop adding toppings. Banana slices are a technology feature. The problem is access, not flavor.
+**Anti-pattern caught:** Do not reorganize your pantry before making the sandwich. That's adding technology when the problem is access. Grab what's reachable. Eat.

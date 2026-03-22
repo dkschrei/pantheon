@@ -13,6 +13,12 @@ _✦ = authored gem (written from live practice)_
 |---------|-----|-------------|
 | [structural-unlock](patterns/structural-unlock/pattern.md) | 2014-present | Restructured YC into an industrial-scale fund and OpenAI from nonprofit to capped-profit to unlock billions in AI scaling capital |
 
+## Marc Andreessen
+
+| Pattern | Era | Application |
+|---------|-----|-------------|
+| [eat-the-world](patterns/eat-the-world/pattern.md) | 1993-present | Built Mosaic/Netscape to bridge the web from academia to the masses, then systematized the pattern into the a16z "software is eating the world" investment thesis |
+
 ## Aristotle
 
 | Pattern | Era | Application |
@@ -29,6 +35,7 @@ _✦ = authored gem (written from live practice)_
 
 | Pattern | Era | Application |
 |---------|-----|-------------|
+| [eat-the-world](patterns/eat-the-world/pattern.md) | 1994-present | Saw that the internet was ready for retail distribution (books first), then expanded the bridge horizontally into every product category and cloud computing (AWS) |
 | [two-way-door](patterns/two-way-door/pattern.md) | 1994-present | Built Amazon into the world's largest e-commerce and cloud company by moving fast on reversible decisions and deliberating only on irreversible ones |
 
 ## Otto von Bismarck
@@ -255,6 +262,7 @@ _✦ = authored gem (written from live practice)_
 
 | Pattern | Era | Application |
 |---------|-----|-------------|
+| [eat-the-world](patterns/eat-the-world/pattern.md) | 1984-2011 | Applied distribution-layer thinking to MP3 players (iPod+iTunes), smartphones (iPhone+App Store), and tablets — never first to the technology, always first to the usable bridge |
 | [schwerpunkt](patterns/schwerpunkt/pattern.md) | 1997-2011 | Returned to Apple, identified the center of gravity as a broken product line, cut 70% of products in 90 days, and struck the decisive node — one beautiful consumer computer (iMac) that restored brand identity and funded everything that followed |
 | [taste-gate](patterns/taste-gate/pattern.md) | 1976-2011 | Apple product line — killed 70% of products on return, reduced iPhone to one button, curated every detail of hardware/software/retail |
 
@@ -483,4 +491,4 @@ _✦ = authored gem (written from live practice)_
 
 ---
 
-_Total: 77 practitioners · 89 pattern appearances_
+_Total: 78 practitioners · 92 pattern appearances_

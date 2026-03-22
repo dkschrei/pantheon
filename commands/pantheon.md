@@ -15,12 +15,13 @@ Executable mental models from history's greatest problem solvers. Drop them into
 | `/pantheon-andon-cord` | andon-cord ✦ | Taiichi Ohno | frustration signal |
 | `/pantheon-anomaly-isolation` | anomaly-isolation | Marie Curie | anomalous data |
 | `/pantheon-axiom-blitz` | axiom-blitz | John Von Neumann | messy domain with no formal foundation |
+| `/pantheon-cannae` | cannae | — | — |
 | `/pantheon-carve-at-joints` | carve-at-joints | Aristotle | messy domain with no clear categories |
 | `/pantheon-complementarity` | complementarity | Niels Bohr | two valid but contradictory frameworks |
 | `/pantheon-constraint-saturation` | constraint-saturation | Linus Pauling | predicting unknown structure |
 | `/pantheon-copernican-inversion` | copernican-inversion | Immanuel Kant | irresolvable debate |
 | `/pantheon-defeat-in-detail` | defeat-in-detail | — | — |
-| `/pantheon-eat-the-world` | eat-the-world | — | — |
+| `/pantheon-eat-the-world` | eat-the-world | Marc Andreessen | technology exists but isn't reaching users |
 | `/pantheon-falsification` | falsification | — | — |
 | `/pantheon-federal-decentralization` | federal-decentralization | — | — |
 | `/pantheon-feynman-clarity` | feynman-clarity ✦ | Richard Feynman | I don't understand why |
@@ -78,4 +79,4 @@ Restart Claude Code to activate.
 
 ---
 
-*github.com/dkschrei/pantheon — 38 patterns*
+*github.com/dkschrei/pantheon — 39 patterns*

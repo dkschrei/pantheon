@@ -20,7 +20,7 @@ events:
   - name: Loudcloud Premature Launch
     year: 1999-2002
     gem-role: violated — Andreessen tried to distribute cloud computing before the underlying technology (bandwidth, virtualization, commodity hardware) was truly ready. The bridge was built over a gap that was still too wide. The company nearly died and had to pivot to enterprise software (Opsware).
-  - name: "Software Is Eating the World" Essay
+  - name: '"Software Is Eating the World" Essay'
     year: 2011
     gem-role: applied — Andreessen codified his pattern into an explicit investment thesis in the Wall Street Journal. Every traditional industry had a technology-distribution gap; a16z would systematically fund the companies building the bridge. The thesis guided billions in venture capital.
 lineage: Gutenberg → Carnegie → Andreessen

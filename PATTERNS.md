@@ -8,6 +8,7 @@
 | `/pantheon-andon-cord` | andon-cord | engineering | frustration signal |
 | `/pantheon-anomaly-isolation` | anomaly-isolation | engineering | anomalous data |
 | `/pantheon-axiom-blitz` | axiom-blitz | engineering | messy domain with no formal foundation |
+| `/pantheon-cannae` | cannae | decision-making | enemy has superior mass |
 | `/pantheon-carve-at-joints` | carve-at-joints | engineering | messy domain with no clear categories |
 | `/pantheon-complementarity` | complementarity | engineering | two valid but contradictory frameworks |
 | `/pantheon-constraint-saturation` | constraint-saturation | engineering | predicting unknown structure |
