@@ -61,6 +61,15 @@ export default function Header({ gems, practitioners, filterType, setFilterType,
             <option key={d} value={d}>{d}</option>
           ))}
         </select>
+        <select
+          className="bg-pantheon-bg border border-pantheon-border rounded-lg px-3 py-1.5 text-sm focus:outline-none focus:border-pantheon-accent"
+          value={filterType === 'origin' ? filterValue : ''}
+          onChange={e => handleFilterChange('origin', e.target.value)}
+        >
+          <option value="">All Origins</option>
+          <option value="authored">✦ Authored</option>
+          <option value="historian">Historian</option>
+        </select>
         {filterValue && (
           <button onClick={clearFilter} className="text-xs text-pantheon-muted hover:text-pantheon-accent transition-colors px-2 py-1 border border-pantheon-border rounded-lg">Clear</button>
         )}

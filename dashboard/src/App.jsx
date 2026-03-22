@@ -57,6 +57,12 @@ function buildGraphData(gems, filterType, filterValue) {
     filteredGems = gems.filter(g => g.name === filterValue);
   } else if (filterType === 'domain' && filterValue) {
     filteredGems = gems.filter(g => g.domains.includes(filterValue));
+  } else if (filterType === 'origin' && filterValue) {
+    if (filterValue === 'authored') {
+      filteredGems = gems.filter(g => g.originType === 'authored');
+    } else if (filterValue === 'historian') {
+      filteredGems = gems.filter(g => g.originType !== 'authored');
+    }
   }
 
   for (const gem of filteredGems) {

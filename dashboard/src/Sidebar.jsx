@@ -12,8 +12,20 @@ export default function Sidebar({ selectedNode, gems, practitioners, onClose, on
               <div className="flex items-center gap-2 cursor-default">
                 <div className="w-4 h-4 rotate-45 border border-pantheon-gem bg-pantheon-gem/15 flex-shrink-0" />
                 <span className="text-pantheon-gem font-medium">Gem</span>
+                <span className="text-pantheon-muted text-xs">(Historian)</span>
               </div>
-              <p className="text-xs text-pantheon-muted mt-1 leading-relaxed pl-6">A distilled cognitive pattern — a named move high-performers make when facing a specific class of problem.</p>
+              <p className="text-xs text-pantheon-muted mt-1 leading-relaxed pl-6">A distilled cognitive pattern extracted by Historian from historical research.</p>
+            </div>
+            <div className="group">
+              <div className="flex items-center gap-2 cursor-default">
+                <div className="relative flex-shrink-0">
+                  <div className="w-4 h-4 rotate-45 border-2 border-yellow-400 bg-yellow-400/15" />
+                  <span className="absolute -top-2 left-1/2 -translate-x-1/2 text-yellow-400 text-[8px]">✦</span>
+                </div>
+                <span className="text-yellow-400 font-medium">Gem</span>
+                <span className="text-pantheon-muted text-xs">(Authored)</span>
+              </div>
+              <p className="text-xs text-pantheon-muted mt-1 leading-relaxed pl-6">An original cognitive pattern authored directly — not extracted from history.</p>
             </div>
             <div className="group">
               <div className="flex items-center gap-2 cursor-default">
