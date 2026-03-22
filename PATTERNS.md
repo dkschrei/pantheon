@@ -13,6 +13,7 @@
 | `/pantheon-cannae` | cannae | decision-making | enemy has superior mass |
 | `/pantheon-carve-at-joints` | carve-at-joints | engineering | messy domain with no clear categories |
 | `/pantheon-complementarity` | complementarity | engineering | two valid but contradictory frameworks |
+| `/pantheon-composition-trap` | composition-trap | decision-making | system stuck despite everyone acting rationally |
 | `/pantheon-constraint-saturation` | constraint-saturation | engineering | predicting unknown structure |
 | `/pantheon-copernican-inversion` | copernican-inversion | philosophy | irresolvable debate |
 | `/pantheon-defeat-in-detail` | defeat-in-detail | decision-making | multiple adversaries |

@@ -20,6 +20,7 @@ Executable mental models from history's greatest problem solvers. Drop them into
 | `/pantheon-cannae` | cannae | — | — |
 | `/pantheon-carve-at-joints` | carve-at-joints | Aristotle | messy domain with no clear categories |
 | `/pantheon-complementarity` | complementarity | Niels Bohr | two valid but contradictory frameworks |
+| `/pantheon-composition-trap` | composition-trap | — | — |
 | `/pantheon-constraint-saturation` | constraint-saturation | Linus Pauling | predicting unknown structure |
 | `/pantheon-copernican-inversion` | copernican-inversion | Immanuel Kant | irresolvable debate |
 | `/pantheon-defeat-in-detail` | defeat-in-detail | — | — |
@@ -92,4 +93,4 @@ Restart Claude Code to activate.
 
 ---
 
-*github.com/dkschrei/pantheon — 52 patterns*
+*github.com/dkschrei/pantheon — 53 patterns*

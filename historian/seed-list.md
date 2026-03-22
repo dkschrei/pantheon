@@ -65,4 +65,4 @@ Progress auto-tracked in `historian/.progress`.
 - [x] Warren Buffett — circle of competence, moat thinking
 - [x] Daniel Kahneman — cognitive bias mapping, System 1/2
 - [x] Nassim Taleb — antifragility, Black Swan preparation
-- [ ] John Maynard Keynes — counter-cyclical thinking, animal spirits
+- [x] John Maynard Keynes — counter-cyclical thinking, animal spirits
