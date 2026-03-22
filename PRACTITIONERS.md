@@ -86,6 +86,12 @@ _✦ = authored gem (written from live practice)_
 |---------|-----|-------------|
 | [copernican-inversion](patterns/copernican-inversion/pattern.md) | 1928-present | Inverted the question of language learning from "how does the child learn grammar from input?" to "what must be innately structured in the mind for grammar acquisition to be possible?" — producing universal grammar |
 
+## Carl von Clausewitz
+
+| Pattern | Era | Application |
+|---------|-----|-------------|
+| [schwerpunkt](patterns/schwerpunkt/pattern.md) | 1780-1831 | Codified the pattern in On War as "center of gravity" — the hub from which all enemy coherence and movement radiates; Schwerpunkt is the doctrine of concentrating main effort at this single point |
+
 ## Seymour Cray
 
 | Pattern | Era | Application |
@@ -203,6 +209,12 @@ _✦ = authored gem (written from live practice)_
 |---------|-----|-------------|
 | [time-and-motion](patterns/time-and-motion/pattern.md) | 1885-1924 | Extended Taylor's method with motion-capture photography, reducing bricklaying from 18 motions to 5 |
 
+## Alexander the Great
+
+| Pattern | Era | Application |
+|---------|-----|-------------|
+| [schwerpunkt](patterns/schwerpunkt/pattern.md) | 356bc-323bc | Personally led the Companion cavalry directly at the enemy commander in every major engagement — Granicus, Issus, Gaugamela — collapsing vastly larger armies by destroying the load-bearing node while the phalanx held the margins |
+
 ## Andy Grove
 
 | Pattern | Era | Application |
@@ -237,6 +249,7 @@ _✦ = authored gem (written from live practice)_
 
 | Pattern | Era | Application |
 |---------|-----|-------------|
+| [schwerpunkt](patterns/schwerpunkt/pattern.md) | 1997-2011 | Returned to Apple, identified the center of gravity as a broken product line, cut 70% of products in 90 days, and struck the decisive node — one beautiful consumer computer (iMac) that restored brand identity and funded everything that followed |
 | [taste-gate](patterns/taste-gate/pattern.md) | 1976-2011 | Apple product line — killed 70% of products on return, reduced iPhone to one button, curated every detail of hardware/software/retail |
 
 ## Travis Kalanick
@@ -382,6 +395,12 @@ _✦ = authored gem (written from live practice)_
 | [the-combination](patterns/the-combination/pattern.md) | 1870-1911 | Absorbed 22 of 26 Cleveland oil refiners in six weeks (1872), then extended the method nationally — converting destructive price competition into coordinated scale via the Standard Oil Trust |
 | [vertical-integration](patterns/vertical-integration/pattern.md) | 1863-1911 | Controlled oil from wellhead to kerosene lamp — refineries, pipelines, barrel-making, rail agreements — collapsing margins at every stage |
 
+## Erwin Rommel
+
+| Pattern | Era | Application |
+|---------|-----|-------------|
+| [schwerpunkt](patterns/schwerpunkt/pattern.md) | 1940-1943 | Applied Schwerpunkt in the 1940 Meuse crossing — drove the 7th Panzer Division through the single least-defended point in the Maginot Line extension, bypassing three French armies; France fell in six weeks |
+
 ## Franklin D. Roosevelt
 
 | Pattern | Era | Application |
@@ -458,4 +477,4 @@ _✦ = authored gem (written from live practice)_
 
 ---
 
-_Total: 73 practitioners · 84 pattern appearances_
+_Total: 76 practitioners · 88 pattern appearances_

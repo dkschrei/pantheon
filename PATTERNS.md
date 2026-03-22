@@ -30,6 +30,7 @@
 | `/pantheon-phantom-machine` | phantom-machine | engineering | impossible problem |
 | `/pantheon-premeditatio` | premeditatio | decision-making | high-stakes uncertainty ahead |
 | `/pantheon-red-bead` | red-bead | systems | blaming workers for defects |
+| `/pantheon-schwerpunkt` | schwerpunkt | decision-making | complex opposing system |
 | `/pantheon-scratch-build` | scratch-build | engineering | facing a complex system you need to master |
 | `/pantheon-shape-the-ground` | shape-the-ground | decision-making | facing a confrontation |
 | `/pantheon-strip-to-structure` | strip-to-structure | engineering | stuck in domain complexity |

@@ -46,7 +46,7 @@ Progress auto-tracked in `historian/.progress`.
 - [x] John D. Rockefeller — standard oil, systematic cost reduction
 
 ## Military Leaders (6)
-- [ ] Alexander the Great — logistics as strategy, speed-of-decision
+- [x] Alexander the Great — logistics as strategy, speed-of-decision
 - [ ] Napoleon Bonaparte — corps system, information advantage
 - [ ] Hannibal Barca — encirclement, outnumbered victory
 - [ ] Ernest Shackleton — leadership under survival conditions
