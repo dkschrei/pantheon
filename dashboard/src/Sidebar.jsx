@@ -7,18 +7,27 @@ export default function Sidebar({ selectedNode, gems, practitioners, onClose, on
         <p className="text-pantheon-muted text-sm">Click a node in the graph to see details.</p>
         <div className="mt-6">
           <h3 className="font-display text-pantheon-accent text-sm mb-3 uppercase tracking-wider">Legend</h3>
-          <div className="space-y-2 text-sm">
-            <div className="flex items-center gap-2">
-              <div className="w-4 h-4 rotate-45 border border-pantheon-gem bg-pantheon-gem/15" />
-              <span>Gem (cognitive pattern)</span>
+          <div className="space-y-3 text-sm">
+            <div className="group">
+              <div className="flex items-center gap-2 cursor-default">
+                <div className="w-4 h-4 rotate-45 border border-pantheon-gem bg-pantheon-gem/15 flex-shrink-0" />
+                <span className="text-pantheon-gem font-medium">Gem</span>
+              </div>
+              <p className="text-xs text-pantheon-muted mt-1 leading-relaxed pl-6">A distilled cognitive pattern — a named move high-performers make when facing a specific class of problem.</p>
             </div>
-            <div className="flex items-center gap-2">
-              <div className="w-4 h-4 rounded-full border border-pantheon-practitioner bg-pantheon-practitioner/15" />
-              <span>Practitioner</span>
+            <div className="group">
+              <div className="flex items-center gap-2 cursor-default">
+                <div className="w-4 h-4 rounded-full border border-pantheon-practitioner bg-pantheon-practitioner/15 flex-shrink-0" />
+                <span className="text-pantheon-practitioner font-medium">Practitioner</span>
+              </div>
+              <p className="text-xs text-pantheon-muted mt-1 leading-relaxed pl-6">A historical figure documented applying this pattern — the real-world evidence it works.</p>
             </div>
-            <div className="flex items-center gap-2">
-              <div className="w-4 h-4 rounded-sm border border-pantheon-event bg-pantheon-event/15" />
-              <span>Event / Milestone</span>
+            <div className="group">
+              <div className="flex items-center gap-2 cursor-default">
+                <div className="w-4 h-4 rounded-sm border border-pantheon-event bg-pantheon-event/15 flex-shrink-0" />
+                <span className="text-pantheon-event font-medium">Event</span>
+              </div>
+              <p className="text-xs text-pantheon-muted mt-1 leading-relaxed pl-6">A specific moment when a gem was applied or violated — with year and outcome.</p>
             </div>
           </div>
         </div>

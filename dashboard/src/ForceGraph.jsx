@@ -122,15 +122,22 @@ export default function ForceGraph({ data, onNodeClick, selectedNode }) {
       .attr('font-weight', d => d.type === 'gem' ? '600' : '400')
       .attr('opacity', d => d.type === 'event' ? 0.6 : 0.85);
 
+    const DEFINITIONS = {
+      gem: 'A distilled cognitive pattern — a named move high-performers make when facing a specific class of problem.',
+      practitioner: 'A historical figure or thinker documented applying this pattern in the real world.',
+      event: 'A specific moment when this pattern was applied or violated — the historical evidence.',
+    };
+
     const tooltip = d3.select('body').append('div')
       .attr('class', 'tooltip')
       .style('opacity', 0);
 
     node.on('mouseenter', (event, d) => {
-      let html = `<strong>${d.label}</strong>`;
+      let html = `<div style="font-size:10px;color:#9ca3af;margin-bottom:5px;font-style:italic;line-height:1.4">${DEFINITIONS[d.type]}</div>`;
+      html += `<strong>${d.label}</strong>`;
       if (d.type === 'gem') html += `<br/><span style="color:#71717a">${d.data.domains.join(', ')}</span>`;
       if (d.type === 'practitioner') html += `<br/><span style="color:#71717a">${d.data.era || ''}</span>`;
-      if (d.type === 'event') html += `<br/><span style="color:#71717a">${d.data.year} - ${d.data.role || ''}</span>`;
+      if (d.type === 'event') html += `<br/><span style="color:#71717a">${d.data.year} · ${d.data.role || ''}</span>`;
       tooltip.html(html)
         .style('left', (event.pageX + 12) + 'px')
         .style('top', (event.pageY - 12) + 'px')
