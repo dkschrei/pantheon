@@ -83,6 +83,7 @@ export default function Header({ gems, practitioners, filterType, setFilterType,
             value={query}
             onChange={e => { setQuery(e.target.value); setShowResults(true); }}
             onFocus={() => setShowResults(true)}
+            onKeyDown={e => { if (e.key === 'Enter' && searchResults.length > 0) handleSelect(searchResults[0]); }}
             className="bg-pantheon-bg border border-pantheon-border rounded-lg px-3 py-1.5 text-sm w-40 sm:w-56 focus:outline-none focus:border-pantheon-accent placeholder:text-pantheon-muted/50"
           />
           {showResults && searchResults.length > 0 && (
@@ -112,7 +113,7 @@ export default function Header({ gems, practitioners, filterType, setFilterType,
           onChange={e => handleFilterChange('practitioner', e.target.value)}
         >
           <option value="">All Practitioners</option>
-          {practitioners.map(p => (
+          {[...practitioners].sort((a, b) => a.name.localeCompare(b.name)).map(p => (
             <option key={p.name} value={p.name}>{p.name}</option>
           ))}
         </select>
@@ -122,7 +123,7 @@ export default function Header({ gems, practitioners, filterType, setFilterType,
           onChange={e => handleFilterChange('gem', e.target.value)}
         >
           <option value="">All Gems</option>
-          {gems.map(g => (
+          {[...gems].sort((a, b) => a.name.localeCompare(b.name)).map(g => (
             <option key={g.name} value={g.name}>{g.name}</option>
           ))}
         </select>
