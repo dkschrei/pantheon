@@ -7,6 +7,7 @@
 |---------|---------|--------|---------|
 | `/pantheon-andon-cord` | andon-cord | engineering | frustration signal |
 | `/pantheon-anomaly-isolation` | anomaly-isolation | engineering | anomalous data |
+| `/pantheon-antifragility` | antifragility | decision-making | building something that needs to survive uncertainty |
 | `/pantheon-axiom-blitz` | axiom-blitz | engineering | messy domain with no formal foundation |
 | `/pantheon-build-the-machine` | build-the-machine | engineering | monumental goal |
 | `/pantheon-cannae` | cannae | decision-making | enemy has superior mass |
