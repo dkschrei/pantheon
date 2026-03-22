@@ -20,8 +20,9 @@ function fixYaml(raw) {
   );
   // Quote name/application values where a double-quoted word is followed by more text
   // e.g. name: "We Shall Fight" — House of Commons  →  name: '"We Shall Fight" — House of Commons'
+  // e.g. application: "The machine that makes the machine" — ...  →  application: '"The machine..." — ...'
   raw = raw.replace(
-    /^(\s+(?:- )?name:\s+)"([^"]*)"([^\n]+)$/gm,
+    /^(\s+(?:- )?(?:name|application):\s+)"([^"]*)"([^\n]+)$/gm,
     (_m, prefix, inner, rest) => {
       const full = `"${inner}"${rest}`.replace(/'/g, "''");
       return `${prefix}'${full}'`;
