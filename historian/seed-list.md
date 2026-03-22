@@ -47,7 +47,7 @@ Progress auto-tracked in `historian/.progress`.
 
 ## Military Leaders (6)
 - [x] Alexander the Great — logistics as strategy, speed-of-decision
-- [ ] Napoleon Bonaparte — corps system, information advantage
+- [x] Napoleon Bonaparte — corps system, information advantage
 - [ ] Hannibal Barca — encirclement, outnumbered victory
 - [ ] Ernest Shackleton — leadership under survival conditions
 - [ ] Winston Churchill — narrative framing, refusing capitulation

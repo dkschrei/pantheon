@@ -19,6 +19,7 @@ Executable mental models from history's greatest problem solvers. Drop them into
 | `/pantheon-complementarity` | complementarity | Niels Bohr | two valid but contradictory frameworks |
 | `/pantheon-constraint-saturation` | constraint-saturation | Linus Pauling | predicting unknown structure |
 | `/pantheon-copernican-inversion` | copernican-inversion | Immanuel Kant | irresolvable debate |
+| `/pantheon-defeat-in-detail` | defeat-in-detail | — | — |
 | `/pantheon-eat-the-world` | eat-the-world | — | — |
 | `/pantheon-falsification` | falsification | — | — |
 | `/pantheon-federal-decentralization` | federal-decentralization | — | — |
@@ -77,4 +78,4 @@ Restart Claude Code to activate.
 
 ---
 
-*github.com/dkschrei/pantheon — 37 patterns*
+*github.com/dkschrei/pantheon — 38 patterns*

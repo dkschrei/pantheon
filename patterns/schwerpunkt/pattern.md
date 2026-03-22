@@ -13,6 +13,9 @@ practitioners:
   - name: Erwin Rommel
     era: 1940-1943
     application: Applied Schwerpunkt in the 1940 Meuse crossing — drove the 7th Panzer Division through the single least-defended point in the Maginot Line extension, bypassing three French armies; France fell in six weeks
+  - name: Napoleon Bonaparte
+    era: 1796-1815
+    application: Applied Schwerpunkt at the operational level — most famously at Austerlitz (1805), where he deliberately weakened his right to bait the allied center off the Pratzen Heights, then struck the heights with concentrated force, hinging both allied wings into isolated destruction
   - name: Steve Jobs
     era: 1997-2011
     application: Returned to Apple, identified the center of gravity as a broken product line, cut 70% of products in 90 days, and struck the decisive node — one beautiful consumer computer (iMac) that restored brand identity and funded everything that followed

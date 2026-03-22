@@ -43,6 +43,12 @@ _✦ = authored gem (written from live practice)_
 |---------|-----|-------------|
 | [complementarity](patterns/complementarity/pattern.md) | 1913-1962 | Resolved the wave-particle paradox by refusing to choose — declared both descriptions necessary and mutually exclusive, depending on the experimental context |
 
+## Napoleon Bonaparte
+
+| Pattern | Era | Application |
+|---------|-----|-------------|
+| [schwerpunkt](patterns/schwerpunkt/pattern.md) | 1796-1815 | Applied Schwerpunkt at the operational level — most famously at Austerlitz (1805), where he deliberately weakened his right to bait the allied center off the Pratzen Heights, then struck the heights with concentrated force, hinging both allied wings into isolated destruction |
+
 ## George Boole
 
 | Pattern | Era | Application |
@@ -477,4 +483,4 @@ _✦ = authored gem (written from live practice)_
 
 ---
 
-_Total: 76 practitioners · 88 pattern appearances_
+_Total: 77 practitioners · 89 pattern appearances_

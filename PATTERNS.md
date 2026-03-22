@@ -12,6 +12,7 @@
 | `/pantheon-complementarity` | complementarity | engineering | two valid but contradictory frameworks |
 | `/pantheon-constraint-saturation` | constraint-saturation | engineering | predicting unknown structure |
 | `/pantheon-copernican-inversion` | copernican-inversion | philosophy | irresolvable debate |
+| `/pantheon-defeat-in-detail` | defeat-in-detail | decision-making | multiple adversaries |
 | `/pantheon-eat-the-world` | eat-the-world | engineering | technology exists but isn't reaching users |
 | `/pantheon-falsification` | falsification | philosophy | theory feels too comfortable |
 | `/pantheon-federal-decentralization` | federal-decentralization | leadership | scaling organization |
