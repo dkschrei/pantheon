@@ -50,7 +50,7 @@ Progress auto-tracked in `historian/.progress`.
 - [x] Napoleon Bonaparte — corps system, information advantage
 - [x] Hannibal Barca — encirclement, outnumbered victory
 - [x] Ernest Shackleton — leadership under survival conditions
-- [ ] Winston Churchill — narrative framing, refusing capitulation
+- [x] Winston Churchill — narrative framing, refusing capitulation
 - [ ] George Washington — strategic retreat, long-game patience
 
 ## Artists & Creators (5)

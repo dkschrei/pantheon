@@ -26,6 +26,7 @@
 | `/pantheon-material-honesty` | material-honesty | engineering | design review |
 | `/pantheon-methodical-doubt` | methodical-doubt | philosophy | inherited assumptions |
 | `/pantheon-mind-forge` | mind-forge | engineering | complex system design |
+| `/pantheon-mobilize-the-language` | mobilize-the-language | leadership | belief gap blocking action |
 | `/pantheon-musk-filter` | musk-filter | engineering | build request |
 | `/pantheon-ohno-circle` | ohno-circle | engineering | premature solution |
 | `/pantheon-pain-blindness` | pain-blindness | engineering | nobody likes this but everyone uses it |

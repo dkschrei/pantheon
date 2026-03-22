@@ -33,6 +33,7 @@ Executable mental models from history's greatest problem solvers. Drop them into
 | `/pantheon-material-honesty` | material-honesty | Jony Ive | design review |
 | `/pantheon-methodical-doubt` | methodical-doubt | René Descartes | inherited assumptions |
 | `/pantheon-mind-forge` | mind-forge | Nikola Tesla | complex system design |
+| `/pantheon-mobilize-the-language` | mobilize-the-language | — | — |
 | `/pantheon-musk-filter` | musk-filter | — | — |
 | `/pantheon-ohno-circle` | ohno-circle | Taiichi Ohno | premature solution |
 | `/pantheon-pain-blindness` | pain-blindness | Tony Fadell | nobody likes this but everyone uses it |
@@ -80,4 +81,4 @@ Restart Claude Code to activate.
 
 ---
 
-*github.com/dkschrei/pantheon — 40 patterns*
+*github.com/dkschrei/pantheon — 41 patterns*
