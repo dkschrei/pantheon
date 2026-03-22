@@ -46,6 +46,7 @@ Executable mental models from history's greatest problem solvers. Drop them into
 | `/pantheon-shape-the-ground` | shape-the-ground | Sun Tzu | facing a confrontation |
 | `/pantheon-strip-to-structure` | strip-to-structure | Claude Shannon | stuck in domain complexity |
 | `/pantheon-structural-unlock` | structural-unlock | Sam Altman | structural bottleneck |
+| `/pantheon-subtraction` | subtraction | — | — |
 | `/pantheon-taste-gate` | taste-gate | Steve Jobs | feature list growing |
 | `/pantheon-the-combination` | the-combination | John D. Rockefeller | cutthroat competition |
 | `/pantheon-the-endurance` | the-endurance | — | — |
@@ -83,4 +84,4 @@ Restart Claude Code to activate.
 
 ---
 
-*github.com/dkschrei/pantheon — 43 patterns*
+*github.com/dkschrei/pantheon — 44 patterns*

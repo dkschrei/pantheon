@@ -39,6 +39,7 @@
 | `/pantheon-shape-the-ground` | shape-the-ground | decision-making | facing a confrontation |
 | `/pantheon-strip-to-structure` | strip-to-structure | engineering | stuck in domain complexity |
 | `/pantheon-structural-unlock` | structural-unlock | leadership | structural bottleneck |
+| `/pantheon-subtraction` | subtraction | creativity | blank-canvas paralysis |
 | `/pantheon-taste-gate` | taste-gate | decision-making | feature list growing |
 | `/pantheon-the-combination` | the-combination | decision-making | cutthroat competition |
 | `/pantheon-the-endurance` | the-endurance | leadership | primary mission destroyed |
