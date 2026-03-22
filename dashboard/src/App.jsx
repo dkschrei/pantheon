@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import gemsData from './data/gems.json';
 import ForceGraph from './ForceGraph';
 import Sidebar from './Sidebar';
@@ -10,7 +10,7 @@ export default function App() {
   const [filterType, setFilterType] = useState('all');
   const [filterValue, setFilterValue] = useState('');
   const [sidebarOpen, setSidebarOpen] = useState(() => window.innerWidth >= 640);
-  const graphData = buildGraphData(gems, filterType, filterValue);
+  const graphData = useMemo(() => buildGraphData(gems, filterType, filterValue), [gems, filterType, filterValue]);
 
   useEffect(() => {
     const handleResize = () => setSidebarOpen(window.innerWidth >= 640);

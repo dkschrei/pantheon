@@ -15,6 +15,7 @@ export default function ForceGraph({ data, onNodeClick, selectedNode }) {
   const zoomRef = useRef();
   const nodeSelRef = useRef();
   const linkSelRef = useRef();
+  const simRef = useRef();
 
   const handleClick = useCallback((event, d) => {
     onNodeClick({ id: d.id, type: d.type, label: d.label, data: d.data });
@@ -173,6 +174,7 @@ export default function ForceGraph({ data, onNodeClick, selectedNode }) {
       node.attr('transform', d => `translate(${d.x},${d.y})`);
     });
 
+    simRef.current = simulation;
     nodeSelRef.current = { node, link, nodes: data.nodes, links: data.links };
 
     svg.call(zoom.transform, d3.zoomIdentity.translate(width / 4, height / 4).scale(0.7));
@@ -205,10 +207,12 @@ export default function ForceGraph({ data, onNodeClick, selectedNode }) {
       return src === selectedNode.id || tgt === selectedNode.id ? 0.8 : 0.08;
     });
 
-    // Zoom to the selected node — delay so the simulation has time to settle
+    // Zoom to the selected node using live simulation positions
     const timer = setTimeout(() => {
-      const target = nodes.find(n => n.id === selectedNode.id);
-      if (target && target.x != null && !isNaN(target.x) && zoomRef.current) {
+      if (!zoomRef.current || !simRef.current) return;
+      const liveNodes = simRef.current.nodes();
+      const target = liveNodes.find(n => n.id === selectedNode.id);
+      if (target && target.x != null && !isNaN(target.x)) {
         const { zoom, svg, width, height } = zoomRef.current;
         const scale = 1.8;
         const tx = width / 2 - target.x * scale;

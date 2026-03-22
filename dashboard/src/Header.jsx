@@ -31,9 +31,11 @@ export default function Header({ gems, practitioners, filterType, setFilterType,
         }
       }
 
-      // Match by practitioner name — surface the gem, not the practitioner
+      // Match by practitioner name or application/org — surface the gem, not the practitioner
       for (const p of gem.practitioners) {
-        if (p.name.toLowerCase().includes(q) && !addedGemIds.has(gemId)) {
+        const nameMatch = p.name.toLowerCase().includes(q);
+        const appMatch = (p.application || '').toLowerCase().includes(q);
+        if ((nameMatch || appMatch) && !addedGemIds.has(gemId)) {
           results.push({ id: gemId, type: 'gem', label: gem.name, data: gem, matchedPractitioner: p.name });
           addedGemIds.add(gemId);
           break;
