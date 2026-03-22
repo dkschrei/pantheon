@@ -17,16 +17,35 @@ export default function Header({ gems, practitioners, filterType, setFilterType,
     if (!query.trim() || query.length < 2) return [];
     const q = query.toLowerCase();
     const results = [];
+    const addedGemIds = new Set();
 
     for (const gem of gems) {
+      const gemId = `gem:${gem.name}`;
+
+      // Match by gem name or aliases
       if (gem.name.toLowerCase().includes(q) || (gem.aliases || []).some(a => a.toLowerCase().includes(q))) {
-        results.push({ id: `gem:${gem.name}`, type: 'gem', label: gem.name, data: gem });
-      }
-      for (const p of gem.practitioners) {
-        if (p.name.toLowerCase().includes(q) && !results.some(r => r.id === `practitioner:${p.name}`)) {
-          results.push({ id: `practitioner:${p.name}`, type: 'practitioner', label: p.name, data: p });
+        if (!addedGemIds.has(gemId)) {
+          results.push({ id: gemId, type: 'gem', label: gem.name, data: gem });
+          addedGemIds.add(gemId);
         }
       }
+
+      // Match by practitioner name — surface the gem, not the practitioner
+      for (const p of gem.practitioners) {
+        if (p.name.toLowerCase().includes(q) && !addedGemIds.has(gemId)) {
+          results.push({ id: gemId, type: 'gem', label: gem.name, data: gem, matchedPractitioner: p.name });
+          addedGemIds.add(gemId);
+          break;
+        }
+      }
+
+      // Match by domain name
+      if (!addedGemIds.has(gemId) && gem.domains.some(d => d.toLowerCase().includes(q))) {
+        results.push({ id: gemId, type: 'gem', label: gem.name, data: gem });
+        addedGemIds.add(gemId);
+      }
+
+      // Match by event name or description
       for (const e of gem.events) {
         if (e.name.toLowerCase().includes(q) || (e.description || '').toLowerCase().includes(q)) {
           results.push({ id: `event:${gem.name}:${e.name}`, type: 'event', label: e.name, data: { ...e, gemName: gem.name } });
@@ -93,6 +112,9 @@ export default function Header({ gems, practitioners, filterType, setFilterType,
                   className="w-full text-left px-3 py-2 hover:bg-pantheon-border/40 transition-colors flex items-center gap-2 border-b border-pantheon-border/30 last:border-0">
                   <span className={`text-[10px] uppercase tracking-wider w-16 flex-shrink-0 ${typeColor[r.type]}`}>{r.type}</span>
                   <span className="text-sm truncate">{r.label}</span>
+                  {r.type === 'gem' && r.matchedPractitioner && (
+                    <span className="text-[10px] text-pantheon-muted ml-auto flex-shrink-0">via {r.matchedPractitioner}</span>
+                  )}
                   {r.type === 'event' && (
                     <span className="text-[10px] text-pantheon-muted ml-auto flex-shrink-0">via {r.data.gemName}</span>
                   )}
