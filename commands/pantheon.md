@@ -40,6 +40,7 @@ Executable mental models from history's greatest problem solvers. Drop them into
 | `/pantheon-phantom-machine` | phantom-machine | Alan Turing | impossible problem |
 | `/pantheon-premeditatio` | premeditatio | Seneca | high-stakes uncertainty ahead |
 | `/pantheon-red-bead` | red-bead | W. Edwards Deming | blaming workers for defects |
+| `/pantheon-render-to-understand` | render-to-understand | Leonardo da Vinci | surface understanding only |
 | `/pantheon-schwerpunkt` | schwerpunkt | Alexander the Great | complex opposing system |
 | `/pantheon-scratch-build` | scratch-build | — | — |
 | `/pantheon-shape-the-ground` | shape-the-ground | Sun Tzu | facing a confrontation |
@@ -82,4 +83,4 @@ Restart Claude Code to activate.
 
 ---
 
-*github.com/dkschrei/pantheon — 42 patterns*
+*github.com/dkschrei/pantheon — 43 patterns*

@@ -54,7 +54,7 @@ Progress auto-tracked in `historian/.progress`.
 - [x] George Washington — strategic retreat, long-game patience
 
 ## Artists & Creators (5)
-- [ ] Leonardo da Vinci — cross-domain curiosity, notebook method
+- [x] Leonardo da Vinci — cross-domain curiosity, notebook method
 - [ ] Michelangelo — constraint as creativity
 - [ ] Wolfgang Amadeus Mozart — compositional speed, pattern saturation
 - [ ] Pablo Picasso — deconstruction-reconstruction, period focus

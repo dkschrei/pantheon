@@ -9,7 +9,7 @@ practitioners:
     application: Designed the AC induction motor, Tesla coil, and hundreds of inventions entirely in mental simulation before physical construction
   - name: Leonardo da Vinci
     era: 1452-1519
-    application: Engineered flying machines, hydraulic systems, and anatomical studies through exhaustive mental and drawn simulation centuries before buildable technology existed
+    application: Used mental simulation as a precursor to drawn rendering — imagined mechanical systems (flying machines, hydraulic screws, armored vehicles) before committing them to notebook diagrams; his primary pattern is render-to-understand
 events:
   - name: Budapest Park Revelation
     year: 1882

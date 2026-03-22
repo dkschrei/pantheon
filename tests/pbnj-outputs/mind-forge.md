@@ -6,28 +6,46 @@
 
 ## Mind Forge: PB&J Sandwich
 
-**Step 1 — Complete mental model first**
+---
 
-Components: 2 bread slices, peanut butter jar, jelly jar, knife, plate.
+**Step 1: Complete Mental Model**
 
-Interfaces: knife-to-bread (spreading surface), bread-to-bread (mating face), knife-to-jar (extraction).
+Components: bread (2 slices), peanut butter, jelly, knife, plate.
 
-Data flows: PB exits jar → knife → slice A (bottom face). Jelly exits jar → knife → slice B (bottom face). Slice B inverts onto slice A.
+Interfaces:
+- Knife → bread surface (spreading force, angle)
+- PB → slice A (bottom layer)
+- Jelly → slice B (bottom layer)
+- Slice A + Slice B → joined faces
 
-**Step 2 — Simulate operation**
+---
 
-Trace the assembly: Spread PB on slice A. Knife now has PB residue. Knife goes into jelly jar → jelly is now contaminated with PB. Cross-contamination failure detected.
+**Step 2: Simulate Operation**
 
-Edge case: if jelly is applied first, PB residue goes into jelly jar. Same failure either way.
+Trace normal execution: spread PB on slice A, spread jelly on slice B, press together. Works.
 
-Scale scenario: making 10 sandwiches — contamination compounds.
+**Edge case — jelly on top of PB on same slice:** jelly migrates under knife, PB contaminates jelly jar on return stroke.
 
-**Step 3 — Redesign and re-simulate**
+**Edge case — too much jelly near crust:** structural failure at edges, jelly extrudes on press.
 
-Fix: use two knives (one per jar) OR wipe knife between spreads.
+**Edge case — cold PB:** high spreading force tears bread.
 
-Re-simulate: knife 1 spreads PB on slice A. Knife 2 spreads jelly on slice B. Flip B onto A. Jars remain uncontaminated. Design survives.
+---
 
-**Step 4 — Build as verification**
+**Step 3: Redesign**
 
-Execute the assembly. The two-knife approach works exactly as modeled. No surprises.
+- Spread PB and jelly on *separate* slices to avoid cross-contamination.
+- Keep jelly 1cm from crust to prevent extrusion.
+- If PB is cold, microwave 10 seconds before spreading.
+
+Re-simulate: all three failure modes resolved.
+
+---
+
+**Step 4: Build as Verification**
+
+Execute the verified specification. The sandwich confirms the design. No surprises.
+
+---
+
+*Mind Forge prevents the "just try it" wasted sandwich.*

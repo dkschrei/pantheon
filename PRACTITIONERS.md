@@ -75,6 +75,12 @@ _✦ = authored gem (written from live practice)_
 | [shape-the-ground](patterns/shape-the-ground/pattern.md) | 1927-1997 | Translated Sun Tzu's terrain-shaping into the OODA loop — cycling faster through observation and orientation to collapse the adversary's decision space before engagement |
 | [the-ratchet ✦](patterns/the-ratchet/pattern.md) | 1927-1997 | OODA Loop at multiple tempos — fast tactical loop nested inside slow strategic reorientation; applied to fighter combat doctrine and military strategy |
 
+## Santiago Ramón y Cajal
+
+| Pattern | Era | Application |
+|---------|-----|-------------|
+| [render-to-understand](patterns/render-to-understand/pattern.md) | 1852-1934 | Drew every neuron by hand over decades; his meticulous rendering of neural architecture revealed the synaptic gap and earned him the Nobel Prize — understanding that emerged from the constraint of having to render each structure faithfully |
+
 ## Santiago Calatrava
 
 | Pattern | Era | Application |
@@ -179,6 +185,7 @@ _✦ = authored gem (written from live practice)_
 | Pattern | Era | Application |
 |---------|-----|-------------|
 | [feynman-clarity ✦](patterns/feynman-clarity/pattern.md) | 1940-1988 | Manhattan Project debugging, Challenger investigation, physics education reform |
+| [render-to-understand](patterns/render-to-understand/pattern.md) | 1918-1988 | Required himself to produce a one-page derivation of any result he claimed to understand — if he couldn't render it from first principles, he didn't understand it |
 
 ## F. Scott Fitzgerald
 
@@ -475,7 +482,8 @@ _✦ = authored gem (written from live practice)_
 
 | Pattern | Era | Application |
 |---------|-----|-------------|
-| [mind-forge](patterns/mind-forge/pattern.md) | 1452-1519 | Engineered flying machines, hydraulic systems, and anatomical studies through exhaustive mental and drawn simulation centuries before buildable technology existed |
+| [mind-forge](patterns/mind-forge/pattern.md) | 1452-1519 | Used mental simulation as a precursor to drawn rendering — imagined mechanical systems (flying machines, hydraulic screws, armored vehicles) before committing them to notebook diagrams; his primary pattern is render-to-understand |
+| [render-to-understand](patterns/render-to-understand/pattern.md) | 1452-1519 | Dissected 30+ human corpses and drew every muscle, tendon, and valve not to create art but to force mechanistic understanding — his anatomical drawings of the heart's chambers preceded Harvey's discovery of blood circulation by 100 years |
 
 ## Donald Wheeler
 
@@ -491,4 +499,4 @@ _✦ = authored gem (written from live practice)_
 
 ---
 
-_Total: 78 practitioners · 92 pattern appearances_
+_Total: 79 practitioners · 95 pattern appearances_
