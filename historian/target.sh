@@ -57,6 +57,30 @@ if ! git diff --quiet || ! git diff --staged --quiet; then
   git push
   echo ""
   echo "✓ Committed + pushed: $TARGET"
+
+  # Verify Vercel deployment succeeded
+  if command -v vercel &>/dev/null || npx vercel --version &>/dev/null 2>&1; then
+    echo "Waiting for Vercel deployment..."
+    VERCEL_OK=false
+    for i in 1 2 3 4 5 6 7 8 9 10; do
+      sleep 6
+      DEPLOY_LINE=$(npx vercel ls 2>/dev/null | grep "Production" | head -1 || true)
+      if echo "$DEPLOY_LINE" | grep -q "● Ready"; then
+        VERCEL_OK=true
+        break
+      elif echo "$DEPLOY_LINE" | grep -q "● Error"; then
+        echo "✗ Vercel: Deployment FAILED"
+        echo "  Last deploy: $DEPLOY_LINE"
+        echo "  Run 'npx vercel logs' for details"
+        exit 1
+      fi
+    done
+    if $VERCEL_OK; then
+      echo "✓ Vercel: Live and ready"
+    else
+      echo "⚠ Vercel: Deploy timed out — check 'npx vercel ls'"
+    fi
+  fi
 else
   echo "WARNING: No new files detected — may have been merged into an existing gem."
   echo "Check the output above to see which gem was updated."

@@ -45,6 +45,26 @@ Gem naming: use the most recognizable label for the underlying cognitive pattern
 
 Add discoverable aliases: include the names of key practitioners, organizations, and concepts as aliases so users can find this gem by searching any of the input terms.
 
+## YAML Safety Rules (CRITICAL — read before writing frontmatter)
+
+The pattern.md frontmatter is parsed by a strict YAML parser. Violations break the entire build. Follow these rules without exception:
+
+1. **Single-quote ALL `application:` values** — they always contain complex text. No exceptions.
+   ```yaml
+   application: 'Invested $12B in CUDA before AI had commercial revenue — seeding the ecosystem a decade early'
+   ```
+
+2. **Single-quote ALL `gem-role:` values** — they contain em dashes (—) and complex descriptions.
+   ```yaml
+   gem-role: 'applied — Huang launched CUDA in 2006 and invested $12B over the next decade'
+   ```
+
+3. **Only use schema-defined fields** in frontmatter. The valid fields are: `name`, `aliases`, `domain`, `trigger`, `practitioners` (with sub-fields: `name`, `era`, `application`), `events` (with sub-fields: `name`, `year`, `gem-role`), `lineage`, `origin-earliest`, `origin-modern`, `origin-type`. Do NOT add extra fields like `outcome`, `practitioner`, `context`, `result`, or any other invented sub-fields.
+
+4. **Escape single quotes inside single-quoted values** by doubling them: `'it''s fine'`
+
+5. **Flow arrays `[...]`** for short lists: `aliases: [cuda, nvidia, huang]`
+
 After writing, run:
   bash scripts/generate-patterns.sh
   bash scripts/generate-practitioners.sh

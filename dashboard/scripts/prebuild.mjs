@@ -58,29 +58,36 @@ function extractDescription(content) {
 
 const files = glob.sync('*/pattern.md', { cwd: PATTERNS_DIR });
 
-const gems = files.map(file => {
-  const raw = readFileSync(join(PATTERNS_DIR, file), 'utf8');
-  const { data, content } = matter(fixYaml(raw));
-  const name = data.name || file.split('/')[0];
-  return {
-    name,
-    aliases: data.aliases || [],
-    domains: data.domain || [],
-    triggers: data.trigger || [],
-    lineage: data.lineage || null,
-    originType: data['origin-type'] || null,
-    authoredBy: data['authored-by'] || null,
-    description: extractDescription(content),
-    practitioners: (data.practitioners || []).map(p => ({
-      name: p.name || '',
-      era: p.era != null ? String(p.era) : null,
-      application: p.application || null,
-    })),
-    events: (data.events || []).map(e => {
-      const { role, description } = parseGemRole(e['gem-role']);
-      return { name: e.name || '', year: e.year != null ? String(e.year) : null, role, description };
-    }),
-  };
+const parseErrors = [];
+const gems = files.flatMap(file => {
+  try {
+    const raw = readFileSync(join(PATTERNS_DIR, file), 'utf8');
+    const { data, content } = matter(fixYaml(raw));
+    const name = data.name || file.split('/')[0];
+    return [{
+      name,
+      aliases: data.aliases || [],
+      domains: data.domain || [],
+      triggers: data.trigger || [],
+      lineage: data.lineage || null,
+      originType: data['origin-type'] || null,
+      authoredBy: data['authored-by'] || null,
+      description: extractDescription(content),
+      practitioners: (data.practitioners || []).map(p => ({
+        name: p.name || '',
+        era: p.era != null ? String(p.era) : null,
+        application: p.application || null,
+      })),
+      events: (data.events || []).map(e => {
+        const { role, description } = parseGemRole(e['gem-role']);
+        return { name: e.name || '', year: e.year != null ? String(e.year) : null, role, description };
+      }),
+    }];
+  } catch (err) {
+    parseErrors.push({ file, error: err.message });
+    console.error(`⚠ SKIPPED ${file}: ${err.message}`);
+    return [];
+  }
 });
 
 const practitionerMap = new Map();
@@ -96,3 +103,9 @@ writeFileSync(
   JSON.stringify({ gems, practitioners }, null, 2)
 );
 console.log(`✓ gems.json: ${gems.length} gems, ${practitioners.length} practitioners, ${gems.reduce((s, g) => s + g.events.length, 0)} events`);
+if (parseErrors.length > 0) {
+  console.error(`\n⚠ ${parseErrors.length} pattern(s) skipped due to YAML errors:`);
+  parseErrors.forEach(({ file, error }) => console.error(`  • ${file}: ${error}`));
+  console.error('Fix the frontmatter in these files and rebuild.\n');
+  process.exit(1);
+}
