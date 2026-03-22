@@ -32,6 +32,7 @@
 | `/pantheon-mobilize-the-language` | mobilize-the-language | leadership | belief gap blocking action |
 | `/pantheon-musk-filter` | musk-filter | engineering | build request |
 | `/pantheon-ohno-circle` | ohno-circle | engineering | premature solution |
+| `/pantheon-outside-view` | outside-view | decision-making | making a prediction |
 | `/pantheon-pain-blindness` | pain-blindness | engineering | nobody likes this but everyone uses it |
 | `/pantheon-phantom-machine` | phantom-machine | engineering | impossible problem |
 | `/pantheon-premeditatio` | premeditatio | decision-making | high-stakes uncertainty ahead |

@@ -12,7 +12,7 @@ practitioners:
     application: Insisted that the first principle of science is "you must not fool yourself — and you are the easiest person to fool," operationalizing falsification as a personal discipline against self-deception
   - name: Daniel Kahneman
     era: 1934-2024
-    application: Built a research program around demonstrating that human cognition systematically seeks confirmation; used falsification discipline to expose biases that confirmation-seeking minds cannot see on their own
+    application: Built a research program around demonstrating that human cognition systematically seeks confirmation; used falsification discipline to expose biases that confirmation-seeking minds cannot see on their own (primary gem → outside-view)
 events:
   - name: Einstein's 1919 Eclipse Test
     year: 1919

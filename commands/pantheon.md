@@ -39,6 +39,7 @@ Executable mental models from history's greatest problem solvers. Drop them into
 | `/pantheon-mobilize-the-language` | mobilize-the-language | — | — |
 | `/pantheon-musk-filter` | musk-filter | — | — |
 | `/pantheon-ohno-circle` | ohno-circle | Taiichi Ohno | premature solution |
+| `/pantheon-outside-view` | outside-view | — | — |
 | `/pantheon-pain-blindness` | pain-blindness | Tony Fadell | nobody likes this but everyone uses it |
 | `/pantheon-phantom-machine` | phantom-machine | Alan Turing | impossible problem |
 | `/pantheon-premeditatio` | premeditatio | Seneca | high-stakes uncertainty ahead |
@@ -90,4 +91,4 @@ Restart Claude Code to activate.
 
 ---
 
-*github.com/dkschrei/pantheon — 50 patterns*
+*github.com/dkschrei/pantheon — 51 patterns*

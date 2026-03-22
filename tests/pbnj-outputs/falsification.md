@@ -4,44 +4,41 @@
 
 **Output:**
 
-## Falsification: PB&J Construction
+## Falsification Applied: Making a PB&J
 
-**Claim:** "Spread peanut butter first, then jelly, press slices together — sandwich is complete."
-
----
-
-**Step 1: Forbidden Prediction**
-
-This theory forbids: *the sandwich falling apart, ingredients mixing uncontrollably, or the bread tearing during construction.*
-
-If the plan is correct, those outcomes cannot happen.
+**Claim:** "Spread peanut butter on one slice, jelly on the other, press together — done."
 
 ---
 
-**Step 2: Kill Shot**
+**Step 1: State as a Prohibition**
 
-The strongest refutation test: *Use fresh, soft bread with runny jelly and heavy peanut butter. Apply jelly to an unspread surface. Press hard.*
+This plan predicts: *the sandwich will NOT fall apart, leak, or have uneven coverage.*
 
-This is the most dangerous condition. If the sandwich fails here, the "just spread and press" plan is broken.
-
----
-
-**Step 3: Run It**
-
-Testing: soft bread + runny jelly + no peanut butter barrier.
-
-Result: **jelly soaks through immediately. Bread tears. Structural failure.**
-
-Disconfirming evidence first — the plan has a real failure mode.
+Specific forbiddances:
+- Bread will not tear during spreading
+- Jelly will not bleed through to the outside
+- The halves will not slide apart when picked up
 
 ---
 
-**Step 4: Verdict**
+**Step 2: Design the Kill Shot**
 
-Theory survives *only* with a patch: peanut butter on *both* slices creates a moisture barrier that prevents jelly bleed-through.
-
-**Provisional trust granted** with this amendment. Future kill shot: test with maximum jelly quantity and compressed storage (lunchbox).
+Pick up the finished sandwich with one hand and squeeze gently. If it collapses, leaks, or the slices separate — the plan failed.
 
 ---
 
-The sandwich works. The original plan almost didn't.
+**Step 3: Run the Hardest Test First**
+
+Before declaring success, check the *failure cases*:
+- Is the bread too thin for the spreading force? (tear risk)
+- Was too much jelly applied near the edges? (bleed risk)
+- Is the peanut butter layer asymmetrically thick, making the sandwich lopsided?
+
+Test the squeeze. If jelly escapes the edges — **refuted**.
+
+---
+
+**Step 4: Survive or Die**
+
+- **Refuted:** Reduce jelly quantity, leave a 1cm dry border, switch to thicker bread. New plan replaces old one — no patches.
+- **Survived:** Provisional success. Future kill shot: does it hold after 5 minutes?

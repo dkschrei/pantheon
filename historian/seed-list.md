@@ -63,6 +63,6 @@ Progress auto-tracked in `historian/.progress`.
 ## Investors & Economists (5)
 - [x] Charlie Munger — inversion, mental model lattice
 - [x] Warren Buffett — circle of competence, moat thinking
-- [ ] Daniel Kahneman — cognitive bias mapping, System 1/2
+- [x] Daniel Kahneman — cognitive bias mapping, System 1/2
 - [ ] Nassim Taleb — antifragility, Black Swan preparation
 - [ ] John Maynard Keynes — counter-cyclical thinking, animal spirits
