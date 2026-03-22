@@ -18,6 +18,12 @@ Every pattern answers the same question: *what did this genius actually do diffe
 
 ---
 
+## Live Dashboard
+
+**[pantheon-lilac.vercel.app](https://pantheon-lilac.vercel.app)** — interactive force-graph visualization of all gems, practitioners, and historical events. Click any node to explore.
+
+---
+
 ## Install (Claude Code)
 
 ```bash
