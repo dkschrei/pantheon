@@ -20,6 +20,7 @@
 | `/pantheon-feynman-clarity` | feynman-clarity | debugging | I don't understand why |
 | `/pantheon-flow-line` | flow-line | engineering | batch processing |
 | `/pantheon-gedankenexperiment` | gedankenexperiment | engineering | two trusted principles contradict |
+| `/pantheon-gestalt-first` | gestalt-first | creativity | starting without a complete picture |
 | `/pantheon-imperial-self-correction` | imperial-self-correction | leadership | emotional reaction driving a decision |
 | `/pantheon-inflection-point` | inflection-point | decision-making | strategic shift |
 | `/pantheon-lion-and-fox` | lion-and-fox | leadership | political decision |

@@ -56,7 +56,7 @@ Progress auto-tracked in `historian/.progress`.
 ## Artists & Creators (5)
 - [x] Leonardo da Vinci — cross-domain curiosity, notebook method
 - [x] Michelangelo — constraint as creativity
-- [ ] Wolfgang Amadeus Mozart — compositional speed, pattern saturation
+- [x] Wolfgang Amadeus Mozart — compositional speed, pattern saturation
 - [ ] Pablo Picasso — deconstruction-reconstruction, period focus
 - [ ] Johann Sebastian Bach — structural mastery, constraint-driven variation
 
