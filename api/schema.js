@@ -6,6 +6,8 @@ export const typeDefs = `#graphql
     triggers: [String!]!
     lineage: String
     originType: String
+    """The distilled mental model — extracted from '### The Pattern' in the pattern file."""
+    description: String
     practitioners: [GemPractitioner!]!
     events: [Event!]!
   }

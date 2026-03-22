@@ -13,6 +13,7 @@ const GET_ALL_DATA = gql`
       triggers
       lineage
       originType
+      description
       practitioners {
         name
         era

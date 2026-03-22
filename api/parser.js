@@ -56,13 +56,18 @@ function parsePractitioner(p, gemName) {
   };
 }
 
+function extractDescription(content) {
+  const match = content.match(/###\s+The Pattern\s*\n+([\s\S]*?)(?=\n\n###|\n\n##|$)/);
+  return match ? match[1].trim() : null;
+}
+
 export function loadGems() {
   const files = glob.sync('*/pattern.md', { cwd: PATTERNS_DIR });
 
   return files.map((file) => {
     const fullPath = join(PATTERNS_DIR, file);
     const raw = readFileSync(fullPath, 'utf8');
-    const { data } = matter(quoteGemRoleValues(raw));
+    const { data, content } = matter(quoteGemRoleValues(raw));
 
     const name = data.name || file.split('/')[0];
     const practitioners = (data.practitioners || []).map((p) =>
@@ -77,6 +82,7 @@ export function loadGems() {
       triggers: data.trigger || [],
       lineage: data.lineage || null,
       originType: data['origin-type'] || null,
+      description: extractDescription(content),
       practitioners,
       events,
     };
