@@ -21,6 +21,7 @@ Executable mental models from history's greatest problem solvers. Drop them into
 | `/pantheon-copernican-inversion` | copernican-inversion | Immanuel Kant | irresolvable debate |
 | `/pantheon-eat-the-world` | eat-the-world | — | — |
 | `/pantheon-falsification` | falsification | — | — |
+| `/pantheon-federal-decentralization` | federal-decentralization | — | — |
 | `/pantheon-feynman-clarity` | feynman-clarity ✦ | Richard Feynman | I don't understand why |
 | `/pantheon-flow-line` | flow-line | Henry Ford | batch processing |
 | `/pantheon-gedankenexperiment` | gedankenexperiment | — | — |
@@ -74,4 +75,4 @@ Restart Claude Code to activate.
 
 ---
 
-*github.com/dkschrei/pantheon — 34 patterns*
+*github.com/dkschrei/pantheon — 35 patterns*
