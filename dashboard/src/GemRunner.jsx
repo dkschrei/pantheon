@@ -187,7 +187,19 @@ export default function GemRunner() {
   const [gemSearch, setGemSearch] = useState("");
   const [history, setHistory] = useState([]);
   const [innerTab, setInnerTab] = useState("run");
+  const [isMobile, setIsMobile] = useState(() => window.innerWidth < 640);
+  const [gemPanelOpen, setGemPanelOpen] = useState(() => window.innerWidth >= 640);
   const outputRef = useRef(null);
+
+  useEffect(() => {
+    const handleResize = () => {
+      const mobile = window.innerWidth < 640;
+      setIsMobile(mobile);
+      if (!mobile) setGemPanelOpen(true);
+    };
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   useEffect(() => {
     setHumanitySignal(detectHumanity(input));
@@ -385,10 +397,43 @@ export default function GemRunner() {
       </div>
 
       {innerTab === "run" ? (
-        <div style={{ display: "grid", gridTemplateColumns: "260px 1fr", flex: 1, overflow: "hidden" }}>
+        <div style={{
+          display: isMobile ? "flex" : "grid",
+          gridTemplateColumns: isMobile ? undefined : "260px 1fr",
+          flexDirection: isMobile ? "column" : undefined,
+          flex: 1,
+          overflow: "hidden",
+        }}>
 
-          {/* Left: gem panel */}
-          <div style={{ borderRight: "1px solid #18181b", display: "flex", flexDirection: "column", overflow: "hidden" }}>
+          {/* Mobile: gem selector bar (collapsed) */}
+          {isMobile && !gemPanelOpen && (
+            <div style={{
+              borderBottom: "1px solid #18181b", padding: "10px 14px",
+              display: "flex", alignItems: "center", justifyContent: "space-between",
+              background: "#0c0c0e", flexShrink: 0,
+            }}>
+              <div>
+                <div style={{ fontSize: "9px", letterSpacing: "0.15em", color: "#3f3f46", marginBottom: "2px" }}>GEM</div>
+                <div style={{ fontSize: "13px", color: "#fafafa", fontWeight: 500 }}>{gem.label}</div>
+              </div>
+              <button onClick={() => setGemPanelOpen(true)} style={{
+                padding: "6px 14px", background: "transparent",
+                border: "1px solid #27272a", borderRadius: "3px",
+                color: "#a1a1aa", fontSize: "11px", fontFamily: "inherit",
+                cursor: "pointer", letterSpacing: "0.05em",
+              }}>change gem</button>
+            </div>
+          )}
+
+          {/* Left: gem panel (full on desktop, overlay/expanded on mobile) */}
+          {(!isMobile || gemPanelOpen) && (
+          <div style={{
+            borderRight: isMobile ? "none" : "1px solid #18181b",
+            borderBottom: isMobile ? "1px solid #18181b" : "none",
+            display: "flex", flexDirection: "column",
+            overflow: "hidden",
+            ...(isMobile ? { flexShrink: 0, maxHeight: "50vh" } : {}),
+          }}>
             <div style={{ padding: "12px 14px", borderBottom: "1px solid #18181b" }}>
               <input
                 className="gr-search"
@@ -441,19 +486,43 @@ export default function GemRunner() {
             </div>
 
             <div style={{ padding: "10px 14px", borderTop: "1px solid #18181b", background: "#0c0c0e" }}>
-              <div style={{ fontSize: "10px", color: domainColor(gem.domain), letterSpacing: "0.1em", marginBottom: "3px" }}>
-                {gem.domain.toUpperCase()}
+              <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
+                <div>
+                  <div style={{ fontSize: "10px", color: domainColor(gem.domain), letterSpacing: "0.1em", marginBottom: "3px" }}>
+                    {gem.domain.toUpperCase()}
+                  </div>
+                  <div style={{ fontSize: "11px", color: "#52525b" }}>{gem.trigger}</div>
+                </div>
+                {isMobile && (
+                  <button onClick={() => setGemPanelOpen(false)} style={{
+                    padding: "5px 12px", background: "#fafafa",
+                    border: "none", borderRadius: "3px",
+                    color: "#0a0a0b", fontSize: "11px", fontFamily: "inherit",
+                    cursor: "pointer", fontWeight: 600, letterSpacing: "0.08em",
+                  }}>done</button>
+                )}
               </div>
-              <div style={{ fontSize: "11px", color: "#52525b" }}>{gem.trigger}</div>
             </div>
           </div>
+          )}
 
           {/* Right: main panel */}
-          <div style={{ display: "flex", flexDirection: "column", overflowY: "auto", padding: "20px 24px", gap: "18px" }}>
+          <div style={{
+            display: isMobile && gemPanelOpen ? "none" : "flex",
+            flexDirection: "column",
+            overflowY: "auto",
+            padding: isMobile ? "16px 16px" : "20px 24px",
+            gap: "18px",
+          }}>
 
             <div>
               <div style={{ fontSize: "10px", letterSpacing: "0.15em", color: "#3f3f46", marginBottom: "10px" }}>APPROACH</div>
-              <div style={{ display: "flex", gap: "5px", flexWrap: "wrap" }}>
+              <div style={{
+                display: "flex", gap: "5px",
+                flexWrap: isMobile ? "nowrap" : "wrap",
+                overflowX: isMobile ? "auto" : "visible",
+                paddingBottom: isMobile ? "4px" : 0,
+              }}>
                 {APPROACHES.map(a => (
                   <button key={a.id} className="gr-approach-btn" onClick={() => setApproach(a)} style={{
                     padding: "7px 14px", fontFamily: "inherit",
@@ -489,7 +558,10 @@ export default function GemRunner() {
                 ))}
               </div>
               <div style={{ fontSize: "11px", color: "#3f3f46", marginTop: "7px" }}>{approach.desc}</div>
-              <div style={{ display: "flex", gap: "6px", marginTop: "10px" }}>
+              <div style={{
+                display: "flex", gap: "6px", marginTop: "10px",
+                flexDirection: isMobile ? "column" : "row",
+              }}>
                 <input
                   value={voiceInput}
                   onChange={e => setVoiceInput(e.target.value)}
@@ -499,12 +571,15 @@ export default function GemRunner() {
                     flex: 1, background: "#0c0c0e", border: "1px solid #1c1c1f",
                     borderRadius: "3px", padding: "5px 10px", color: "#a1a1aa",
                     fontSize: "11px", fontFamily: "inherit",
+                    width: isMobile ? "100%" : undefined,
+                    boxSizing: "border-box",
                   }}
                 />
                 <button onClick={handleAddVoice} disabled={!voiceInput.trim()} style={{
                   padding: "5px 12px", background: "transparent",
                   border: "1px solid #27272a", borderRadius: "3px", cursor: "pointer",
                   color: "#52525b", fontSize: "11px", fontFamily: "inherit",
+                  alignSelf: isMobile ? "flex-start" : undefined,
                 }}>+ add</button>
               </div>
             </div>
