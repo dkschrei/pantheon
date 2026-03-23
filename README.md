@@ -4,95 +4,83 @@
   <img src="assets/logo.svg" alt="Pantheon" width="600" />
 </p>
 
-> "Elon Musk didn't invent first principles thinking. Toyota didn't invent the factory stop. Steve Jobs didn't invent subtraction. Every modern genius is a synthesizer — standing on shoulders built across centuries of human problem-solving. Pantheon codifies those shoulders into a deployable AI library."
+> "Elon Musk didn't invent first principles thinking. Toyota didn't invent the factory stop. Steve Jobs didn't invent subtraction. Every modern genius is a synthesizer — standing on shoulders built across centuries of human problem-solving. Pantheon codifies those shoulders into a deployable library."
 
 ---
 
 ## What is Pantheon?
 
-Pantheon is a library of executable cognitive patterns — distilled from history's greatest problem solvers and packaged as AI skills you can drop into any AI coding environment.
+Pantheon is a library of 54 cognitive patterns distilled from history's greatest problem solvers — and a tool for running them against any situation you're actually facing.
 
-It is part history lesson on human ingenuity, part operating manual. Every gem traces a real problem solved by a real person — Jensen Huang seeding a developer ecosystem a decade before the market existed, Toyota stopping the line the moment defects appear, Feynman refusing to accept understanding he couldn't articulate simply. That history is then codified into a protocol any AI agent can run today.
+Every gem traces a real problem solved by a real person: Jensen Huang seeding a developer ecosystem a decade before the market existed, Toyota stopping the line the moment a defect appears, Feynman refusing to accept understanding he couldn't articulate simply. That history is codified into a protocol — trigger conditions, step-by-step procedure, anti-patterns — that you can run today.
 
-These are not quotes. Not principles. Not motivational frameworks. They are **protocols**: trigger conditions, step-by-step procedures, and anti-patterns that your AI can run when it detects the right context. History's best mental models, made executable.
+These are not quotes. Not principles. Not motivational frameworks. They are **protocols**: what did this genius actually do differently when faced with this class of problem?
 
-Every pattern answers the same question: *what did this genius actually do differently when faced with this class of problem?*
+Pantheon has three layers:
+
+1. **The Library** — 54 gems, 118 practitioners, 200 historical events. The raw material.
+2. **The Dashboard** — force-graph and historian ranking. Explore the connections.
+3. **The Gem Runner** — describe your situation, pick a lens, get the pattern applied. This is the unlock.
 
 ---
 
-## Live Dashboard
+## The Gem Runner
 
-**[pantheon-lilac.vercel.app](https://pantheon-lilac.vercel.app)** — interactive force-graph visualization of all gems, practitioners, and historical events. Click any node to explore.
+**[pantheon-lilac.vercel.app](https://pantheon-lilac.vercel.app)** → Run tab
 
-### The Historian's Ranking
+You describe what you're facing. You pick a gem — the lens you want applied. You pick an approach — how you want it delivered. The pattern runs against your specific situation. Not generic wisdom. Not a quote. The pattern applied to your exact context.
 
-History doesn't repeat itself by accident. The same conditions that produced a breakthrough in 400 BC surface again in 1687, again in 1905, again in 2006 — because the underlying problem class never changed. Only the vocabulary did. The Pantheon Historian's job is to find that signal beneath the noise: the cognitive move that recurs across millennia, disciplines, and civilizations, and name it once so it can be used deliberately.
+**7 built-in approaches:**
 
-For every gem in the library, the Historian conducts a structured research pass — tracing the original breakthrough to its source, mapping every confirmed recurrence across history, and scoring each event on two axes:
+| Approach | What it does |
+|----------|-------------|
+| **Raw** | Full pattern analysis. Sharpest form. Safety-screened, not softened. |
+| **Advice** | 3 actions, plain second-person. Act on it today. |
+| **Poem** | Free verse. Metaphor from the gem's domain. Feel it first. |
+| **Haiku** | 5-7-5. The irreducible core. |
+| **Yoda** | Inverted syntax. Wisdom-first. |
+| **Confucius** | One aphorism. One sentence. Carry it with you. |
+| **The Oracle** | She already knows. Warm, inevitable. You already knew too. |
 
-- **Quantitative reach** — how many people were affected, across how many generations, across how many domains
+**Custom voices:** Add any voice — God, Nietzsche, Marcus Aurelius, Morpheus from the Matrix, your 80-year-old self. The pattern runs through their worldview. Saved to your browser.
+
+**Safety gates:** The runner detects vulnerability signals in your input — illness, grief, crisis, loss — and activates a humanity gate that reframes the pattern with care before applying it. Every run also passes a safety screen. The output must be net-positive or it gets revised.
+
+**Bring your own key.** No paywall, no subscription, no account. You pay OpenRouter directly — fractions of a cent per run. One key works with Claude, GPT-4, and Gemini.
+
+> *One key. Five minutes. Free forever.*
+> Go to [openrouter.ai](https://openrouter.ai) → create account → add $5 in credits → create a key. Paste it in. That's it.
+
+---
+
+## The Historian's Ranking
+
+History doesn't repeat itself by accident. The same conditions that produced a breakthrough in 400 BC surface again in 1687, again in 1905, again in 2006 — because the underlying problem class never changed. Only the vocabulary did.
+
+For every gem, the Historian traces the original breakthrough to its source, maps every confirmed recurrence across history, and scores each event on two axes:
+
+- **Quantitative reach** — how many people were affected, across how many generations and domains
 - **Qualitative depth** — how fundamentally it shifted the way humans *frame* problems, not just solve them
 
 The scores compound into a single ranking that answers one question: *if this pattern had never been discovered, how differently does civilization unfold?*
 
-The result is not a list of famous people. It is a leaderboard of cognitive leverage — the rare moments when one person's way of seeing became the default way everyone sees.
+The result is not a list of famous people. It is a leaderboard of cognitive leverage.
 
----
-
-**The ranking is a provocation, not a verdict.**
-
-We ranked `gedankenexperiment` #1. Einstein's thought experiments score five civilizational events; the pattern traces from Galileo's falling bodies to Hawking's black hole information paradox. Maybe you agree. Maybe you think we underweighted the industrial patterns that fed billions, or overweighted the theoretical physics that fed equations. Maybe there's an entire era of human ingenuity we haven't mapped yet — a culture, a discipline, a century the Historian hasn't reached.
-
-Every score is visible in the dashboard. Every event is documented. Every reasoning chain is in the repo. The synthesis is ongoing — the Historian is still working.
+**The ranking is a provocation, not a verdict.** `gedankenexperiment` is ranked #1. Einstein's thought experiments score five civilizational events; the pattern traces from Galileo's falling bodies to Hawking's black hole information paradox. Every score is visible in the dashboard. Every event is documented. Every reasoning chain is in the repo.
 
 *The history is written. The synthesis has just begun.*
 
 ---
 
-## Install (Claude Code)
+## Install as AI Skills (Claude Code)
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/dkschrei/pantheon/main/install.sh | bash
 ```
 
-Restart Claude Code after installing.
-
----
-
-## Available Patterns
+Restart Claude Code after installing. The patterns become available as `/pantheon-*` skills inside any coding session.
 
 See [`PATTERNS.md`](PATTERNS.md) for the full dispatch table.
-
-| Trigger | Pattern | Genius |
-|---------|---------|--------|
-| frustration signal / *"Why the \*\*\*\* did you just do that?"* | Andon Cord | Toyota |
-| Any build/automate/create request | Musk Filter | Elon Musk |
-| "Why isn't this working" / stuck debugger | Feynman Clarity Test | Richard Feynman |
-
-> **Ever had that moment?** The one where your AI agent does something so wrong you swear out loud at your terminal.
-> That word — the one you almost never use — is the most precisely calibrated frustration signal in human communication.
-> Toyota solved this in 1960 with a physical cord anyone could pull to stop the entire production line.
-> Pantheon installs that cord into your AI.
-
-See [`PBNJ.md`](PBNJ.md) for the PB&J test — every pattern applied to the same problem so you can see exactly what each one does.
-
-See [`PRACTITIONERS.md`](PRACTITIONERS.md) for the practitioner index — every historical figure mapped to the patterns they inspired.
-
----
-
-## Pattern Format
-
-Every pattern follows a canonical schema: trigger conditions, protocol, anti-pattern, real examples, and origin. See [`SCHEMA.md`](SCHEMA.md).
-
-```
-patterns/
-  {pattern-name}/
-    pattern.md          ← canonical content (platform-agnostic)
-    adapters/
-      claude.md         ← Claude Code skill
-      cursor.md         ← (coming) .cursorrules entry
-      openai.md         ← (coming) system prompt drop-in
-```
 
 ---
 
@@ -123,7 +111,7 @@ I burned through a session's worth of Claude tokens because an agent automated a
 
 The Andon Cord came from the same frustration: agents that see you're stuck and keep going anyway, trying variation #4 of the same failed approach. Toyota solved this problem in 1960. It's a pull cord. Anyone can use it.
 
-The patterns in this library are not new. They have been sitting in history books, biographies, and manufacturing manuals for decades. Pantheon is the packaging. Your AI gets the shoulders of giants, available in the moment you need them.
+The patterns in this library are not new. They have been sitting in history books, biographies, and manufacturing manuals for decades. Pantheon is the packaging. The Gem Runner is the interface.
 
 ---
 
@@ -134,8 +122,10 @@ The patterns in this library are not new. They have been sitting in history book
 - [x] Schema v1.0 — YAML frontmatter + two-zone format (Protocol TLDR + The Book)
 - [x] 54 gems — historian path + authored path (✦ marked)
 - [x] 9-criteria quality standard — 4 gates + 5 Pantheon challenges
-- [x] Two gem paths — Historian agent loop + `/pantheon-gem-builder` for authored gems
 - [x] 118 practitioners indexed across 200 historical events
+- [x] Historian ranking — magnitude scoring, gemScore, discovery log
+- [x] Gem Runner — 54 gems × 7 approaches + custom voices, humanity gate, safety screen
+- [x] Bring-your-own-key — no paywall, OpenRouter, user's credits only
 - [x] PB&J test — gems validated against the same input
 - [x] Contributing open — see `CONTRIBUTING.md`
 - [ ] Public launch — May 6, 2026
