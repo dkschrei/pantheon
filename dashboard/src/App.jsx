@@ -40,27 +40,25 @@ export default function App() {
       />
       <div className="flex flex-1 overflow-hidden relative">
         {activeTab === 'graph' ? (
-          <>
-            <div className="flex-1 relative">
-              <ForceGraph
-                data={graphData}
-                onNodeClick={setSelectedNode}
-                selectedNode={selectedNode}
-              />
-            </div>
-            <Sidebar
+          <div className="flex-1 relative">
+            <ForceGraph
+              data={graphData}
+              onNodeClick={setSelectedNode}
               selectedNode={selectedNode}
-              gems={gems}
-              practitioners={practitioners}
-              onClose={() => setSelectedNode(null)}
-              onNavigate={setSelectedNode}
-              sidebarOpen={sidebarOpen}
-              onToggleSidebar={() => setSidebarOpen(o => !o)}
             />
-          </>
+          </div>
         ) : (
-          <Historian gems={gems} />
+          <Historian gems={gems} onGemSelect={setSelectedNode} />
         )}
+        <Sidebar
+          selectedNode={selectedNode}
+          gems={gems}
+          practitioners={practitioners}
+          onClose={() => setSelectedNode(null)}
+          onNavigate={setSelectedNode}
+          sidebarOpen={sidebarOpen}
+          onToggleSidebar={() => setSidebarOpen(o => !o)}
+        />
       </div>
     </div>
   );

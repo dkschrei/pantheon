@@ -92,6 +92,14 @@ export default function Sidebar({ selectedNode, gems, practitioners, onClose, on
 
 const GITHUB_BASE = 'https://github.com/dkschrei/pantheon/blob/main/patterns';
 
+const MAGNITUDE_META = {
+  5: { label: 'Civilizational', color: '#f87171' },
+  4: { label: 'Historic',       color: '#fb923c' },
+  3: { label: 'Major',          color: '#facc15' },
+  2: { label: 'Significant',    color: '#6ee7b7' },
+  1: { label: 'Notable',        color: '#71717a' },
+};
+
 function GemDetail({ gem, onNavigate }) {
   const githubUrl = `${GITHUB_BASE}/${gem.name}/pattern.md`;
   return (
@@ -155,6 +163,38 @@ function GemDetail({ gem, onNavigate }) {
                 {p.application && <p className="text-xs text-pantheon-muted mt-0.5 line-clamp-2">{p.application}</p>}
               </button>
             ))}
+          </div>
+        </div>
+      )}
+      {gem.gemScore > 0 && (
+        <div className="border border-pantheon-border rounded-lg overflow-hidden">
+          <div className="px-3 py-2 bg-pantheon-bg/60 border-b border-pantheon-border flex items-center justify-between">
+            <h4 className="text-pantheon-muted text-xs uppercase tracking-wider">Historian's Score</h4>
+            <span className="font-mono text-sm text-pantheon-accent font-semibold">{gem.gemScore}</span>
+          </div>
+          <div className="px-3 py-2 space-y-2">
+            {gem.events.filter(e => e.magnitude).map(e => {
+              const meta = MAGNITUDE_META[e.magnitude] || MAGNITUDE_META[1];
+              return (
+                <div key={e.name} className="text-xs space-y-0.5">
+                  <div className="flex items-center gap-2">
+                    <span className="font-mono w-4 text-right flex-shrink-0 font-semibold" style={{ color: meta.color }}>{e.magnitude}</span>
+                    <span className="text-[10px] uppercase tracking-wider flex-shrink-0" style={{ color: meta.color }}>{meta.label}</span>
+                    <span className={`text-[10px] px-1 rounded flex-shrink-0 ${e.role === 'violated' ? 'text-red-400/70' : 'text-pantheon-event/70'}`}>{e.role}</span>
+                    <span className="text-pantheon-muted text-[10px]">{e.year}</span>
+                  </div>
+                  <p className="text-pantheon-text pl-6 leading-snug">{e.name}</p>
+                  {e.description && <p className="text-pantheon-muted pl-6 leading-snug line-clamp-2">{e.description}</p>}
+                </div>
+              );
+            })}
+            <div className="pt-2 border-t border-pantheon-border/50">
+              <a href="https://github.com/dkschrei/pantheon/blob/main/CONTRIBUTING.md"
+                target="_blank" rel="noopener noreferrer"
+                className="text-[10px] text-pantheon-muted hover:text-pantheon-accent transition-colors">
+                Disagree with this ranking? → Open a PR
+              </a>
+            </div>
           </div>
         </div>
       )}

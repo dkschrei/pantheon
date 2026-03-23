@@ -39,7 +39,7 @@ function ProvenBadge({ score }) {
   return              <span className="text-[10px] uppercase tracking-wider px-1.5 py-0.5 rounded text-pantheon-muted border border-pantheon-border">candidate</span>;
 }
 
-export default function Historian({ gems }) {
+export default function Historian({ gems, onGemSelect }) {
   const [expandedGem, setExpandedGem] = useState(null);
   const [timelineView, setTimelineView] = useState('rankings'); // 'rankings' | 'timeline'
 
@@ -136,6 +136,7 @@ export default function Historian({ gems }) {
                     maxScore={maxScore}
                     expanded={expandedGem === gem.name}
                     onToggle={() => setExpandedGem(expandedGem === gem.name ? null : gem.name)}
+                    onSelect={() => onGemSelect({ id: `gem:${gem.name}`, type: 'gem', label: gem.name, data: gem })}
                   />
                 ))}
               </div>
@@ -189,22 +190,32 @@ function Stat({ value, label, dim }) {
   );
 }
 
-function GemRow({ gem, rank, maxScore, expanded, onToggle }) {
+function GemRow({ gem, rank, maxScore, expanded, onToggle, onSelect }) {
   return (
     <div className="border border-pantheon-border rounded-lg overflow-hidden">
-      <button
-        onClick={onToggle}
-        className="w-full text-left px-4 py-3 flex items-center gap-3 hover:bg-pantheon-card/60 transition-colors"
-      >
-        <span className="text-xs font-mono text-pantheon-muted w-6 text-right flex-shrink-0">{rank}</span>
-        <span className="flex-1 text-sm text-pantheon-text truncate">{gem.name}</span>
-        <div className="flex items-center gap-3 flex-shrink-0">
-          <span className="text-xs text-pantheon-muted hidden sm:inline">{gem.events.length} events</span>
-          <ProvenBadge score={gem.gemScore} />
-          <ScoreBar score={gem.gemScore} max={maxScore} />
-          <span className="text-pantheon-muted text-xs">{expanded ? '▲' : '▼'}</span>
-        </div>
-      </button>
+      <div className="flex items-center">
+        {/* Main click target → opens sidebar */}
+        <button
+          onClick={onSelect}
+          className="flex-1 text-left px-4 py-3 flex items-center gap-3 hover:bg-pantheon-card/60 transition-colors min-w-0"
+        >
+          <span className="text-xs font-mono text-pantheon-muted w-6 text-right flex-shrink-0">{rank}</span>
+          <span className="flex-1 text-sm text-pantheon-text truncate">{gem.name}</span>
+          <div className="flex items-center gap-3 flex-shrink-0">
+            <span className="text-xs text-pantheon-muted hidden sm:inline">{gem.events.length} events</span>
+            <ProvenBadge score={gem.gemScore} />
+            <ScoreBar score={gem.gemScore} max={maxScore} />
+          </div>
+        </button>
+        {/* Expand toggle → inline event list */}
+        <button
+          onClick={onToggle}
+          className="px-3 h-full py-3 text-pantheon-muted hover:text-pantheon-text text-xs border-l border-pantheon-border/50 transition-colors flex-shrink-0"
+          title="Show events"
+        >
+          {expanded ? '▲' : '▼'}
+        </button>
+      </div>
       {expanded && (
         <div className="border-t border-pantheon-border bg-pantheon-card/30 px-4 py-3 space-y-2">
           {gem.events.map(e => (
