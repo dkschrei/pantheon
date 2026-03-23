@@ -244,7 +244,7 @@ export default function GemRunner() {
         headers: {
           "Authorization": `Bearer ${apiKey}`,
           "Content-Type": "application/json",
-          "HTTP-Referer": "http://localhost:5173",
+          "HTTP-Referer": window.location.origin,
           "X-Title": "Pantheon",
         },
         body: JSON.stringify({
