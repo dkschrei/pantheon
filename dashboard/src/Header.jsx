@@ -113,6 +113,12 @@ export default function Header({ gems, practitioners, filterType, setFilterType,
           >
             Historian
           </button>
+          <button
+            onClick={() => onTabChange('run')}
+            className={`px-3 py-1 text-xs rounded transition-colors ${activeTab === 'run' ? 'bg-pantheon-accent/20 text-pantheon-accent' : 'text-pantheon-muted hover:text-pantheon-text'}`}
+          >
+            Run
+          </button>
         </div>
         <div className="h-6 w-px bg-pantheon-border" />
         <div className="flex items-center gap-2 text-sm text-pantheon-muted">

@@ -4,6 +4,7 @@ import ForceGraph from './ForceGraph';
 import Sidebar from './Sidebar';
 import Header from './Header';
 import Historian from './Historian';
+import GemRunner from './GemRunner';
 
 export default function App() {
   const { gems, practitioners } = gemsData;
@@ -47,18 +48,22 @@ export default function App() {
               selectedNode={selectedNode}
             />
           </div>
-        ) : (
+        ) : activeTab === 'historian' ? (
           <Historian gems={gems} onGemSelect={setSelectedNode} />
+        ) : (
+          <GemRunner />
         )}
-        <Sidebar
-          selectedNode={selectedNode}
-          gems={gems}
-          practitioners={practitioners}
-          onClose={() => setSelectedNode(null)}
-          onNavigate={setSelectedNode}
-          sidebarOpen={sidebarOpen}
-          onToggleSidebar={() => setSidebarOpen(o => !o)}
-        />
+        {activeTab !== 'run' && (
+          <Sidebar
+            selectedNode={selectedNode}
+            gems={gems}
+            practitioners={practitioners}
+            onClose={() => setSelectedNode(null)}
+            onNavigate={setSelectedNode}
+            sidebarOpen={sidebarOpen}
+            onToggleSidebar={() => setSidebarOpen(o => !o)}
+          />
+        )}
       </div>
     </div>
   );
