@@ -13,16 +13,22 @@ function CollapseTab({ onToggle }) {
 }
 
 export default function Sidebar({ selectedNode, gems, practitioners, onClose, onNavigate, sidebarOpen, onToggleSidebar }) {
+  const isMobile = typeof window !== 'undefined' && window.innerWidth < 640;
+
   if (!sidebarOpen) {
     return <CollapseTab onToggle={onToggleSidebar} />;
   }
 
+  const sidebarStyle = isMobile
+    ? { position: 'absolute', inset: 0, width: '100%', zIndex: 50 }
+    : { width: '480px' };
+
   if (!selectedNode) {
     return (
-      <aside className="bg-pantheon-card border-l border-pantheon-border p-5 overflow-y-auto flex-shrink-0" style={{ width: '480px' }}>
+      <aside className="bg-pantheon-card border-l border-pantheon-border p-5 overflow-y-auto flex-shrink-0" style={sidebarStyle}>
         <div className="flex items-center justify-between mb-4">
           <span className="text-pantheon-muted text-xs uppercase tracking-wider">Sidebar</span>
-          <button onClick={onToggleSidebar} className="text-pantheon-muted hover:text-pantheon-text text-sm leading-none" title="Collapse sidebar">›</button>
+          <button onClick={onToggleSidebar} className="text-pantheon-muted hover:text-pantheon-text leading-none px-2 py-1" style={{ fontSize: isMobile ? '24px' : '14px' }} title="Collapse sidebar">›</button>
         </div>
         <p className="text-pantheon-muted text-sm">Click a node in the graph to see details.</p>
         <div className="mt-6">
@@ -70,16 +76,26 @@ export default function Sidebar({ selectedNode, gems, practitioners, onClose, on
   const { type, label, data } = selectedNode;
 
   return (
-    <aside className="bg-pantheon-card border-l border-pantheon-border p-5 overflow-y-auto flex-shrink-0" style={{ width: '480px' }}>
+    <aside className="bg-pantheon-card border-l border-pantheon-border p-5 overflow-y-auto flex-shrink-0" style={sidebarStyle}>
       <div className="flex items-center justify-between mb-4">
-        <span className={`text-xs uppercase tracking-wider px-2 py-0.5 rounded-full border ${
-          type === 'gem' ? 'text-pantheon-gem border-pantheon-gem/30' :
-          type === 'practitioner' ? 'text-pantheon-practitioner border-pantheon-practitioner/30' :
-          'text-pantheon-event border-pantheon-event/30'
-        }`}>{type}</span>
+        {isMobile ? (
+          <button
+            onClick={onClose}
+            className="flex items-center gap-1 text-pantheon-muted hover:text-pantheon-text transition-colors"
+            style={{ fontSize: '15px', padding: '6px 0' }}
+          >
+            ‹ Back
+          </button>
+        ) : (
+          <span className={`text-xs uppercase tracking-wider px-2 py-0.5 rounded-full border ${
+            type === 'gem' ? 'text-pantheon-gem border-pantheon-gem/30' :
+            type === 'practitioner' ? 'text-pantheon-practitioner border-pantheon-practitioner/30' :
+            'text-pantheon-event border-pantheon-event/30'
+          }`}>{type}</span>
+        )}
         <div className="flex items-center gap-2">
-          <button onClick={onToggleSidebar} className="text-pantheon-muted hover:text-pantheon-text text-sm leading-none" title="Collapse sidebar">›</button>
-          <button onClick={onClose} className="text-pantheon-muted hover:text-pantheon-text text-lg leading-none">x</button>
+          {!isMobile && <button onClick={onToggleSidebar} className="text-pantheon-muted hover:text-pantheon-text text-sm leading-none" title="Collapse sidebar">›</button>}
+          {!isMobile && <button onClick={onClose} className="text-pantheon-muted hover:text-pantheon-text text-lg leading-none">×</button>}
         </div>
       </div>
       <h2 className="font-display text-lg text-pantheon-accent mb-4">{label}</h2>
