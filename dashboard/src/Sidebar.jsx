@@ -19,7 +19,7 @@ export default function Sidebar({ selectedNode, gems, practitioners, onClose, on
 
   if (!selectedNode) {
     return (
-      <aside className="w-80 bg-pantheon-card border-l border-pantheon-border p-5 overflow-y-auto flex-shrink-0">
+      <aside className="w-[420px] bg-pantheon-card border-l border-pantheon-border p-5 overflow-y-auto flex-shrink-0">
         <div className="flex items-center justify-between mb-4">
           <span className="text-pantheon-muted text-xs uppercase tracking-wider">Sidebar</span>
           <button onClick={onToggleSidebar} className="text-pantheon-muted hover:text-pantheon-text text-sm leading-none" title="Collapse sidebar">›</button>
@@ -70,7 +70,7 @@ export default function Sidebar({ selectedNode, gems, practitioners, onClose, on
   const { type, label, data } = selectedNode;
 
   return (
-    <aside className="w-80 bg-pantheon-card border-l border-pantheon-border p-5 overflow-y-auto flex-shrink-0">
+    <aside className="w-[420px] bg-pantheon-card border-l border-pantheon-border p-5 overflow-y-auto flex-shrink-0">
       <div className="flex items-center justify-between mb-4">
         <span className={`text-xs uppercase tracking-wider px-2 py-0.5 rounded-full border ${
           type === 'gem' ? 'text-pantheon-gem border-pantheon-gem/30' :
