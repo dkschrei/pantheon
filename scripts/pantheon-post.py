@@ -14,7 +14,6 @@ Usage:
 
 import argparse
 import json
-import os
 import random
 import subprocess
 import sys
@@ -32,16 +31,11 @@ PANTHEON_ROOT = Path(__file__).parent.parent
 PATTERNS_DIR  = PANTHEON_ROOT / "patterns"
 
 # ── Content generation ─────────────────────────────────────────────────────
-def generate_content(subject: str, gem_context: str = "", gem_name: str = "") -> dict:
+def generate_content(gem_name: str = "", subject: str = "") -> dict:
     """Run researcher + writer pipeline and return content dict."""
     if gem_name:
         researcher_cmd = [sys.executable, str(Path(__file__).parent / "researcher.py"),
                           "--mode", "gem", "--arg", gem_name]
-    elif subject.startswith("the '") and "' cognitive pattern" in subject:
-        # Legacy subject format from random_gem() — extract gem name
-        extracted = subject.split("'")[1]
-        researcher_cmd = [sys.executable, str(Path(__file__).parent / "researcher.py"),
-                          "--mode", "gem", "--arg", extracted]
     else:
         researcher_cmd = [sys.executable, str(Path(__file__).parent / "researcher.py"),
                           "--mode", "topic", "--arg", subject]
@@ -196,16 +190,14 @@ def main():
     if args.topic:
         subject = args.topic
         gem_name = ""
-        gem_context = ""
     else:
         gem_name = args.gem or random_gem()
         print(f"Gem: {gem_name}")
-        gem_context = ""  # researcher loads gem context internally now
-        subject = gem_name
+        subject = ""
 
     # Generate content
     print("Generating content via Claude (research + write)...")
-    content = generate_content(subject, gem_context, gem_name=gem_name)
+    content = generate_content(gem_name=gem_name, subject=subject)
 
     content["threads_post"] += "\n\nhttps://pantheon-lilac.vercel.app/"
 
