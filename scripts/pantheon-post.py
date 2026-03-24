@@ -240,6 +240,8 @@ def main():
     print("Generating content via Claude...")
     content = generate_content(subject, gem_context)
 
+    content["threads_post"] += "\n\nhttps://pantheon-lilac.vercel.app/"
+
     print(f"\n── X ({len(content['x_post'])} chars) ──")
     print(content["x_post"])
     print(f"\n── Threads ──")
