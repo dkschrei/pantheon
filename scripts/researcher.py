@@ -49,9 +49,10 @@ def load_gem_summaries(patterns_dir: Path) -> list[dict]:
 
 
 def load_full_gem(gem_name: str) -> str:
+    """Return full pattern.md text for a gem. Exits if gem not found."""
     pattern_file = PATTERNS_DIR / gem_name / "pattern.md"
     if not pattern_file.exists():
-        return ""
+        sys.exit(f"✗ Gem not found: '{gem_name}'. Check patterns/ directory.")
     return pattern_file.read_text(encoding="utf-8")
 
 
@@ -135,7 +136,12 @@ Return ONLY valid JSON. No markdown fences."""
                 return json.loads(part)
 
     # Try parsing the whole concatenated text as JSON
-    return json.loads(raw)
+    try:
+        return json.loads(raw.strip())
+    except json.JSONDecodeError as e:
+        print(f"✗ Could not parse JSON from researcher response: {e}", file=sys.stderr)
+        print(f"Raw response:\n{raw}", file=sys.stderr)
+        sys.exit(1)
 
 
 def main():
@@ -150,7 +156,7 @@ def main():
     # Sanitize --arg: strip shell-special characters (input from Telegram)
     arg = args.arg
     if arg:
-        arg = arg.replace("`", "").replace("$", "").replace(";", "").replace("&", "")
+        arg = arg.replace("`", "").replace("$", "").replace(";", "").replace("&", "").replace("|", "").replace(">", "").replace("<", "")
 
     brief = run_research(args.mode, arg)
     print(json.dumps(brief, ensure_ascii=False))
