@@ -17,7 +17,7 @@
 | `/pantheon-constraint-saturation` | constraint-saturation | engineering | predicting unknown structure |
 | `/pantheon-copernican-inversion` | copernican-inversion | philosophy | irresolvable debate |
 | `/pantheon-defeat-in-detail` | defeat-in-detail | decision-making | multiple adversaries |
-| `/pantheon-domain-cartographer` | domain-cartographer | knowledge-management | AI has data but not meaning |
+| `/pantheon-domain-cartographer` | domain-cartographer | knowledge-management | apprentice needs to map a domain they know nothing about |
 | `/pantheon-eat-the-world` | eat-the-world | engineering | technology exists but isn't reaching users |
 | `/pantheon-falsification` | falsification | philosophy | theory feels too comfortable |
 | `/pantheon-federal-decentralization` | federal-decentralization | leadership | scaling organization |

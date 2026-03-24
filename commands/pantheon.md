@@ -24,7 +24,7 @@ Executable mental models from history's greatest problem solvers. Drop them into
 | `/pantheon-constraint-saturation` | constraint-saturation | Linus Pauling | predicting unknown structure |
 | `/pantheon-copernican-inversion` | copernican-inversion | Immanuel Kant | irresolvable debate |
 | `/pantheon-defeat-in-detail` | defeat-in-detail | — | — |
-| `/pantheon-domain-cartographer` | domain-cartographer ✦ | Frederick Winslow Taylor | AI has data but not meaning |
+| `/pantheon-domain-cartographer` | domain-cartographer ✦ | Frederick Winslow Taylor | apprentice needs to map a domain they know nothing about |
 | `/pantheon-eat-the-world` | eat-the-world | Marc Andreessen | technology exists but isn't reaching users |
 | `/pantheon-falsification` | falsification | — | — |
 | `/pantheon-federal-decentralization` | federal-decentralization | — | — |

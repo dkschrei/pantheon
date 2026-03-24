@@ -2,7 +2,7 @@
 name: domain-cartographer
 aliases: [cartographer-loop, knowledge-extraction-loop, tacit-knowledge-mapping, expert-correction-loop, bold-guess-protocol, minimum-viable-correction, knowledge-acquisition-loop, feigenbaum, mycin, taylor, scientific-management, malinowski, participant-observation, knowledge-engineering, knowledge-acquisition-bottleneck]
 domain: [knowledge-management, onboarding, organizational-learning, AI-collaboration, systems-thinking]
-trigger: [AI has data but not meaning, tacit knowledge in expert head, source systems without conceptual layer, expert blank-page paralysis, knowledge extraction session, onboarding a new domain, need to map what someone knows]
+trigger: [apprentice needs to map a domain they know nothing about, tacit knowledge lives in one person's head, new hire onboarding to complex domain, expert leaving and knowledge must be transferred, blank-page paralysis when asked to explain, knowledge extraction session needed]
 practitioners:
   - name: Frederick Winslow Taylor
     era: 1880-1911
@@ -31,8 +31,8 @@ events:
     gem-role: 'applied — AI ingested raw SAP system data, built annotated landscape map with confidence scores, expert ran three delta passes correcting misclassifications only, producing validated operational CSV in hours instead of weeks'
     magnitude: 1
 lineage: taylor-1899 → malinowski-1915 → feigenbaum-1972 → domain-cartographer-2026
-origin-earliest: schreiber-2026
-origin-modern: schreiber-2026
+origin-earliest: taylor-1899
+origin-modern: feigenbaum-1972
 origin-type: authored
 authored-by: Dana Schreiber
 ---
@@ -41,20 +41,20 @@ authored-by: Dana Schreiber
 
 ## Protocol  ← TLDR zone (always at the top)
 
-**Trigger:** You have raw data about a domain — logs, inventories, system records — but the conceptual model lives only in an expert's head. Asking the expert to explain it produces blank-page paralysis. You need the model extracted, not narrated.
+**Trigger:** An apprentice needs to build operational knowledge of a domain they know nothing about, but the expert who holds that knowledge can't narrate it from scratch. The blank page breaks the session before it starts.
 
 **Steps:**
-1. **INGEST** — AI consumes all available raw sources without involving the expert
-2. **MAP** — AI constructs a first-draft model, annotating every element with confidence level and explicit assumptions
-3. **SURFACE** — Present the model as a concrete, scannable artifact (table, CSV, diagram) — no questions yet
+1. **INGEST** — Apprentice consumes all available raw sources without involving the expert
+2. **MAP** — Apprentice constructs a first-draft model, annotating every element with confidence level and explicit assumptions
+3. **SURFACE** — Present the model as a concrete, scannable artifact (table, map, diagram) — no open questions yet
 4. **DELTA** — Expert scans the artifact, marks only what's wrong — binary corrections, not explanations
-5. **INTEGRATE** — AI updates model, promotes corrections to ground truth, re-scores confidence
+5. **INTEGRATE** — Apprentice updates model, promotes corrections to ground truth, re-scores confidence
 6. **VERIFY** — Re-surface corrected model; expert confirms or runs another delta pass
 7. **GRADUATE** — Model clears confidence threshold → becomes the operational knowledge artifact
 
 **Anti-pattern:** Asking the expert "Walk me through your domain" before surfacing anything. This forces the expert to construct the model mentally before externalizing it — the hardest possible mode of knowledge transfer.
 
-**Hard rule:** The AI must surface a concrete artifact before asking the expert for any input. No artifact = no session.
+**Hard rule:** An artifact must exist before the expert is asked for any input. No artifact = no session.
 
 ---
 
@@ -62,45 +62,49 @@ authored-by: Dana Schreiber
 
 ### The Pattern
 
-Tacit knowledge can't be extracted by asking questions — the expert has no internal index they can narrate from. The Domain Cartographer Loop inverts the transfer direction: AI makes bold structural guesses from raw data, surfaces them as a concrete artifact, and lets the expert apply minimum-effort corrections. The model converges through successive delta passes until it becomes operational knowledge — structured, versioned, queryable.
+Tacit knowledge can't be extracted by asking questions — experts have no internal index they can narrate from. The Domain Cartographer Loop inverts the transfer direction: the apprentice makes bold structural guesses from raw data, surfaces them as a concrete artifact, and lets the expert apply minimum-effort corrections. The expert's role shifts from composer to auditor. Auditing is faster, lower-effort, and produces ground truth rather than narrative. The model converges through successive delta passes until it becomes operational knowledge — structured, versioned, queryable.
 
 ### Protocol (extended)
 
-1. **INGEST** — AI consumes the raw source corpus: system exports, logs, inventory files, config records, org charts — anything machine-readable. The expert is not involved at this stage. The goal is maximum coverage without priming on expert framing.
+1. **INGEST** — Apprentice consumes the raw source corpus: records, logs, inventories, archives, config files, org charts — anything available without expert interpretation. The expert is not involved at this stage. Goal is maximum coverage without priming on expert framing.
 
-2. **MAP** — AI constructs a first-draft model of the domain. Every element receives a confidence annotation: high (multiple signals agree), medium (single signal), low (inferred or assumed). Every assumption is surfaced explicitly. The model should be wrong in places — that's expected. Maximum coverage beats maximum accuracy at this stage.
+2. **MAP** — Apprentice constructs a first-draft model. Every element receives a confidence annotation: high (multiple signals agree), medium (single signal), low (inferred or assumed). Every assumption is made explicit. The model will be wrong in places — that's expected. Maximum coverage beats maximum accuracy at this stage.
 
-3. **SURFACE** — Present the model as a concrete, scannable artifact — a CSV, table, or diagram. Not a list of questions. The expert needs something to react to, not something to construct from scratch. The blank-page problem is solved before the expert enters the room.
+3. **SURFACE** — Present the model as a concrete, scannable artifact — a table, map, diagram, or structured list. Not a list of questions. The expert needs something to react to, not something to build from scratch. The blank-page problem is solved before the expert enters the room.
 
-4. **DELTA** — Expert scans the artifact. They are not asked to explain anything. They mark what's wrong: this is misclassified, that name is incorrect, these two are duplicates, that system was decommissioned. The cognitive load is binary — scan and correct, not compose. This is the minimum viable expert contribution.
+4. **DELTA** — Expert scans the artifact. They are not asked to explain anything. They mark what's wrong: this is misclassified, that label is incorrect, these two are the same thing, that entry is outdated. The cognitive load is recognition, not composition — scan and correct, not narrate. This is the minimum viable expert contribution.
 
-5. **INTEGRATE** — AI updates the model. Corrections become ground truth. Original guesses that were corrected are demoted and logged. Confidence scores update across the board. The artifact version increments.
+5. **INTEGRATE** — Apprentice updates the model. Corrections become ground truth. Original guesses that were corrected are demoted and logged. Confidence scores update. The artifact version increments.
 
-6. **VERIFY** — Re-surface the corrected model. The expert confirms that changes landed correctly, or runs another delta pass on residual errors.
+6. **VERIFY** — Re-surface the corrected model. Expert confirms changes landed correctly, or runs another delta pass on residual errors.
 
-7. **GRADUATE** — When the artifact clears the confidence threshold — no remaining low-confidence elements, fewer than 5% corrections in the last delta pass — it graduates to the operational knowledge layer: stored, versioned, integrated into whatever system needs it.
+7. **GRADUATE** — When the artifact clears the confidence threshold — no remaining low-confidence elements, fewer than 5% corrections in the last delta pass — it graduates to the operational knowledge layer: stored, versioned, ready to use.
 
 ### Anti-Pattern (extended)
 
-**Blank-page interrogation:** Agent asks "Can you walk me through your system?" before surfacing anything. The expert narrates a stream-of-consciousness dump that's incomplete, unnormalized, and impossible to validate. The agent then has to structure it anyway — doing the hardest work in the wrong sequence, after the expert's bandwidth is spent.
+**Blank-page interrogation:** Apprentice opens with "Walk me through your domain" before surfacing anything. The expert narrates a stream-of-consciousness dump that's incomplete, unnormalized, and impossible to validate. The apprentice then has to structure it anyway — doing the hardest work in the wrong order, after the expert's bandwidth is spent. This is the failure mode Feigenbaum named the "knowledge acquisition bottleneck."
 
-**Premature closure:** Agent surfaces a low-coverage first draft, collects a few corrections, and declares the model ready. Low-confidence elements survive unchallenged because they were never surfaced explicitly. The artifact looks complete but has silent gaps.
+**Premature closure:** Apprentice surfaces a low-coverage draft, collects corrections on what's present, and declares the model ready. Elements not in the draft survive as silent gaps — invisible because they were never surfaced. The artifact looks complete but has holes.
 
-**One-question-at-a-time labeling:** Agent asks "What classification would you give system X?" for each element individually. This turns the expert into a labeler rather than a corrector. The interaction is an order of magnitude slower, produces no artifact, and captures no confidence metadata.
+**One-at-a-time labeling:** Apprentice asks "How would you classify X?" for each element individually. This turns the expert into a labeler rather than an auditor. The interaction is an order of magnitude slower, produces no artifact structure, and forces the expert to hold the whole domain in working memory one piece at a time.
 
-**Asking for explanations instead of corrections:** "Why is this system in this category?" The expert explains instead of marks. The session produces narrative rather than ground truth. The model doesn't update.
+**Asking for explanations instead of corrections:** "Why does this go in that category?" The expert explains reasoning instead of marking errors. The session produces narrative, not ground truth. The model doesn't update.
 
 ### Examples
 
+**Trobriand Islands Fieldwork (1915)**
+
+Malinowski arrived with no model of Trobriand culture. He spent months accumulating raw observation — ceremonies, transactions, disputes, daily routines — then built draft hypotheses and presented them to informants for correction. The kula exchange network, a complex multi-island trade system invisible to prior anthropologists using blank-page interviews, became legible only through this method. Informants could confirm or deny a concrete hypothesis far more readily than they could narrate the system unprompted. The loop ran for 26 months; the resulting monograph became the founding document of modern anthropological fieldwork.
+
+**MYCIN Expert System (1972–1979)**
+
+Feigenbaum's team at Stanford couldn't get infectious disease physicians to articulate their diagnostic rules through questioning — the knowledge was tacit. The team's move: ingest medical literature and case logs, generate a draft rule set, then enter a correction cycle with physicians who reviewed rules and marked adjustments. Physicians could audit ("that rule is wrong, this should trigger instead") far faster than they could compose rules from scratch. Through successive delta passes the rule base grew to ~600 rules performing at senior-physician level. The extraction method proved that tacit expert knowledge was accessible through bold-hypothesis-then-correction but not through open-ended elicitation.
+
 **SAP Basis L1 Landscape Mapping (2026)**
 
-A new L1 SAP administrator needed to understand the full system landscape — hundreds of systems, servers, and transport routes — within days of starting. Direct knowledge transfer from the departing L2 admin was impossible: no time, no documentation, knowledge too complex to narrate from scratch.
+A new L1 administrator needed operational knowledge of a complex SAP environment — hundreds of systems, transport routes, and dependencies — within days. The departing expert had no time to narrate it from scratch. An AI agent ran the loop: ingested raw system inventory exports, built an annotated landscape map with confidence scores, surfaced it for review. The expert ran three delta passes marking misclassifications and deprecated entries. Total expert contribution: less than two hours. The knowledge that had lived in one person's head was now structured, stored, and queryable — weeks of shadowing compressed into one session.
 
-The Domain Cartographer Loop ran as follows: AI ingested raw system inventory exports, transport logs, and configuration files. It built a first-draft landscape map annotated with confidence levels and system classifications — correctly placed many systems, misclassified others. The expert reviewed the CSV output, marking misclassifications, correcting naming conventions, flagging decommissioned systems.
-
-Three delta passes later: a complete, validated, operational landscape map. The artifact that would have taken weeks of shadowing and interviews took one session.
-
-The expert described the experience as "mentoring an L1 admin" rather than "being interrogated." The interaction mode — correct what's wrong, not explain from scratch — made the knowledge transfer feel natural. That framing is the signal the loop worked: the expert was in their preferred cognitive mode (recognizing errors) rather than a forced mode (constructing models under time pressure).
+The expert's description: "mentoring an L1 admin" rather than "being interrogated." That framing is the diagnostic signal the loop worked — the expert operated in recognition mode, not composition mode.
 
 ### Practitioners
 
