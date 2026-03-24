@@ -7,6 +7,12 @@ _✦ = authored gem (written from live practice)_
 
 ---
 
+## IBM (System/360)
+
+| Pattern | Era | Application |
+|---------|-----|-------------|
+| [platform-gravity](patterns/platform-gravity/pattern.md) | 1964-1970 | Announced the System/360 as a unified architecture across six incompatible product lines, investing $5B (the largest private capital investment in US history at the time) to create a single developer ecosystem — before customers understood why they needed software compatibility |
+
 ## Sam Altman
 
 | Pattern | Era | Application |
@@ -180,6 +186,12 @@ _✦ = authored gem (written from live practice)_
 |---------|-----|-------------|
 | [pain-blindness](patterns/pain-blindness/pattern.md) | 2001-present | iPod, iPhone, Nest thermostat — found domains where technology existed but the experience was fragmented across actors, then collapsed the full stack into one integrated product |
 
+## Edward Feigenbaum
+
+| Pattern | Era | Application |
+|---------|-----|-------------|
+| [domain-cartographer ✦](patterns/domain-cartographer/pattern.md) | 1965-1990 | Built MYCIN by ingesting medical literature and case logs before physician interviews — surfaced diagnostic rule sets for physician scan-and-correct validation, and coined 'knowledge acquisition bottleneck' for the failure mode this loop solves |
+
 ## Tim Ferriss
 
 | Pattern | Era | Application |
@@ -253,6 +265,12 @@ _✦ = authored gem (written from live practice)_
 | Pattern | Era | Application |
 |---------|-----|-------------|
 | [structural-unlock](patterns/structural-unlock/pattern.md) | 1789-1804 | Redesigned the federal financial system — assumption of state debts, national bank, tariff structure — to unlock capital formation for a new nation |
+
+## Jensen Huang
+
+| Pattern | Era | Application |
+|---------|-----|-------------|
+| [platform-gravity](patterns/platform-gravity/pattern.md) | 2006-present | Invested ~$12B in CUDA (general-purpose GPU computing) from 2006–2017 before AI had commercial revenue — seeding the developer ecosystem a decade before the market materialized; by the time large language models arrived, every framework, researcher, and AI practitioner already depended on CUDA |
 
 ## David Hume
 
@@ -334,6 +352,12 @@ _✦ = authored gem (written from live practice)_
 |---------|-----|-------------|
 | [lion-and-fox](patterns/lion-and-fox/pattern.md) | 1469-1527 | Codified the separation of political action from moral appearance in The Prince, advising rulers to read power as it is — not as doctrine says it should be |
 
+## Bronisław Malinowski
+
+| Pattern | Era | Application |
+|---------|-----|-------------|
+| [domain-cartographer ✦](patterns/domain-cartographer/pattern.md) | 1914-1942 | Pioneered participant observation in the Trobriand Islands — immersed in raw cultural data before constructing anthropological models, then corrected hypotheses with informants who reacted to artifacts rather than explaining from blank slate |
+
 ## Roger Martin
 
 | Pattern | Era | Application |
@@ -351,6 +375,12 @@ _✦ = authored gem (written from live practice)_
 | Pattern | Era | Application |
 |---------|-----|-------------|
 | [carve-at-joints](patterns/carve-at-joints/pattern.md) | 1869-1907 | Carved chemistry at its joints by arranging elements by atomic weight and valence into the periodic table, revealing gaps that predicted undiscovered elements |
+
+## Bill Gates / Microsoft
+
+| Pattern | Era | Application |
+|---------|-----|-------------|
+| [platform-gravity](patterns/platform-gravity/pattern.md) | 1980-1995 | Licensed DOS to IBM for nearly nothing, then placed no restriction on licensing DOS to other PC makers — creating the developer ecosystem around MS-DOS before the personal computer market existed at scale; by 1985 most PC software targeted MS-DOS first, making Microsoft the gravitational center of the platform war |
 
 ## Jean Monnet
 
@@ -470,6 +500,7 @@ _✦ = authored gem (written from live practice)_
 
 | Pattern | Era | Application |
 |---------|-----|-------------|
+| [domain-cartographer ✦](patterns/domain-cartographer/pattern.md) | 1880-1911 | Observed pig iron handlers and machinists directly before involving workers — built time-motion models from raw observation data, then surfaced concrete findings for worker correction rather than asking workers to narrate their own methods from scratch |
 | [time-and-motion](patterns/time-and-motion/pattern.md) | 1874-1915 | Invented scientific management — decomposed factory work into timed motions to find the provably fastest method |
 
 ## Nikola Tesla
@@ -513,4 +544,4 @@ _✦ = authored gem (written from live practice)_
 
 ---
 
-_Total: 81 practitioners · 99 pattern appearances_
+_Total: 86 practitioners · 105 pattern appearances_

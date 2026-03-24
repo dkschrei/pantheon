@@ -24,6 +24,7 @@ Executable mental models from history's greatest problem solvers. Drop them into
 | `/pantheon-constraint-saturation` | constraint-saturation | Linus Pauling | predicting unknown structure |
 | `/pantheon-copernican-inversion` | copernican-inversion | Immanuel Kant | irresolvable debate |
 | `/pantheon-defeat-in-detail` | defeat-in-detail | — | — |
+| `/pantheon-domain-cartographer` | domain-cartographer ✦ | Frederick Winslow Taylor | AI has data but not meaning |
 | `/pantheon-eat-the-world` | eat-the-world | Marc Andreessen | technology exists but isn't reaching users |
 | `/pantheon-falsification` | falsification | — | — |
 | `/pantheon-federal-decentralization` | federal-decentralization | — | — |
@@ -44,7 +45,7 @@ Executable mental models from history's greatest problem solvers. Drop them into
 | `/pantheon-outside-view` | outside-view | — | — |
 | `/pantheon-pain-blindness` | pain-blindness | Tony Fadell | nobody likes this but everyone uses it |
 | `/pantheon-phantom-machine` | phantom-machine | Alan Turing | impossible problem |
-| `/pantheon-platform-gravity` | platform-gravity | — | — |
+| `/pantheon-platform-gravity` | platform-gravity | Jensen Huang | emerging compute paradigm with no commercial market yet |
 | `/pantheon-premeditatio` | premeditatio | Seneca | high-stakes uncertainty ahead |
 | `/pantheon-red-bead` | red-bead | W. Edwards Deming | blaming workers for defects |
 | `/pantheon-render-to-understand` | render-to-understand | Leonardo da Vinci | surface understanding only |
@@ -94,4 +95,4 @@ Restart Claude Code to activate.
 
 ---
 
-*github.com/dkschrei/pantheon — 54 patterns*
+*github.com/dkschrei/pantheon — 55 patterns*
