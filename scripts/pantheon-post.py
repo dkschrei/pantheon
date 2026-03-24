@@ -43,7 +43,7 @@ The Threads post must follow this exact arc in 5-7 sentences:
 4. THE LESSON — one sentence. Why this pattern echoes today. Not preachy — observational.
 5. THE POINTER — one sentence. Lead them to Pantheon. Example: "This pattern lives in Pantheon as [gem name] — and it shows up everywhere once you know the name."
 
-The X post is a single punch — the hook + the turn only. ≤280 chars. One #Pantheon tag at the end.
+The X post is a single punch — the hook + the turn only. ≤280 chars. One #PantheonGems tag at the end.
 
 Rules:
 - Sound like a smart friend who just discovered something remarkable.
