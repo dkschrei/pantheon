@@ -86,7 +86,7 @@ No em-dashes anywhere."""
     raw = ""
 
     for attempt in range(1, MAX_RETRIES + 1):
-        extra = "" if attempt == 1 else f"\n\nATTENTION: Previous attempt produced a threads_post that exceeded 500 characters. Write a shorter version — aim for 450 characters max."
+        extra = "" if attempt == 1 else f"\n\nATTENTION: Previous attempt produced a threads_post that exceeded 500 characters. Write a shorter version, aim for 450 characters max."
         user_prompt = base_prompt + extra
 
         message = client.messages.create(
@@ -132,6 +132,14 @@ No em-dashes anywhere."""
                 truncated = truncated[: idx + 1]
                 break
         content["threads_post"] = truncated
+
+    # Truncate x_post to 280 chars at last word boundary if needed
+    xp = content["x_post"]
+    if len(xp) > 280:
+        truncated_x = xp[:280]
+        # Cut at last space to avoid splitting a word
+        last_space = truncated_x.rfind(" ")
+        content["x_post"] = truncated_x[:last_space] if last_space > 200 else truncated_x
 
     return content
 

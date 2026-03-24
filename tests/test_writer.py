@@ -3,6 +3,8 @@ import subprocess
 import sys
 from pathlib import Path
 
+import pytest
+
 sys.path.insert(0, "scripts")
 
 SAMPLE_BRIEF = {
@@ -26,21 +28,21 @@ def run_writer(brief: dict) -> dict:
     assert result.returncode == 0, f"writer.py failed: {result.stderr}"
     return json.loads(result.stdout.strip())
 
-def test_writer_returns_required_fields():
-    output = run_writer(SAMPLE_BRIEF)
-    assert "x_post" in output
-    assert "threads_post" in output
-    assert "subject_line" in output
+@pytest.fixture(scope="module")
+def writer_output():
+    return run_writer(SAMPLE_BRIEF)
 
-def test_x_post_within_char_limit():
-    output = run_writer(SAMPLE_BRIEF)
-    assert len(output["x_post"]) <= 280, f"X post too long: {len(output['x_post'])} chars"
+def test_writer_returns_required_fields(writer_output):
+    assert "x_post" in writer_output
+    assert "threads_post" in writer_output
+    assert "subject_line" in writer_output
 
-def test_threads_post_within_char_limit():
-    output = run_writer(SAMPLE_BRIEF)
-    assert len(output["threads_post"]) <= 500, f"Threads post too long: {len(output['threads_post'])} chars"
+def test_x_post_within_char_limit(writer_output):
+    assert len(writer_output["x_post"]) <= 280, f"X post too long: {len(writer_output['x_post'])} chars"
 
-def test_no_em_dashes_in_output():
-    output = run_writer(SAMPLE_BRIEF)
-    assert "\u2014" not in output["x_post"], "em-dash found in X post"
-    assert "\u2014" not in output["threads_post"], "em-dash found in Threads post"
+def test_threads_post_within_char_limit(writer_output):
+    assert len(writer_output["threads_post"]) <= 500, f"Threads post too long: {len(writer_output['threads_post'])} chars"
+
+def test_no_em_dashes_in_output(writer_output):
+    assert "\u2014" not in writer_output["x_post"], "em-dash found in X post"
+    assert "\u2014" not in writer_output["threads_post"], "em-dash found in Threads post"
