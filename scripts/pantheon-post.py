@@ -16,6 +16,7 @@ import argparse
 import json
 import os
 import random
+import subprocess
 import sys
 import time
 from pathlib import Path
@@ -23,7 +24,6 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent))
 from shared import get_secret
 
-import anthropic
 import requests
 import tweepy
 
@@ -32,72 +32,38 @@ PANTHEON_ROOT = Path(__file__).parent.parent
 PATTERNS_DIR  = PANTHEON_ROOT / "patterns"
 
 # ── Content generation ─────────────────────────────────────────────────────
-SYSTEM_PROMPT = """You are the content voice for Pantheon — a project that surfaces the cognitive patterns of history's greatest problem-solvers.
+def generate_content(subject: str, gem_context: str = "", gem_name: str = "") -> dict:
+    """Run researcher + writer pipeline and return content dict."""
+    if gem_name:
+        researcher_cmd = [sys.executable, str(Path(__file__).parent / "researcher.py"),
+                          "--mode", "gem", "--arg", gem_name]
+    elif subject.startswith("the '") and "' cognitive pattern" in subject:
+        # Legacy subject format from random_gem() — extract gem name
+        extracted = subject.split("'")[1]
+        researcher_cmd = [sys.executable, str(Path(__file__).parent / "researcher.py"),
+                          "--mode", "gem", "--arg", extracted]
+    else:
+        researcher_cmd = [sys.executable, str(Path(__file__).parent / "researcher.py"),
+                          "--mode", "topic", "--arg", subject]
 
-Your job: write social posts that feel like a compelling story, not a history lesson.
+    researcher = subprocess.run(researcher_cmd, capture_output=True, text=True,
+                                cwd=Path(__file__).parent.parent)
+    if researcher.returncode != 0:
+        sys.exit(f"✗ Researcher failed:\n{researcher.stderr}")
 
-The Threads post must follow this exact arc in 5-7 sentences:
-1. HOOK — one sentence that creates tension or reveals something surprising. No "Did you know". No "In 1942". Drop the reader mid-scene.
-2. STORY — 2-3 sentences. What happened. Who was there. What was at stake. Make it vivid.
-3. THE TURN — one sentence. The insight, the decision, the thing they did differently. This is the gem.
-4. THE LESSON — one sentence. Why this pattern echoes today. Not preachy — observational.
-5. THE POINTER — one sentence. Lead them to Pantheon. Example: "This pattern lives in Pantheon as [gem name] — and it shows up everywhere once you know the name."
-
-The X post is a single punch — the hook + the turn only. ≤280 chars. One #PantheonGems tag at the end.
-
-Rules:
-- Sound like a smart friend who just discovered something remarkable.
-- No em-dashes. No bullet points. Flowing prose only.
-- No corporate voice. No "fascinating" or "remarkable" as adjectives — show it, don't label it.
-- History is not dead. It's a manual most people never opened."""
-
-def generate_content(subject: str, gem_context: str = "") -> dict:
-    client = anthropic.Anthropic(api_key=get_secret("ANTHROPIC_API_KEY"))
-
-    context_block = f"\n\nGem context:\n{gem_context}" if gem_context else ""
-
-    message = client.messages.create(
-        model="claude-sonnet-4-6",
-        max_tokens=600,
-        system=SYSTEM_PROMPT,
-        messages=[{
-            "role": "user",
-            "content": f"""Generate two social posts about: {subject}{context_block}
-
-Return ONLY valid JSON with this exact structure:
-{{
-  "x_post": "...",
-  "threads_post": "...",
-  "subject_line": "one-line description of what this post is about"
-}}
-
-x_post must be ≤280 characters. threads_post must be ≤480 characters (hard limit — count carefully)."""
-        }]
+    writer = subprocess.run(
+        [sys.executable, str(Path(__file__).parent / "writer.py")],
+        input=researcher.stdout, capture_output=True, text=True,
+        cwd=Path(__file__).parent.parent
     )
+    if writer.returncode != 0:
+        sys.exit(f"✗ Writer failed:\n{writer.stderr}")
 
-    raw = message.content[0].text.strip()
-    # Strip markdown code fences if present
-    if raw.startswith("```"):
-        raw = raw.split("```")[1]
-        if raw.startswith("json"):
-            raw = raw[4:]
-    content = json.loads(raw.strip())
-    # Strip em-dashes — Claude ignores the rule sometimes
-    content["x_post"] = content["x_post"].replace("\u2014", "-").replace("\u2013", "-")
-    content["threads_post"] = content["threads_post"].replace("\u2014", "-").replace("\u2013", "-")
-    return content
-
-# ── Gem loader ─────────────────────────────────────────────────────────────
-def load_gem(gem_name: str) -> str:
-    pattern_file = PATTERNS_DIR / gem_name / "pattern.md"
-    if not pattern_file.exists():
-        sys.exit(f"✗ Gem not found: {gem_name}")
-    content = pattern_file.read_text()
-    # Return first 800 chars — enough for practitioners + core pattern
-    return content[:800]
+    return json.loads(writer.stdout.strip())
 
 def random_gem() -> str:
-    gems = [d.name for d in PATTERNS_DIR.iterdir() if d.is_dir()]
+    gems = [d.name for d in PATTERNS_DIR.iterdir()
+            if d.is_dir() and (d / "pattern.md").exists()]
     return random.choice(gems)
 
 # ── Telegram ───────────────────────────────────────────────────────────────
@@ -229,16 +195,17 @@ def main():
     # Determine subject
     if args.topic:
         subject = args.topic
+        gem_name = ""
         gem_context = ""
     else:
         gem_name = args.gem or random_gem()
         print(f"Gem: {gem_name}")
-        gem_context = load_gem(gem_name)
-        subject = f"the '{gem_name}' cognitive pattern from Pantheon"
+        gem_context = ""  # researcher loads gem context internally now
+        subject = gem_name
 
     # Generate content
-    print("Generating content via Claude...")
-    content = generate_content(subject, gem_context)
+    print("Generating content via Claude (research + write)...")
+    content = generate_content(subject, gem_context, gem_name=gem_name)
 
     content["threads_post"] += "\n\nhttps://pantheon-lilac.vercel.app/"
 
