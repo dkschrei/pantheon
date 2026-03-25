@@ -1,0 +1,36 @@
+name: Bug Report
+description: Something broken in the app, data, or scripts
+title: "bug: [short description]"
+labels: ["bug"]
+body:
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Web app (graph, historian, gem runner)
+        - Gem data (pattern.md content, YAML, schema)
+        - Scripts (pantheon-post.py, researcher, writer)
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Be specific. Include the gem name or URL if relevant.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?
+    validations:
+      required: true
+
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to reproduce

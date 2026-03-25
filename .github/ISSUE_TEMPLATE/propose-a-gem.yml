@@ -1,0 +1,87 @@
+name: Propose a Gem
+description: Nominate a cognitive pattern for the Pantheon library
+title: "gem: [pattern-name] — [hero name or origin]"
+labels: ["gem-proposal"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        A Pantheon gem is a **specific cognitive move** — something the best practitioners do differently when everyone else fails. Not a philosophy. Not a framework. The exact thing they did.
+
+        Before submitting, read [CONTRIBUTING.md](../blob/main/CONTRIBUTING.md) and [SCHEMA.md](../blob/main/SCHEMA.md). The standard is high deliberately.
+
+  - type: input
+    id: pattern-name
+    attributes:
+      label: Pattern name (slug)
+      description: Lowercase, hyphenated. Names the move, not the person.
+      placeholder: e.g. andon-cord, shape-the-ground, domain-cartographer
+    validations:
+      required: true
+
+  - type: input
+    id: hero
+    attributes:
+      label: Primary practitioner
+      description: Who is most associated with this pattern? One person, real, documented.
+      placeholder: e.g. Taiichi Ohno, Sun Tzu, Claude Shannon
+    validations:
+      required: true
+
+  - type: textarea
+    id: trigger
+    attributes:
+      label: Trigger condition
+      description: The precise situation where this pattern fires. Specific enough that a reader knows immediately whether it applies.
+      placeholder: "When you are about to commit to a decision that is expensive to reverse and you haven't yet stress-tested the assumptions..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: the-move
+    attributes:
+      label: The move
+      description: What does this practitioner do that others don't? The specific cognitive action — not what they believed, not their philosophy.
+      placeholder: "Instead of optimizing for the plan, they..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: anti-pattern
+    attributes:
+      label: Anti-pattern
+      description: The specific failure mode this pattern prevents. What does it look like when people don't use this?
+    validations:
+      required: true
+
+  - type: textarea
+    id: historical-evidence
+    attributes:
+      label: Historical evidence
+      description: At least one real event where this pattern was applied or violated, with outcome. Invented examples don't count.
+      placeholder: "Toyota assembly line, 1950s — Ohno gave line workers authority to stop the entire production line when a defect appeared..."
+    validations:
+      required: true
+
+  - type: dropdown
+    id: origin-type
+    attributes:
+      label: Origin type
+      description: How did you surface this gem?
+      options:
+        - Historian (researched a historical figure's documented work)
+        - Authored (surfaced from your own lived practice, confirmed by history)
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: quality-gates
+    attributes:
+      label: Quality gates
+      description: Self-assess before submitting. The maintainer will verify.
+      options:
+        - label: "**TRIGGER_SPECIFIC** — the trigger condition is precise, not generic"
+        - label: "**EXECUTABLE** — the protocol is numbered steps, not prose advice"
+        - label: "**DISTINCT** — variation check run against existing gems, not a duplicate"
+        - label: "**GROUNDED** — at least one real practitioner + one real historical event"
+        - label: "**UNIVERSAL** — applies across domains, not domain-specific technique"
