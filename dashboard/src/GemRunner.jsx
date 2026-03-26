@@ -1,61 +1,21 @@
 import { useState, useEffect, useRef } from "react";
+import gemsData from "./data/gems.json";
 
-const GEMS = [
-  { id: "andon-cord", label: "Andon Cord", domain: "engineering", trigger: "frustration signal" },
-  { id: "anomaly-isolation", label: "Anomaly Isolation", domain: "engineering", trigger: "anomalous data" },
-  { id: "antifragility", label: "Antifragility", domain: "decision-making", trigger: "building through uncertainty" },
-  { id: "axiom-blitz", label: "Axiom Blitz", domain: "engineering", trigger: "messy domain, no foundation" },
-  { id: "build-the-machine", label: "Build the Machine", domain: "engineering", trigger: "monumental goal" },
-  { id: "cannae", label: "Cannae", domain: "decision-making", trigger: "enemy has superior mass", sensitive: true },
-  { id: "carve-at-joints", label: "Carve at Joints", domain: "engineering", trigger: "messy domain, no categories" },
-  { id: "complementarity", label: "Complementarity", domain: "engineering", trigger: "contradictory frameworks" },
-  { id: "composition-trap", label: "Composition Trap", domain: "decision-making", trigger: "system stuck, everyone acting rationally" },
-  { id: "constraint-saturation", label: "Constraint Saturation", domain: "engineering", trigger: "predicting unknown structure" },
-  { id: "copernican-inversion", label: "Copernican Inversion", domain: "philosophy", trigger: "irresolvable debate" },
-  { id: "defeat-in-detail", label: "Defeat in Detail", domain: "decision-making", trigger: "multiple adversaries", sensitive: true },
-  { id: "eat-the-world", label: "Eat the World", domain: "engineering", trigger: "tech not reaching users", sensitive: true },
-  { id: "falsification", label: "Falsification", domain: "philosophy", trigger: "theory feels too comfortable" },
-  { id: "federal-decentralization", label: "Federal Decentralization", domain: "leadership", trigger: "scaling organization" },
-  { id: "feynman-clarity", label: "Feynman Clarity", domain: "debugging", trigger: "I don't understand why" },
-  { id: "flow-line", label: "Flow Line", domain: "engineering", trigger: "batch processing" },
-  { id: "gedankenexperiment", label: "Gedankenexperiment", domain: "engineering", trigger: "two principles contradict" },
-  { id: "gestalt-first", label: "Gestalt First", domain: "creativity", trigger: "starting without complete picture" },
-  { id: "grammar-theft", label: "Grammar Theft", domain: "creativity", trigger: "creative ceiling" },
-  { id: "imperial-self-correction", label: "Imperial Self-Correction", domain: "leadership", trigger: "emotion driving decision" },
-  { id: "inflection-point", label: "Inflection Point", domain: "decision-making", trigger: "strategic shift" },
-  { id: "lion-and-fox", label: "Lion and Fox", domain: "leadership", trigger: "political decision" },
-  { id: "material-honesty", label: "Material Honesty", domain: "engineering", trigger: "design review" },
-  { id: "methodical-doubt", label: "Methodical Doubt", domain: "philosophy", trigger: "inherited assumptions" },
-  { id: "mind-forge", label: "Mind Forge", domain: "engineering", trigger: "complex system design" },
-  { id: "mobilize-the-language", label: "Mobilize the Language", domain: "leadership", trigger: "belief gap blocking action" },
-  { id: "musk-filter", label: "Musk Filter", domain: "engineering", trigger: "build request" },
-  { id: "ohno-circle", label: "Ohno Circle", domain: "engineering", trigger: "premature solution" },
-  { id: "outside-view", label: "Outside View", domain: "decision-making", trigger: "making a prediction" },
-  { id: "pain-blindness", label: "Pain Blindness", domain: "engineering", trigger: "nobody likes it, everyone uses it" },
-  { id: "phantom-machine", label: "Phantom Machine", domain: "engineering", trigger: "impossible problem" },
-  { id: "platform-gravity", label: "Platform Gravity", domain: "engineering", trigger: "compute paradigm, no market yet" },
-  { id: "premeditatio", label: "Premeditatio", domain: "decision-making", trigger: "high-stakes uncertainty ahead" },
-  { id: "red-bead", label: "Red Bead", domain: "systems", trigger: "blaming workers for defects" },
-  { id: "render-to-understand", label: "Render to Understand", domain: "engineering", trigger: "surface understanding only" },
-  { id: "schwerpunkt", label: "Schwerpunkt", domain: "decision-making", trigger: "complex opposing system" },
-  { id: "scratch-build", label: "Scratch Build", domain: "engineering", trigger: "complex system to master" },
-  { id: "shape-the-ground", label: "Shape the Ground", domain: "decision-making", trigger: "facing a confrontation" },
-  { id: "strip-to-structure", label: "Strip to Structure", domain: "engineering", trigger: "stuck in domain complexity" },
-  { id: "structural-unlock", label: "Structural Unlock", domain: "leadership", trigger: "structural bottleneck" },
-  { id: "subtraction", label: "Subtraction", domain: "creativity", trigger: "blank-canvas paralysis" },
-  { id: "taste-gate", label: "Taste Gate", domain: "decision-making", trigger: "feature list growing" },
-  { id: "the-combination", label: "The Combination", domain: "decision-making", trigger: "cutthroat competition", sensitive: true },
-  { id: "the-endurance", label: "The Endurance", domain: "leadership", trigger: "primary mission destroyed" },
-  { id: "the-fabian", label: "The Fabian", domain: "leadership", trigger: "outmatched opponent" },
-  { id: "the-fugue", label: "The Fugue", domain: "creativity", trigger: "one idea, don't know where to go" },
-  { id: "the-latticework", label: "The Latticework", domain: "decision-making", trigger: "high-stakes decision" },
-  { id: "the-moat", label: "The Moat", domain: "decision-making", trigger: "build vs buy" },
-  { id: "the-ratchet", label: "The Ratchet", domain: "systems", trigger: "inner loop velocity decreasing" },
-  { id: "time-and-motion", label: "Time and Motion", domain: "engineering", trigger: "optimize process" },
-  { id: "two-way-door", label: "Two-Way Door", domain: "decision-making", trigger: "decision paralysis" },
-  { id: "vertical-integration", label: "Vertical Integration", domain: "engineering", trigger: "supply chain dependency" },
-  { id: "vessel-and-soul", label: "Vessel and Soul", domain: "systems", trigger: "storing information" },
-];
+function toLabel(id) {
+  return id.split("-").map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(" ");
+}
+
+const SENSITIVE_GEM_IDS = new Set(["cannae", "defeat-in-detail", "eat-the-world", "the-combination", "federal-decentralization", "platform-gravity"]);
+
+const GEMS = gemsData
+  .map(g => ({
+    id: g.name,
+    label: toLabel(g.name),
+    domain: (g.domains && g.domains[0]) || "general",
+    trigger: (g.triggers && g.triggers[0]) || "",
+    sensitive: SENSITIVE_GEM_IDS.has(g.name),
+  }))
+  .sort((a, b) => a.label.localeCompare(b.label));
 
 const APPROACHES = [
   { id: "raw", label: "Raw", glyph: "◈", desc: "Pattern output, sharpest form. Safety-screened, not softened." },
@@ -78,7 +38,6 @@ const HUMANITY_SIGNALS = [
   "depression", "anxiety", "assault", "violence",
 ];
 
-const SENSITIVE_GEMS = ["cannae", "defeat-in-detail", "eat-the-world", "the-combination", "federal-decentralization", "platform-gravity"];
 
 function detectHumanity(text) {
   const lower = text.toLowerCase();
@@ -86,7 +45,7 @@ function detectHumanity(text) {
 }
 
 function detectMisfire(gemId, text) {
-  if (!SENSITIVE_GEMS.includes(gemId)) return null;
+  if (!SENSITIVE_GEM_IDS.has(gemId)) return null;
   const adversarialGems = ["cannae", "defeat-in-detail", "the-combination"];
   if (adversarialGems.includes(gemId)) {
     const hasAdversarial = /competi|rival|enemy|opponent|adversar|beat them|market share/i.test(text);
