@@ -159,6 +159,10 @@ The operational system appears first in Locke (1706) and reaches its modern peak
 
 The soul/vessel metaphor is not decorative. It is structurally precise. In every religious and philosophical tradition that uses it, the soul is the information that persists; the vessel is the medium that carried it temporarily. The body is not the person — it is the container the person occupied. The container is mortal. What it carried may not be.
 
+### Research Context
+
+Surfaced in 2026 when LLM context windows became the primary working memory for knowledge workers — creating a failure mode no prior information theory had addressed. When a session ends, everything in the context window evaporates. Luhmann's three tiers assumed a persistent human brain as the fleeting tier; AI workflows replaced that with a window that closes. The gem was added to the library at the moment practitioners began losing permanent insights to ephemeral containers for the first time at scale.
+
 ### Origin
 
 The deepest root is not Luhmann. It is not Plato. It is the unnamed shamans and priests of prehistoric cultures who understood, before writing existed, that the information contained in a person — their knowledge, their stories, their identity — could survive the decay of the person's physical body. Oral tradition was the first fleeting-tier system: pass the knowledge through living carriers, each one a temporary vessel. Ritual and ceremony were the first permanent-tier systems: encode the knowledge in forms that survive individual practitioners. The transition from oral to written tradition is the first major tier architecture upgrade in human history: the soul of oral culture (its accumulated knowledge) was promoted from the fleeting tier (living human memory) to the permanent tier (durable written record).

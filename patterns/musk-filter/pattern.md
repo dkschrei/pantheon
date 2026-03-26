@@ -136,6 +136,10 @@ A Nexus agent was asked to run a loop to improve conventions.md. Loop automation
 
 Aristotle's *Posterior Analytics* (350 BC, question assumptions) → Descartes' *Meditations* (1637, systematic doubt before building) → Taylor's Scientific Management (1911, eliminate wasted motion) → Ford waste elimination (1908-1916) → Ohno muda (1950s) → Lean Manufacturing (1990s) → Musk Filter (2002-present)
 
+### Research Context
+
+Surfaced at the onset of the AI agent era (2025–2026), when Step 5 (automate) became trivially executable for the first time in history. Any process can now be automated in hours with an LLM agent. The mandatory order — question, delete, simplify before you automate — became urgent precisely because the friction that previously enforced it disappeared. When automation is hard, bad processes rarely get automated. When automation is effortless, the five-step discipline is the only thing standing between a lean system and a faster broken one.
+
 ### Origin
 
 Elon Musk described this 5-step algorithm in a 2021 interview and Walter Isaacson's 2023 biography as his core engineering philosophy, first developed at SpaceX for rocket manufacturing and later applied to Tesla production lines and software systems.

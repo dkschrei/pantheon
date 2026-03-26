@@ -113,6 +113,10 @@ The third failure mode is **over-engineering the bridge**. Adding features, comp
 
 The lineage is unified by a single insight: **the person who distributes captures more than the person who invents.** Each practitioner saw that the bottleneck had flipped from creation to access, and built the thinnest possible bridge.
 
+### Research Context
+
+Surfaced at the inflection point when large language models crossed from expert tool to general consumer product (2023–2025) — the same crossing the gem describes. The bottleneck flipped from "can AI do this?" to "who builds the access layer?" at the exact moment this pattern entered the library. Future readers should know this gem was added not as historical analysis but as a live map during the transition it describes.
+
 ### Origin
 
 The pattern is as old as the distinction between invention and distribution. Its earliest large-scale expression is Gutenberg's printing press (c. 1440), which did not create new knowledge but made existing knowledge reachable. The modern formulation belongs to Marc Andreessen, who first applied it intuitively (Mosaic, 1993), learned its failure mode the hard way (Loudcloud, 1999), and eventually codified it as an explicit thesis ("Why Software Is Eating the World," Wall Street Journal, August 20, 2011). The essay's core claim — "every company is becoming a software company whether they know it or not" — is a restatement of the pattern: the technology is ready; the distribution gap is the opportunity.
