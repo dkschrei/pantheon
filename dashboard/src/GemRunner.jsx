@@ -7,7 +7,7 @@ function toLabel(id) {
 
 const SENSITIVE_GEM_IDS = new Set(["cannae", "defeat-in-detail", "eat-the-world", "the-combination", "federal-decentralization", "platform-gravity"]);
 
-const GEMS = gemsData
+const GEMS = gemsData.gems
   .map(g => ({
     id: g.name,
     label: toLabel(g.name),
