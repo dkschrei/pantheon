@@ -139,6 +139,12 @@ Ask:
 
 The classification changes how the gem is framed in The Book section. Authored gems lead with the lived incident. Historian gems lead with the historical practitioner.
 
+**Research Context check:** Ask one additional question:
+
+> "Was this gem surfaced in response to a notable external shift — a technological moment, a cultural inflection, a crisis — that future readers will need to understand why it entered the library now?"
+
+If yes: add a `### Research Context` section to The Book (after `### Origin`). State the external conditions in 2-3 sentences. No personal details — only the historical moment. This section renders as a footnote in the Pantheon UI and is preserved in gems.json as `researchContext`. If no clear external context exists, omit the section entirely.
+
 ---
 
 ## Phase 6: Build (KEEP only)

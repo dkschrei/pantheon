@@ -123,6 +123,11 @@ function GemDetail({ gem, onNavigate }) {
       {gem.description && (
         <div className="p-3 bg-pantheon-bg rounded-lg border border-pantheon-border/50">
           <p className="text-xs leading-relaxed text-pantheon-text">{gem.description}</p>
+          {gem.researchContext && (
+            <p className="mt-2 pt-2 border-t border-pantheon-border/30 text-xs leading-relaxed text-pantheon-muted italic">
+              ✦ {gem.researchContext}
+            </p>
+          )}
         </div>
       )}
       <a href={githubUrl} target="_blank" rel="noopener noreferrer"

@@ -71,6 +71,11 @@ function extractDescription(content) {
   return m ? m[1].trim() : null;
 }
 
+function extractResearchContext(content) {
+  const m = content.match(/###\s+Research Context\s*\n+([\s\S]*?)(?=\n\n###|\n\n##|$)/);
+  return m ? m[1].trim() : null;
+}
+
 const files = glob.sync('*/pattern.md', { cwd: PATTERNS_DIR });
 
 const parseErrors = [];
@@ -96,6 +101,7 @@ const gems = files.flatMap(file => {
       authoredBy: data['authored-by'] || null,
       discoveredAt: getGitDiscoveryDate(filePath),
       description: extractDescription(content),
+      researchContext: extractResearchContext(content),
       gemScore,
       practitioners: (data.practitioners || []).map(p => ({
         name: p.name || '',

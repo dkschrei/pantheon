@@ -73,6 +73,9 @@ How did this idea travel through time to its most prominent practitioner?}
 
 ### Origin
 {Earliest known source. Historical grounding, not hype. 1-2 paragraphs.}
+
+### Research Context  ← optional; include when the surfacing moment itself is historically significant
+{Why this gem was surfaced now. The external conditions — technological shift, cultural moment, crisis — that made this pattern urgent or visible. Sentence-level, no personal details. This is the footnote that future readers need to understand why this gem entered the library at this particular moment in history.}
 ```
 
 ---
