@@ -19,6 +19,7 @@
 | `/pantheon-defeat-in-detail` | defeat-in-detail | decision-making | multiple adversaries |
 | `/pantheon-domain-cartographer` | domain-cartographer | knowledge-management | apprentice needs to map a domain they know nothing about |
 | `/pantheon-eat-the-world` | eat-the-world | engineering | technology exists but isn't reaching users |
+| `/pantheon-extraction-principle` | extraction-principle | strategy | direct questions have failed or the subject controls access to information |
 | `/pantheon-falsification` | falsification | philosophy | theory feels too comfortable |
 | `/pantheon-federal-decentralization` | federal-decentralization | leadership | scaling organization |
 | `/pantheon-feynman-clarity` | feynman-clarity | debugging | I don't understand why |
@@ -36,6 +37,7 @@
 | `/pantheon-mobilize-the-language` | mobilize-the-language | leadership | belief gap blocking action |
 | `/pantheon-musk-filter` | musk-filter | engineering | build request |
 | `/pantheon-ohno-circle` | ohno-circle | engineering | premature solution |
+| `/pantheon-orchestration-layer` | orchestration-layer | strategy | building execution when you should be routing |
 | `/pantheon-outside-view` | outside-view | decision-making | making a prediction |
 | `/pantheon-pain-blindness` | pain-blindness | engineering | nobody likes this but everyone uses it |
 | `/pantheon-phantom-machine` | phantom-machine | engineering | impossible problem |

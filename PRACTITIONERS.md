@@ -105,6 +105,12 @@ _✦ = authored gem (written from live practice)_
 |---------|-----|-------------|
 | [vertical-integration](patterns/vertical-integration/pattern.md) | 1865-1901 | Built Carnegie Steel into the world's largest steel company by owning mines, railroads, coke ovens, and mills — then drove cost out of every link |
 
+## Cosimo de' Medici
+
+| Pattern | Era | Application |
+|---------|-----|-------------|
+| [orchestration-layer ✦](patterns/orchestration-layer/pattern.md) | 1397-1464 | Built the Medici Bank into Europe's dominant financial institution not by trading goods but by owning the correspondent network — the routing layer that connected merchants across the continent without touching the cargo |
+
 ## Coco Chanel
 
 | Pattern | Era | Application |
@@ -243,6 +249,12 @@ _✦ = authored gem (written from live practice)_
 | [imperial-self-correction](patterns/imperial-self-correction/pattern.md) | 1706-1790 | Maintained a nightly self-examination journal tracking 13 virtues, scoring his own conduct against explicit standards — a secular Americanization of the Aurelius protocol |
 | [the-latticework](patterns/the-latticework/pattern.md) | 1723-1790 | Deliberately studied across natural philosophy, economics, diplomacy, printing, and ethics; applied converging models to problems (lightning rod derived from electrical theory + structural engineering + weather observation simultaneously) |
 
+## Marc Gallagher
+
+| Pattern | Era | Application |
+|---------|-----|-------------|
+| [orchestration-layer ✦](patterns/orchestration-layer/pattern.md) | 2025-present | Built Medvi to $401M revenue as a one-person operation by owning the patient relationship and routing all regulated execution to licensed operators — the first documented case of AI infrastructure reducing the cost of holding a coordination layer to near-zero |
+
 ## Buckminster Fuller
 
 | Pattern | Era | Application |
@@ -255,6 +267,12 @@ _✦ = authored gem (written from live practice)_
 |---------|-----|-------------|
 | [the-combination](patterns/the-combination/pattern.md) | 1980-2000 | Made every software developer a stakeholder in the Windows platform rather than a rival — converting potential competitors into distribution partners through licensing and developer tools |
 
+## Bill Hagmaier
+
+| Pattern | Era | Application |
+|---------|-----|-------------|
+| [extraction-principle](patterns/extraction-principle/pattern.md) | 1984-1989 | Extracted Ted Bundy's confessions over 200+ hours by positioning Bundy as a profiling consultant — the expert consultation frame served as cover for five years of disclosure; Bundy never experienced the interaction as interrogation |
+
 ## Frank and Lillian Gilbreth
 
 | Pattern | Era | Application |
@@ -266,6 +284,12 @@ _✦ = authored gem (written from live practice)_
 | Pattern | Era | Application |
 |---------|-----|-------------|
 | [the-gollum-effect ✦](patterns/the-gollum-effect/pattern.md) | Third Age | Held the One Ring for 500 years — gained longevity and acute perception, lost language, identity, relationships, sunlight, and eventually life; the ring outlasted every version of him it destroyed |
+
+## Pär Anders Granhag
+
+| Pattern | Era | Application |
+|---------|-----|-------------|
+| [extraction-principle](patterns/extraction-principle/pattern.md) | 2006-2015 | Developed the Strategic Use of Evidence (SUE) technique — withholding known evidence until suspects commit to contradicting narratives; adopted by the FBI High-Value Detainee Interrogation Group following a $15M research investment |
 
 ## Alexander the Great
 
@@ -481,6 +505,7 @@ _✦ = authored gem (written from live practice)_
 
 | Pattern | Era | Application |
 |---------|-----|-------------|
+| [orchestration-layer ✦](patterns/orchestration-layer/pattern.md) | 1872-1882 | Abandoned ownership of oil wells to own the pipeline and refinery network — the coordination layer that made every independent oil producer dependent on Standard Oil for access to any market |
 | [the-combination](patterns/the-combination/pattern.md) | 1870-1911 | Absorbed 22 of 26 Cleveland oil refiners in six weeks (1872), then extended the method nationally — converting destructive price competition into coordinated scale via the Standard Oil Trust |
 | [vertical-integration](patterns/vertical-integration/pattern.md) | 1863-1911 | Controlled oil from wellhead to kerosene lamp — refineries, pipelines, barrel-making, rail agreements — collapsing margins at every stage |
 
@@ -495,6 +520,12 @@ _✦ = authored gem (written from live practice)_
 | Pattern | Era | Application |
 |---------|-----|-------------|
 | [lion-and-fox](patterns/lion-and-fox/pattern.md) | 1882-1945 | Maneuvered the U.S. toward WWII intervention while publicly maintaining neutralist rhetoric until events forced the issue |
+
+## Hanns Scharff
+
+| Pattern | Era | Application |
+|---------|-----|-------------|
+| [extraction-principle](patterns/extraction-principle/pattern.md) | 1943-1945 | Interrogated ~500 Allied pilots at Dulag Luft using frame displacement and the illusion of omniscience — forest walks, tennis, shared meals — producing a consistent flow of intelligence while subjects described the interactions as socializing; later validated in laboratory research as the "Scharff Technique" |
 
 ## Seneca
 
@@ -575,4 +606,4 @@ _✦ = authored gem (written from live practice)_
 
 ---
 
-_Total: 91 practitioners · 111 pattern appearances_
+_Total: 96 practitioners · 117 pattern appearances_

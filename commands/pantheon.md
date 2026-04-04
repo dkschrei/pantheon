@@ -26,6 +26,7 @@ Executable mental models from history's greatest problem solvers. Drop them into
 | `/pantheon-defeat-in-detail` | defeat-in-detail | — | — |
 | `/pantheon-domain-cartographer` | domain-cartographer ✦ | Frederick Winslow Taylor | apprentice needs to map a domain they know nothing about |
 | `/pantheon-eat-the-world` | eat-the-world | Marc Andreessen | technology exists but isn't reaching users |
+| `/pantheon-extraction-principle` | extraction-principle | Hanns Scharff | direct questions have failed or the subject controls access to information |
 | `/pantheon-falsification` | falsification | — | — |
 | `/pantheon-federal-decentralization` | federal-decentralization | — | — |
 | `/pantheon-feynman-clarity` | feynman-clarity ✦ | Richard Feynman | I don't understand why |
@@ -43,6 +44,7 @@ Executable mental models from history's greatest problem solvers. Drop them into
 | `/pantheon-mobilize-the-language` | mobilize-the-language | — | — |
 | `/pantheon-musk-filter` | musk-filter | — | — |
 | `/pantheon-ohno-circle` | ohno-circle | Taiichi Ohno | premature solution |
+| `/pantheon-orchestration-layer` | orchestration-layer ✦ | Cosimo de' Medici | building execution when you should be routing |
 | `/pantheon-outside-view` | outside-view | — | — |
 | `/pantheon-pain-blindness` | pain-blindness | Tony Fadell | nobody likes this but everyone uses it |
 | `/pantheon-phantom-machine` | phantom-machine | Alan Turing | impossible problem |
@@ -97,4 +99,4 @@ Restart Claude Code to activate.
 
 ---
 
-*github.com/dkschrei/pantheon — 57 patterns*
+*github.com/dkschrei/pantheon — 59 patterns*
