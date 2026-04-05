@@ -29,6 +29,7 @@
 | `/pantheon-grammar-theft` | grammar-theft | creativity | creative ceiling |
 | `/pantheon-imperial-self-correction` | imperial-self-correction | leadership | emotional reaction driving a decision |
 | `/pantheon-inflection-point` | inflection-point | decision-making | strategic shift |
+| `/pantheon-insurgents-advantage` | insurgents-advantage | strategy | outgunned or outresourced in a contest you need to win |
 | `/pantheon-lion-and-fox` | lion-and-fox | leadership | political decision |
 | `/pantheon-masters-release` | masters-release | leadership | reluctance to fully train AI |
 | `/pantheon-material-honesty` | material-honesty | engineering | design review |

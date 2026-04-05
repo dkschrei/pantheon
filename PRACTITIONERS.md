@@ -267,6 +267,12 @@ _✦ = authored gem (written from live practice)_
 |---------|-----|-------------|
 | [the-combination](patterns/the-combination/pattern.md) | 1980-2000 | Made every software developer a stakeholder in the Windows platform rather than a rival — converting potential competitors into distribution partners through licensing and developer tools |
 
+## Reed Hastings
+
+| Pattern | Era | Application |
+|---------|-----|-------------|
+| [insurgents-advantage](patterns/insurgents-advantage/pattern.md) | 1997-present | A $40 Blockbuster late fee produced Netflix — not a video retail expert, which is precisely why he could see past the late fee model; cannibalised his own DVD business to move to terrain Blockbuster had no infrastructure to contest |
+
 ## Bill Hagmaier
 
 | Pattern | Era | Application |
@@ -314,6 +320,18 @@ _✦ = authored gem (written from live practice)_
 | Pattern | Era | Application |
 |---------|-----|-------------|
 | [platform-gravity](patterns/platform-gravity/pattern.md) | 2006-present | Invested ~$12B in CUDA (general-purpose GPU computing) from 2006–2017 before AI had commercial revenue — seeding the developer ecosystem a decade before the market materialized; by the time large language models arrived, every framework, researcher, and AI practitioner already depended on CUDA |
+
+## Ho Chi Minh
+
+| Pattern | Era | Application |
+|---------|-----|-------------|
+| [insurgents-advantage](patterns/insurgents-advantage/pattern.md) | 1955-1975 | Defeated the US military by refusing to present a target — tunnel systems, night movement, civilian terrain; the Tet Offensive was a military defeat and a strategic victory that destroyed US political will |
+
+## Herb Kelleher
+
+| Pattern | Era | Application |
+|---------|-----|-------------|
+| [insurgents-advantage](patterns/insurgents-advantage/pattern.md) | 1967-2001 | Built Southwest Airlines into the most profitable US carrier by not knowing hub-and-spoke was required — no airline experience meant no inherited assumptions; point-to-point routing, one aircraft type, 20-minute turns; legacy carriers understood the model by the 1980s and could not copy it |
 
 ## David Hume
 
@@ -443,6 +461,12 @@ _✦ = authored gem (written from live practice)_
 |---------|-----|-------------|
 | [the-latticework](patterns/the-latticework/pattern.md) | 1948-2023 | Built a ~100-model toolkit spanning physics, biology, psychology, mathematics, economics, and engineering — applied as a convergence checklist before every major Berkshire Hathaway investment decision |
 
+## Mao Zedong
+
+| Pattern | Era | Application |
+|---------|-----|-------------|
+| [insurgents-advantage](patterns/insurgents-advantage/pattern.md) | 1927-1949 | Built the People's Republic of China from a defeated revolutionary force by refusing to fight on the Nationalist army's terms — guerrilla doctrine, population as terrain, exhaust the incumbent's structural advantages through time |
+
 ## Miyamoto Musashi
 
 | Pattern | Era | Application |
@@ -487,6 +511,12 @@ _✦ = authored gem (written from live practice)_
 | Pattern | Era | Application |
 |---------|-----|-------------|
 | [material-honesty](patterns/material-honesty/pattern.md) | 1927-1999 | Furniture design — tubular steel and bentwood used for what they naturally do (bend, support, flex) rather than forced into shapes that deny their properties |
+
+## Peter Steinberger
+
+| Pattern | Era | Application |
+|---------|-----|-------------|
+| [insurgents-advantage](patterns/insurgents-advantage/pattern.md) | 2024-present | Built OpenClaw for personal need, open-sourced before incumbents could evaluate the category, achieved community gravity that made him the required partner for NemoClaw — invited by Jensen Huang to jointly announce it at GTC |
 
 ## Plato
 
@@ -606,4 +636,4 @@ _✦ = authored gem (written from live practice)_
 
 ---
 
-_Total: 96 practitioners · 117 pattern appearances_
+_Total: 101 practitioners · 122 pattern appearances_
