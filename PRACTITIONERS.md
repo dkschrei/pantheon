@@ -19,6 +19,12 @@ _✦ = authored gem (written from live practice)_
 |---------|-----|-------------|
 | [structural-unlock](patterns/structural-unlock/pattern.md) | 2014-present | Restructured YC into an industrial-scale fund and OpenAI from nonprofit to capped-profit to unlock billions in AI scaling capital |
 
+## David J. Anderson
+
+| Pattern | Era | Application |
+|---------|-----|-------------|
+| [work-as-done ✦](patterns/work-as-done/pattern.md) | 2010-present | Built the Kanban Method on the refusal to design a process at all — "start with what you do now", because the existing process is data and a designed one is a guess |
+
 ## Marc Andreessen
 
 | Pattern | Era | Application |
@@ -55,6 +61,12 @@ _✦ = authored gem (written from live practice)_
 | Pattern | Era | Application |
 |---------|-----|-------------|
 | [lion-and-fox](patterns/lion-and-fox/pattern.md) | 1815-1898 | Unified Germany by provoking wars he could win, engineering pretexts, and presenting aggressive expansion as defensive necessity |
+
+## David Bohm
+
+| Pattern | Era | Application |
+|---------|-----|-------------|
+| [holographic-self](patterns/holographic-self/pattern.md) | 1917-1992 | Implicate Order theory — proposed that the visible, explicate universe unfolds from an implicate order where the whole is encoded in every part, a physical precursor to Faggin's consciousness field model |
 
 ## Niels Bohr
 
@@ -104,12 +116,6 @@ _✦ = authored gem (written from live practice)_
 | Pattern | Era | Application |
 |---------|-----|-------------|
 | [vertical-integration](patterns/vertical-integration/pattern.md) | 1865-1901 | Built Carnegie Steel into the world's largest steel company by owning mines, railroads, coke ovens, and mills — then drove cost out of every link |
-
-## Cosimo de' Medici
-
-| Pattern | Era | Application |
-|---------|-----|-------------|
-| [orchestration-layer ✦](patterns/orchestration-layer/pattern.md) | 1397-1464 | Built the Medici Bank into Europe's dominant financial institution not by trading goods but by owning the correspondent network — the routing layer that connected merchants across the continent without touching the cargo |
 
 ## Coco Chanel
 
@@ -204,6 +210,18 @@ _✦ = authored gem (written from live practice)_
 |---------|-----|-------------|
 | [pain-blindness](patterns/pain-blindness/pattern.md) | 2001-present | iPod, iPhone, Nest thermostat — found domains where technology existed but the experience was fragmented across actors, then collapsed the full stack into one integrated product |
 
+## Federico Faggin
+
+| Pattern | Era | Application |
+|---------|-----|-------------|
+| [holographic-self](patterns/holographic-self/pattern.md) | 1941-present | Designed the Intel 4004 (world's first microprocessor, 1971), then founded the Federico and Elvia Faggin Foundation to study the science of consciousness — arguing the builder of the machine is uniquely positioned to understand why machines cannot be conscious |
+
+## André Ombredane and Jean-Marie Faverge
+
+| Pattern | Era | Application |
+|---------|-----|-------------|
+| [work-as-done ✦](patterns/work-as-done/pattern.md) | 1955 | Established in French work analysis that a job has two separate descriptions — the work as it is laid down, and the work as people actually carry it out — and that studying only the first explains nothing |
+
 ## Edward Feigenbaum
 
 | Pattern | Era | Application |
@@ -249,35 +267,23 @@ _✦ = authored gem (written from live practice)_
 | [imperial-self-correction](patterns/imperial-self-correction/pattern.md) | 1706-1790 | Maintained a nightly self-examination journal tracking 13 virtues, scoring his own conduct against explicit standards — a secular Americanization of the Aurelius protocol |
 | [the-latticework](patterns/the-latticework/pattern.md) | 1723-1790 | Deliberately studied across natural philosophy, economics, diplomacy, printing, and ethics; applied converging models to problems (lightning rod derived from electrical theory + structural engineering + weather observation simultaneously) |
 
-## Marc Gallagher
-
-| Pattern | Era | Application |
-|---------|-----|-------------|
-| [orchestration-layer ✦](patterns/orchestration-layer/pattern.md) | 2025-present | Built Medvi to $401M revenue as a one-person operation by owning the patient relationship and routing all regulated execution to licensed operators — the first documented case of AI infrastructure reducing the cost of holding a coordination layer to near-zero |
-
 ## Buckminster Fuller
 
 | Pattern | Era | Application |
 |---------|-----|-------------|
 | [constraint-saturation](patterns/constraint-saturation/pattern.md) | 1948-1983 | Derived geodesic dome geometry by saturating structural design with constraints — maximum strength per unit material, uniform stress distribution, triangulated load paths — arriving at forms no architect had imagined |
 
+## Marc Gallagher
+
+| Pattern | Era | Application |
+|---------|-----|-------------|
+| [orchestration-layer ✦](patterns/orchestration-layer/pattern.md) | 2025-present | Built Medvi to $401M revenue as a one-person operation by owning the patient relationship and routing infrastructure while outsourcing all regulated execution to licensed physicians and pharmacies |
+
 ## Bill Gates
 
 | Pattern | Era | Application |
 |---------|-----|-------------|
 | [the-combination](patterns/the-combination/pattern.md) | 1980-2000 | Made every software developer a stakeholder in the Windows platform rather than a rival — converting potential competitors into distribution partners through licensing and developer tools |
-
-## Reed Hastings
-
-| Pattern | Era | Application |
-|---------|-----|-------------|
-| [insurgents-advantage](patterns/insurgents-advantage/pattern.md) | 1997-present | A $40 Blockbuster late fee produced Netflix — not a video retail expert, which is precisely why he could see past the late fee model; cannibalised his own DVD business to move to terrain Blockbuster had no infrastructure to contest |
-
-## Bill Hagmaier
-
-| Pattern | Era | Application |
-|---------|-----|-------------|
-| [extraction-principle](patterns/extraction-principle/pattern.md) | 1984-1989 | Extracted Ted Bundy's confessions over 200+ hours by positioning Bundy as a profiling consultant — the expert consultation frame served as cover for five years of disclosure; Bundy never experienced the interaction as interrogation |
 
 ## Frank and Lillian Gilbreth
 
@@ -295,7 +301,7 @@ _✦ = authored gem (written from live practice)_
 
 | Pattern | Era | Application |
 |---------|-----|-------------|
-| [extraction-principle](patterns/extraction-principle/pattern.md) | 2006-2015 | Developed the Strategic Use of Evidence (SUE) technique — withholding known evidence until suspects commit to contradicting narratives; adopted by the FBI High-Value Detainee Interrogation Group following a $15M research investment |
+| [extraction-principle](patterns/extraction-principle/pattern.md) | 2006-2015 | Developed the Strategic Use of Evidence (SUE) technique — withholding known evidence until suspects committed to contradicting narratives, generating self-incrimination without the suspect understanding the trap was built before they arrived |
 
 ## Alexander the Great
 
@@ -309,29 +315,35 @@ _✦ = authored gem (written from live practice)_
 |---------|-----|-------------|
 | [inflection-point](patterns/inflection-point/pattern.md) | 1968-2004 | Detected 10x forces at Intel and executed total pivots — memory to microprocessors, B2B to consumer brand — before the data was conclusive |
 
+## Bill Hagmaier
+
+| Pattern | Era | Application |
+|---------|-----|-------------|
+| [extraction-principle](patterns/extraction-principle/pattern.md) | 1984-1989 | Extracted Ted Bundy's confessions across 200+ hours by positioning Bundy as a profiling consultant; Bundy revealed his own methodology through expert commentary, never experiencing the interaction as interrogation |
+
 ## Alexander Hamilton
 
 | Pattern | Era | Application |
 |---------|-----|-------------|
 | [structural-unlock](patterns/structural-unlock/pattern.md) | 1789-1804 | Redesigned the federal financial system — assumption of state debts, national bank, tariff structure — to unlock capital formation for a new nation |
 
+## Reed Hastings
+
+| Pattern | Era | Application |
+|---------|-----|-------------|
+| [insurgents-advantage](patterns/insurgents-advantage/pattern.md) | 1997-present | A $40 Blockbuster late fee produced Netflix — not a video retail expert, which is precisely why he could see past the late fee model; Blockbuster's 9,000 stores were the anchor that made the threat invisible until too late |
+
+## Erik Hollnagel
+
+| Pattern | Era | Application |
+|---------|-----|-------------|
+| [work-as-done ✦](patterns/work-as-done/pattern.md) | 2004-present | Founded resilience engineering with David Woods and made the gap itself the unit of analysis — work-as-imagined is what managers, designers and regulators believe happens; work-as-done is what actually happens |
+
 ## Jensen Huang
 
 | Pattern | Era | Application |
 |---------|-----|-------------|
 | [platform-gravity](patterns/platform-gravity/pattern.md) | 2006-present | Invested ~$12B in CUDA (general-purpose GPU computing) from 2006–2017 before AI had commercial revenue — seeding the developer ecosystem a decade before the market materialized; by the time large language models arrived, every framework, researcher, and AI practitioner already depended on CUDA |
-
-## Ho Chi Minh
-
-| Pattern | Era | Application |
-|---------|-----|-------------|
-| [insurgents-advantage](patterns/insurgents-advantage/pattern.md) | 1955-1975 | Defeated the US military by refusing to present a target — tunnel systems, night movement, civilian terrain; the Tet Offensive was a military defeat and a strategic victory that destroyed US political will |
-
-## Herb Kelleher
-
-| Pattern | Era | Application |
-|---------|-----|-------------|
-| [insurgents-advantage](patterns/insurgents-advantage/pattern.md) | 1967-2001 | Built Southwest Airlines into the most profitable US carrier by not knowing hub-and-spoke was required — no airline experience meant no inherited assumptions; point-to-point routing, one aircraft type, 20-minute turns; legacy carriers understood the model by the 1980s and could not copy it |
 
 ## David Hume
 
@@ -377,11 +389,23 @@ _✦ = authored gem (written from live practice)_
 |---------|-----|-------------|
 | [copernican-inversion](patterns/copernican-inversion/pattern.md) | 1724-1804 | Dissolved the rationalism-vs-empiricism deadlock by inverting the question — asking how objects must conform to cognition rather than how cognition conforms to objects — producing the Critique of Pure Reason |
 
+## Herb Kelleher
+
+| Pattern | Era | Application |
+|---------|-----|-------------|
+| [insurgents-advantage](patterns/insurgents-advantage/pattern.md) | 1967-2001 | Built Southwest Airlines into the most profitable carrier in US history by not knowing hub-and-spoke was required — no airline experience meant no inherited assumptions; the constraint forced point-to-point routing that every legacy carrier knew was impossible |
+
 ## Thomas Kuhn
 
 | Pattern | Era | Application |
 |---------|-----|-------------|
 | [copernican-inversion](patterns/copernican-inversion/pattern.md) | 1922-1996 | Inverted the question of scientific progress from "how does science accumulate truth?" to "what structures the framework within which scientists see truth?" — producing the paradigm-shift model |
+
+## Gottfried Wilhelm Leibniz
+
+| Pattern | Era | Application |
+|---------|-----|-------------|
+| [holographic-self](patterns/holographic-self/pattern.md) | 1646-1716 | Monadology — each monad mirrors the entire universe from its own perspective; the part is not a fragment of the whole but a complete expression of it at a different scale of resolution |
 
 ## Zhuge Liang
 
@@ -431,6 +455,12 @@ _✦ = authored gem (written from live practice)_
 |---------|-----|-------------|
 | [phantom-machine](patterns/phantom-machine/pattern.md) | 1956-2011 | Constructed LISP as the machine that could represent any symbolic reasoning, turning AI from philosophy into engineering |
 
+## Cosimo de' Medici
+
+| Pattern | Era | Application |
+|---------|-----|-------------|
+| [orchestration-layer ✦](patterns/orchestration-layer/pattern.md) | 1397-1464 | Built the Medici Bank not by trading goods but by owning the correspondent network — the routing layer that connected merchants across Europe without touching the cargo |
+
 ## Dmitri Mendeleev
 
 | Pattern | Era | Application |
@@ -442,6 +472,12 @@ _✦ = authored gem (written from live practice)_
 | Pattern | Era | Application |
 |---------|-----|-------------|
 | [platform-gravity](patterns/platform-gravity/pattern.md) | 1980-1995 | Licensed DOS to IBM for nearly nothing, then placed no restriction on licensing DOS to other PC makers — creating the developer ecosystem around MS-DOS before the personal computer market existed at scale; by 1985 most PC software targeted MS-DOS first, making Microsoft the gravitational center of the platform war |
+
+## Ho Chi Minh
+
+| Pattern | Era | Application |
+|---------|-----|-------------|
+| [insurgents-advantage](patterns/insurgents-advantage/pattern.md) | 1955-1975 | Defeated the US military by refusing to present a target — tunnel systems, night movement, disappearing into civilian terrain; the insurgent's absence of a fixed position was the position |
 
 ## Jean Monnet
 
@@ -460,12 +496,6 @@ _✦ = authored gem (written from live practice)_
 | Pattern | Era | Application |
 |---------|-----|-------------|
 | [the-latticework](patterns/the-latticework/pattern.md) | 1948-2023 | Built a ~100-model toolkit spanning physics, biology, psychology, mathematics, economics, and engineering — applied as a convergence checklist before every major Berkshire Hathaway investment decision |
-
-## Mao Zedong
-
-| Pattern | Era | Application |
-|---------|-----|-------------|
-| [insurgents-advantage](patterns/insurgents-advantage/pattern.md) | 1927-1949 | Built the People's Republic of China from a defeated revolutionary force by refusing to fight on the Nationalist army's terms — guerrilla doctrine, population as terrain, exhaust the incumbent's structural advantages through time |
 
 ## Miyamoto Musashi
 
@@ -512,12 +542,6 @@ _✦ = authored gem (written from live practice)_
 |---------|-----|-------------|
 | [material-honesty](patterns/material-honesty/pattern.md) | 1927-1999 | Furniture design — tubular steel and bentwood used for what they naturally do (bend, support, flex) rather than forced into shapes that deny their properties |
 
-## Peter Steinberger
-
-| Pattern | Era | Application |
-|---------|-----|-------------|
-| [insurgents-advantage](patterns/insurgents-advantage/pattern.md) | 2024-present | Built OpenClaw for personal need, open-sourced before incumbents could evaluate the category, achieved community gravity that made him the required partner for NemoClaw — invited by Jensen Huang to jointly announce it at GTC |
-
 ## Plato
 
 | Pattern | Era | Application |
@@ -535,7 +559,7 @@ _✦ = authored gem (written from live practice)_
 
 | Pattern | Era | Application |
 |---------|-----|-------------|
-| [orchestration-layer ✦](patterns/orchestration-layer/pattern.md) | 1872-1882 | Abandoned ownership of oil wells to own the pipeline and refinery network — the coordination layer that made every independent oil producer dependent on Standard Oil for access to any market |
+| [orchestration-layer ✦](patterns/orchestration-layer/pattern.md) | 1870-1882 | Abandoned ownership of oil wells to own the pipeline and refinery network — the coordination layer that made every other oil producer dependent on Standard Oil for access to market |
 | [the-combination](patterns/the-combination/pattern.md) | 1870-1911 | Absorbed 22 of 26 Cleveland oil refiners in six weeks (1872), then extended the method nationally — converting destructive price competition into coordinated scale via the Standard Oil Trust |
 | [vertical-integration](patterns/vertical-integration/pattern.md) | 1863-1911 | Controlled oil from wellhead to kerosene lamp — refineries, pipelines, barrel-making, rail agreements — collapsing margins at every stage |
 
@@ -555,7 +579,7 @@ _✦ = authored gem (written from live practice)_
 
 | Pattern | Era | Application |
 |---------|-----|-------------|
-| [extraction-principle](patterns/extraction-principle/pattern.md) | 1943-1945 | Interrogated ~500 Allied pilots at Dulag Luft using frame displacement and the illusion of omniscience — forest walks, tennis, shared meals — producing a consistent flow of intelligence while subjects described the interactions as socializing; later validated in laboratory research as the "Scharff Technique" |
+| [extraction-principle](patterns/extraction-principle/pattern.md) | 1943-1945 | Interrogated ~500 Allied pilots without coercion by building the illusion of omniscience and displacing the frame — walks, meals, casual conversation — so pilots disclosed operational intelligence while experiencing the interaction as socializing |
 
 ## Seneca
 
@@ -576,11 +600,23 @@ _✦ = authored gem (written from live practice)_
 |---------|-----|-------------|
 | [red-bead](patterns/red-bead/pattern.md) | 1891-1967 | Invented the control chart and the original common-cause/special-cause framework at Bell Labs, which Deming extended into a full management philosophy |
 
+## Mike Rother and John Shook
+
+| Pattern | Era | Application |
+|---------|-----|-------------|
+| [work-as-done ✦](patterns/work-as-done/pattern.md) | 1998-present | Wrote down Toyota's mapping method for the first time with the sequence made non-negotiable — the current-state map is drawn from observation before any future-state map is allowed |
+
 ## Socrates
 
 | Pattern | Era | Application |
 |---------|-----|-------------|
 | [feynman-clarity ✦](patterns/feynman-clarity/pattern.md) | 470-399bc | Socratic method — expose contradictions in assumed knowledge through simple questions |
+
+## Peter Steinberger
+
+| Pattern | Era | Application |
+|---------|-----|-------------|
+| [insurgents-advantage](patterns/insurgents-advantage/pattern.md) | 2024-present | Solo engineer against a well-resourced AI policy apparatus; built what he personally needed, open-sourced before incumbents could absorb it, ended up on stage with Jensen Huang announcing NemoClaw; absence of institutional constraints was the speed advantage |
 
 ## Frederick Winslow Taylor
 
@@ -614,6 +650,12 @@ _✦ = authored gem (written from live practice)_
 |---------|-----|-------------|
 | [shape-the-ground](patterns/shape-the-ground/pattern.md) | 544bc-496bc | Codified the principle that wars are won before they begin — by shaping terrain, information, and morale until the outcome is inevitable |
 
+## Diane Vaughan
+
+| Pattern | Era | Application |
+|---------|-----|-------------|
+| [work-as-done ✦](patterns/work-as-done/pattern.md) | 1986-1996 | Reconstructed NASA's actual Challenger launch decision from documents and testimony, showing the real process had drifted from the documented one one accepted exception at a time — and naming that drift the normalization of deviance |
+
 ## Leonardo da Vinci
 
 | Pattern | Era | Application |
@@ -634,6 +676,12 @@ _✦ = authored gem (written from live practice)_
 |---------|-----|-------------|
 | [anomaly-isolation](patterns/anomaly-isolation/pattern.md) | 1933-present | Refused to dismiss persistent microwave antenna noise as equipment error — identified it as cosmic microwave background radiation |
 
+## Mao Zedong
+
+| Pattern | Era | Application |
+|---------|-----|-------------|
+| [insurgents-advantage](patterns/insurgents-advantage/pattern.md) | 1927-1949 | Built the People's Republic of China from a defeated revolutionary force by refusing to fight the Nationalist army on conventional terms — guerrilla doctrine, population as terrain, exhaust the incumbent's advantage through time |
+
 ---
 
-_Total: 101 practitioners · 122 pattern appearances_
+_Total: 109 practitioners · 130 pattern appearances_
