@@ -94,9 +94,10 @@ Read the file `~/.claude/pantheon/<gem-name>.md` and immediately begin executing
 | two-way-door | decision paralysis |
 | vertical-integration | supply chain dependency |
 | vessel-and-soul | about to store information and unsure where it belongs |
+| work-as-done | documented process may be fiction |
 
 _✦ = authored gem (written from live practice)_
 
 ---
 
-*60 gems — github.com/dkschrei/pantheon*
+*61 gems — github.com/dkschrei/pantheon*
