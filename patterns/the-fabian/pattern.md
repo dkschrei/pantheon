@@ -25,7 +25,7 @@ events:
     outcome: Washington evacuated 9,000 men across the East River in ten hours under fog and darkness without detection, preserving the Continental Army that was the Revolution's only strategic instrument; had the army been captured or destroyed, the Revolution would have ended in August 1776.
   - name: The New Jersey Retreat
     year: 1776
-    gem-role: applied — After a string of defeats in New York, Washington retreated southwest across New Jersey for two months, his army shrinking from 20,000 to under 3,000. He wrote: "The enemy cannot conquer us unless they can destroy our army." Then on December 26, he struck at Trenton on terms he could win — a surprise crossing in a snowstorm — not to fight a decisive battle but to demonstrate existence and raise morale. The preservation made the strike possible.
+    gem-role: "applied — After a string of defeats in New York, Washington retreated southwest across New Jersey for two months, his army shrinking from 20,000 to under 3,000. He wrote: \"The enemy cannot conquer us unless they can destroy our army.\" Then on December 26, he struck at Trenton on terms he could win — a surprise crossing in a snowstorm — not to fight a decisive battle but to demonstrate existence and raise morale. The preservation made the strike possible."
     magnitude: 4
     practitioner: George Washington
     outcome: By preserving the army through two months of retreat and striking at Trenton on favorable terms, Washington kept the Revolution alive long enough for France to formally recognize American independence in 1778; without French entry, the eventual American victory at Yorktown in 1781 would not have been possible.
@@ -37,7 +37,7 @@ events:
     outcome: The Continental Army that emerged from Valley Forge in spring 1778 — drilled in Prussian tactics by Friedrich von Steuben — was qualitatively transformed; it performed effectively at Monmouth in June 1778 and went on to the decisive Yorktown campaign of 1781.
   - name: Horatio Gates at Camden
     year: 1780
-    gem-role: violated — Gates chose pitched battle against Cornwallis at Camden with a half-starved army on unfavorable ground — the opposite of the Fabian move. He sought a decisive engagement he could not win. The Continental Army in the South was effectively destroyed in 45 minutes. Nathanael Greene, who replaced Gates, immediately reverted to Fabian tactics: "I have been beaten, but am not conquered." He rebuilt and eventually forced Cornwallis north.
+    gem-role: "violated — Gates chose pitched battle against Cornwallis at Camden with a half-starved army on unfavorable ground — the opposite of the Fabian move. He sought a decisive engagement he could not win. The Continental Army in the South was effectively destroyed in 45 minutes. Nathanael Greene, who replaced Gates, immediately reverted to Fabian tactics: \"I have been beaten, but am not conquered.\" He rebuilt and eventually forced Cornwallis north."
     magnitude: 3
     practitioner: Horatio Gates
     outcome: Gates's Continental Army in the South was effectively destroyed at Camden in 45 minutes; Gates himself fled 60 miles before stopping, ending his command in disgrace; Nathanael Greene replaced him and immediately adopted Fabian tactics, eventually forcing British withdrawal from the Carolinas without winning a single pitched battle.

@@ -9,7 +9,7 @@ practitioners:
     application: As Khufu's vizier and architect, designed the full logistics infrastructure — Nile branch canals, artificial harbors, worker village, 10-day supply cycles — before the Great Pyramid was built; the supply machine delivered 2.3 million blocks over 20 years
   - name: Elon Musk
     era: 2014-present
-    application: "The machine that makes the machine" — Gigafactory 1 was the primary engineering challenge of Model 3 production; Musk focused the company on manufacturing process design before focusing on vehicle design
+    application: "\"The machine that makes the machine\" — Gigafactory 1 was the primary engineering challenge of Model 3 production; Musk focused the company on manufacturing process design before focusing on vehicle design"
   - name: Henry J. Kaiser
     era: 1940-1945
     application: Built the Richmond, CA shipyard before building Liberty Ships; invested in prefabrication infrastructure and modular hull sections so that assembly became a delivery problem, not an engineering problem — 18 ships per month at peak

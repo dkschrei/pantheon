@@ -16,13 +16,13 @@ events:
     outcome: Produced the most technically accomplished sculpture of the Renaissance from a block two prior sculptors had abandoned as unworkable; the David stands 5.17 meters tall and is considered the defining achievement of Renaissance sculpture.
   - name: The Prisoners (Slaves)
     year: 1513-1536
-    gem-role: applied — Six figures for the tomb of Julius II left deliberately unfinished (non-finito): the Awakening Slave, Atlas, the Bearded Slave. Michelangelo said figures were souls liberating themselves from matter. The unfinished state was the statement — the ideal form visible mid-revelation
+    gem-role: "applied — Six figures for the tomb of Julius II left deliberately unfinished (non-finito): the Awakening Slave, Atlas, the Bearded Slave. Michelangelo said figures were souls liberating themselves from matter. The unfinished state was the statement — the ideal form visible mid-revelation"
     magnitude: 2
     practitioner: Michelangelo Buonarroti
     outcome: The deliberately unfinished figures became the most direct artistic statement of the subtraction method ever made — the process of revelation itself became the subject, influencing generations of sculptors and philosophers of art.
   - name: Sistine Chapel ceiling
     year: 1508-1512
-    gem-role: applied — Michelangelo refused the commission initially (he was a sculptor, not a painter) but applied the same logic: visualized the complete ceiling in full before a single brushstroke, then revealed each section completely before moving to the next rather than sketching everything then filling in
+    gem-role: "applied — Michelangelo refused the commission initially (he was a sculptor, not a painter) but applied the same logic: visualized the complete ceiling in full before a single brushstroke, then revealed each section completely before moving to the next rather than sketching everything then filling in"
     magnitude: 4
     practitioner: Michelangelo Buonarroti
     outcome: Produced the most celebrated painted ceiling in Western art in four years; the work is considered the supreme achievement of Renaissance painting and remains one of the most visited cultural sites in the world.

@@ -25,7 +25,7 @@ events:
     outcome: Les Demoiselles d'Avignon (1907) became the foundational work of Cubism and one of the most influential paintings of the 20th century; the structural grammar extracted from African masks gave Picasso the tool to shatter Western perspectival convention and invent a new pictorial language that defined modern art.
   - name: Analytic Cubism exhaustion and transition to Synthetic Cubism
     year: 1912
-    gem-role: applied — By 1912 Picasso had pushed Cézanne's multi-viewpoint principle to its logical limit: paintings so fractured they were nearly unreadable. Rather than refining Analytic Cubism, he imported the grammar of collage — assembly from external fragments (newspaper, wallpaper) rather than disassembly from a unified whole. Synthetic Cubism was a new structural system that arose directly from what Analytic Cubism could not solve.
+    gem-role: "applied — By 1912 Picasso had pushed Cézanne's multi-viewpoint principle to its logical limit: paintings so fractured they were nearly unreadable. Rather than refining Analytic Cubism, he imported the grammar of collage — assembly from external fragments (newspaper, wallpaper) rather than disassembly from a unified whole. Synthetic Cubism was a new structural system that arose directly from what Analytic Cubism could not solve."
     magnitude: 3
     practitioner: Pablo Picasso
     outcome: Synthetic Cubism opened an entirely new formal vocabulary — assemblage and collage as structural principles — that influenced every subsequent avant-garde movement including Dada, Constructivism, and Pop Art; Picasso's willingness to abandon Analytic Cubism at its peak prevented the creative stagnation that would have come from refining a system he had already exhausted.

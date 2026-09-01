@@ -34,7 +34,7 @@ events:
     outcome: No independent laboratory was able to replicate the cold fusion results under controlled conditions; the claim was rejected by the scientific community within months, and both researchers' reputations were severely damaged — a case study in confirmation-seeking without falsification design.
   - name: Semmelweis and Childbed Fever
     year: 1847
-    gem-role: applied — Semmelweis designed a falsification test: if cadaverous particles caused puerperal fever, then handwashing should eliminate the difference in mortality between two clinics; mortality dropped from 18% to 1%, and the hypothesis survived the attempt to kill it
+    gem-role: "applied — Semmelweis designed a falsification test: if cadaverous particles caused puerperal fever, then handwashing should eliminate the difference in mortality between two clinics; mortality dropped from 18% to 1%, and the hypothesis survived the attempt to kill it"
     magnitude: 4
     practitioner: Ignaz Semmelweis
     outcome: Mortality from puerperal fever in Semmelweis's ward dropped from 18% to under 2% after introducing chlorinated lime handwashing; the hypothesis survived the falsification test and provided the first evidence-based argument for antiseptic practice, predating Lister and Pasteur's germ theory.

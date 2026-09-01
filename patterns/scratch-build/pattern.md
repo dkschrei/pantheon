@@ -28,7 +28,7 @@ events:
     outcome: Tesla shipped Model 3 and Model Y with vision-only Autopilot; the decision — widely criticized as cost-cutting — was grounded in deep system understanding that radar introduced sensor fusion ambiguities outweighing its benefits, demonstrating that scratch-build mastery enables confident simplification.
   - name: Feynman's blackboard quote
     year: 1988
-    gem-role: applied — found on his blackboard at death: "What I cannot create, I do not understand" — the credo of scratch-build
+    gem-role: "applied — found on his blackboard at death: \"What I cannot create, I do not understand\" — the credo of scratch-build"
     magnitude: 2
     practitioner: Richard Feynman
     outcome: Feynman's insistence on re-deriving results from first principles produced the Feynman Lectures on Physics — a complete from-scratch reconstruction of the physics curriculum that remains the most widely read physics textbook, having revealed connections the standard curriculum obscured.

@@ -22,13 +22,13 @@ events:
     outcome: See's generated over $1.65B in cumulative pre-tax earnings on the original $25M purchase price by 2011, compounding at ~12% annually without requiring reinvestment in the chocolate business itself; the freed cash funded subsequent Berkshire acquisitions and the transaction became Buffett's definitive proof-of-concept for moat-based investing.
   - name: Coca-Cola Investment
     year: 1988-1989
-    gem-role: applied — Buffett bought ~7% of Coca-Cola for $1.02B, then held for 35+ years. The moat: global brand, distribution network, and psychological consumer loyalty that no competitor could replicate. By 2023, the position was worth ~$24B and generating $736M/year in dividends alone. Buffett described it as "owning a piece of something that will be around in a hundred years."
+    gem-role: "applied — Buffett bought ~7% of Coca-Cola for $1.02B, then held for 35+ years. The moat: global brand, distribution network, and psychological consumer loyalty that no competitor could replicate. By 2023, the position was worth ~$24B and generating $736M/year in dividends alone. Buffett described it as \"owning a piece of something that will be around in a hundred years.\""
     magnitude: 3
     practitioner: Warren Buffett
     outcome: The $1.02B investment was worth ~$24B by 2023 and generating $736M in annual dividends; holding through all market cycles without selling produced both the capital gain and the compounding dividend stream, demonstrating that permanent hold of a true moat creates returns no active trading strategy can replicate.
   - name: Washington Post Investment
     year: 1973-2014
-    gem-role: applied — Buffett bought ~10% of Washington Post for $10.6M during the 1973-74 bear market, estimating intrinsic value at $400M+ vs. the $80M market cap. The moat: regional newspaper monopoly and television licenses. He held for 41 years, earning 100x return. He later described this as one of the first pure applications of moat + patience thinking.
+    gem-role: "applied — Buffett bought ~10% of Washington Post for $10.6M during the 1973-74 bear market, estimating intrinsic value at $400M+ vs. the $80M market cap. The moat: regional newspaper monopoly and television licenses. He held for 41 years, earning 100x return. He later described this as one of the first pure applications of moat + patience thinking."
     magnitude: 2
     practitioner: Warren Buffett
     outcome: The $10.6M investment returned approximately $1.1B over 41 years — a 100x return; the Washington Post holding became Buffett's first explicit articulation of moat + patience as a combined investment discipline.
@@ -40,7 +40,7 @@ events:
     outcome: The American Express stock tripled within two years of Buffett's concentrated position; the investment established his signature method of stress-testing moats through direct behavioral observation (visiting restaurants to watch whether customers still used AmEx) rather than relying on financial statements alone.
   - name: Avoiding Technology Stocks
     year: 1999-2000
-    gem-role: applied — Buffett refused to buy internet stocks during the dot-com bubble, despite massive underperformance vs. the market. His reasoning: he could not identify durable moats in most tech businesses. The NASDAQ subsequently fell 78%. Buffett later described this as the moat filter working as a negative screen — if you cannot name the moat, you do not own the business.
+    gem-role: "applied — Buffett refused to buy internet stocks during the dot-com bubble, despite massive underperformance vs. the market. His reasoning: he could not identify durable moats in most tech businesses. The NASDAQ subsequently fell 78%. Buffett later described this as the moat filter working as a negative screen — if you cannot name the moat, you do not own the business."
     magnitude: 3
     practitioner: Warren Buffett
     outcome: Berkshire preserved capital while the NASDAQ fell 78% from its March 2000 peak; Buffett was publicly mocked as out-of-touch in 1999, then vindicated when the bubble collapsed — the moat filter functioning as a negative screen eliminated an entire category of investments that destroyed trillions in investor capital.

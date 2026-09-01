@@ -22,7 +22,7 @@ events:
     outcome: Universa Investments returned over 100% in 2008 while the S&P 500 fell 37%, vindicating the barbell strategy and positioning Taleb as the central theorist of tail-risk hedging.
   - name: The Black Swan publication and reception
     year: 2007-2010
-    gem-role: applied — Taleb designed his intellectual output antifragilly: he made strong, provocative claims that invited attack. Each attack by economists and statisticians spread the book further and stress-tested its arguments. Sales grew with controversy rather than shrinking from it. He explicitly noted: "My books are like my options positions — they gain from being attacked."
+    gem-role: "applied — Taleb designed his intellectual output antifragilly: he made strong, provocative claims that invited attack. Each attack by economists and statisticians spread the book further and stress-tested its arguments. Sales grew with controversy rather than shrinking from it. He explicitly noted: \"My books are like my options positions — they gain from being attacked.\""
     magnitude: 2
     practitioner: Nassim Nicholas Taleb
     outcome: The Black Swan sold over three million copies and was named one of the twelve most influential books since World War II by The Sunday Times; attacks from mainstream economists amplified rather than diminished its reach.

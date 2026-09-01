@@ -16,7 +16,7 @@ practitioners:
 events:
   - name: Sinking of the Endurance
     year: 1915
-    gem-role: applied — When the Endurance sank on November 21, 1915, Shackleton wrote: "Ship and stores have gone — so now we'll go home." Six words, no grief, complete mission substitution. He then executed a flawless 800-mile open-boat journey and unmapped mountain crossing to rescue all 27 men.
+    gem-role: "applied — When the Endurance sank on November 21, 1915, Shackleton wrote: \"Ship and stores have gone — so now we'll go home.\" Six words, no grief, complete mission substitution. He then executed a flawless 800-mile open-boat journey and unmapped mountain crossing to rescue all 27 men."
     magnitude: 3
     practitioner: Ernest Shackleton
     outcome: Shackleton led all 27 crew members to safety over 22 months without a single fatality — the greatest survival story in polar exploration history, subsequently studied at Harvard Business School, the US Navy, and leadership programs worldwide.

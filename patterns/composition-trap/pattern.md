@@ -10,13 +10,13 @@ practitioners:
 events:
   - name: The General Theory of Employment, Interest and Money
     year: 1936
-    gem-role: applied — Classical economics held that recessions self-correct as wages fall until markets clear. Keynes showed this reasoning commits a composition error: when all workers accept lower wages simultaneously, total purchasing power falls proportionally, demand collapses further, and the equilibrium locks at mass unemployment. The fix was not to fix individual wages but to inject aggregate demand via government spending — intervening at the level where the failure actually lived.
+    gem-role: "applied — Classical economics held that recessions self-correct as wages fall until markets clear. Keynes showed this reasoning commits a composition error: when all workers accept lower wages simultaneously, total purchasing power falls proportionally, demand collapses further, and the equilibrium locks at mass unemployment. The fix was not to fix individual wages but to inject aggregate demand via government spending — intervening at the level where the failure actually lived."
     magnitude: 5
     practitioner: John Maynard Keynes
     outcome: The General Theory redirected macroeconomics for a generation; countries that applied its fiscal prescription — including the US New Deal and post-WWII full-employment policies — outperformed those that applied the classical individual-level austerity prescription, establishing aggregate demand management as the core tool of modern macroeconomics.
   - name: Bretton Woods Conference
     year: 1944
-    gem-role: applied — Keynes proposed an International Clearing Union to address global trade imbalances. His diagnosis: each nation rationally trying to run a trade surplus creates a collective deflationary spiral (all cannot simultaneously export more than they import). His intervention was structural — an international institution with penalties on surplus nations, operating at the aggregate level of the world economy, not pressuring individual countries one at a time.
+    gem-role: "applied — Keynes proposed an International Clearing Union to address global trade imbalances. His diagnosis: each nation rationally trying to run a trade surplus creates a collective deflationary spiral (all cannot simultaneously export more than they import). His intervention was structural — an international institution with penalties on surplus nations, operating at the aggregate level of the world economy, not pressuring individual countries one at a time."
     magnitude: 4
     practitioner: John Maynard Keynes
     outcome: Though Keynes lost the negotiation to Harry Dexter White and the weaker IMF structure omitted surplus penalties, the conference established the institutional framework for postwar international finance; the global trade imbalances Keynes predicted subsequently materialized, validating his diagnosis even as his cure was rejected.
