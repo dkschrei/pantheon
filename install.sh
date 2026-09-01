@@ -28,11 +28,22 @@ if [ -n "$LOCAL_DIR" ] && [ -d "${LOCAL_DIR}/commands" ]; then
   cp "${LOCAL_DIR}/commands/pantheon.md" "${CLAUDE_COMMANDS}/pantheon.md"
   echo "  ✓ dispatcher → ${CLAUDE_COMMANDS}/pantheon.md"
 
-  # Install gem adapters to ~/.claude/pantheon/ (on-demand only)
+  # Install gem adapters to ~/.claude/pantheon/ (on-demand only).
+  # Source of truth is patterns/<gem>/adapters/claude.md — one per gem. The old
+  # commands/pantheon-*.md set covered only 7 gems, so `/pantheon <gem> show`
+  # failed for every other gem the dispatcher lists.
   GEMS_COUNT=0
+  for adapter in "${LOCAL_DIR}"/patterns/*/adapters/claude.md; do
+    [ -f "$adapter" ] || continue
+    gem_name=$(basename "$(dirname "$(dirname "$adapter")")")
+    cp "$adapter" "${CLAUDE_GEMS}/${gem_name}.md"
+    GEMS_COUNT=$((GEMS_COUNT + 1))
+  done
+  # Non-gem helpers (e.g. the gem builder) still ship from commands/.
   for cmd in "${LOCAL_DIR}"/commands/pantheon-*.md; do
     [ -f "$cmd" ] || continue
     gem_name=$(basename "$cmd" .md | sed 's/^pantheon-//')
+    [ -f "${CLAUDE_GEMS}/${gem_name}.md" ] && continue
     cp "$cmd" "${CLAUDE_GEMS}/${gem_name}.md"
     GEMS_COUNT=$((GEMS_COUNT + 1))
   done
@@ -57,16 +68,22 @@ else
   GEMS_COUNT=0
   while IFS= read -r path; do
     [ -z "$path" ] && continue
-    filename=$(basename "$path")
-    gem_name=$(echo "$filename" | sed 's/^pantheon-//;s/\.md$//')
+    case "$path" in
+      patterns/*/adapters/claude.md) gem_name=$(basename "$(dirname "$(dirname "$path")")") ;;
+      *) gem_name=$(basename "$path" .md | sed 's/^pantheon-//') ;;
+    esac
+    [ -f "${CLAUDE_GEMS}/${gem_name}.md" ] && continue
     curl -fsSL "${RAW}/${path}" -o "${CLAUDE_GEMS}/${gem_name}.md"
     GEMS_COUNT=$((GEMS_COUNT + 1))
   done < <(echo "$TREE" | python3 -c "
 import sys, json
 tree = json.load(sys.stdin)['tree']
 for f in tree:
-    if f['path'].startswith('commands/pantheon-') and f['path'].endswith('.md'):
-        print(f['path'])
+    p = f['path']
+    if p.startswith('patterns/') and p.endswith('/adapters/claude.md'):
+        print(p)
+    elif p.startswith('commands/pantheon-') and p.endswith('.md'):
+        print(p)
 ")
   echo "  ✓ ${GEMS_COUNT} gem adapters → ${CLAUDE_GEMS}/"
 fi
