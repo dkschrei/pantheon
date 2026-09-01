@@ -1,4 +1,5 @@
 ---
+name: extraction-principle
 description: Invoke when direct questions have failed, the subject controls access to information you need, or you are designing an interview, investigation, or negotiation structure — maps the mismatch between what the subject thinks is happening and what is actually happening, and selects the extraction architecture that fits
 ---
 

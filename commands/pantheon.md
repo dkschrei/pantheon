@@ -48,7 +48,7 @@ Read the file `~/.claude/pantheon/<gem-name>.md` and immediately begin executing
 | defeat-in-detail | multiple adversaries |
 | domain-cartographer | apprentice needs to map a domain they know nothing about |
 | eat-the-world | technology exists but isn't reaching users |
-| extraction-principle | direct questions have failed or subject controls access to information |
+| extraction-principle | direct questions have failed |
 | falsification | theory feels too comfortable |
 | federal-decentralization | scaling organization |
 | feynman-clarity | I don't understand why |
@@ -56,6 +56,7 @@ Read the file `~/.claude/pantheon/<gem-name>.md` and immediately begin executing
 | gedankenexperiment | two trusted principles contradict |
 | gestalt-first | starting without a complete picture |
 | grammar-theft | creative ceiling |
+| holographic-self | losing yourself in your own system |
 | imperial-self-correction | emotional reaction driving a decision |
 | inflection-point | strategic shift |
 | insurgents-advantage | outgunned or outresourced in a contest you need to win |
@@ -100,4 +101,4 @@ _✦ = authored gem (written from live practice)_
 
 ---
 
-*61 gems — github.com/dkschrei/pantheon*
+*62 gems — github.com/dkschrei/pantheon*

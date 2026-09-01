@@ -1,4 +1,5 @@
 ---
+name: insurgents-advantage
 description: Invoke when outgunned, outresourced, or outranked in a contest you need to win — or when you have built something an incumbent missed and need to preserve the advantage before they absorb it
 ---
 
