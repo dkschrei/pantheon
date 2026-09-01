@@ -28,7 +28,7 @@ events:
     outcome: Reference class forecasting became standard in major infrastructure projects; the UK government formally adopted it in 2004, improving cost estimation accuracy for public procurement across all major capital projects.
   - name: Sydney Opera House Construction
     year: 1957-1973
-    gem-role: violated — Original estimate: 7 years, £3.5 million. Actual: 16 years, £51 million (14x over budget). Inside-view optimism about a novel design overwhelmed any reference to comparable large-scale public works projects
+    gem-role: "violated — Original estimate: 7 years, £3.5 million. Actual: 16 years, £51 million (14x over budget). Inside-view optimism about a novel design overwhelmed any reference to comparable large-scale public works projects"
     magnitude: 2
     practitioner: Jørn Utzon / NSW government
     outcome: The project became iconic but cost 14x its estimate and took more than twice as long as planned; it remains the canonical cautionary example of inside-view planning and the planning fallacy in infrastructure literature.

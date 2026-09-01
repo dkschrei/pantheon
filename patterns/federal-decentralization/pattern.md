@@ -34,7 +34,7 @@ events:
     outcome: Durant was forced out of GM in 1920 after the company faced collapse during the postwar recession; without standardized reporting or capital controls, GM had no mechanism to identify which divisions were bleeding, and the board replaced him with Pierre du Pont, who implemented Sloan's plan.
   - name: Berkshire Hathaway Acquisition Model
     year: 1965-present
-    gem-role: applied — Buffett's purchase commitment: "We will not second-guess your operational decisions." Each subsidiary CEO runs their company as if they own it; Berkshire's role is only capital allocation and successor selection — the canonical modern application of Sloan's framework
+    gem-role: "applied — Buffett's purchase commitment: \"We will not second-guess your operational decisions.\" Each subsidiary CEO runs their company as if they own it; Berkshire's role is only capital allocation and successor selection — the canonical modern application of Sloan's framework"
     magnitude: 3
     practitioner: Warren Buffett
     outcome: By 2024, Berkshire Hathaway managed 60+ wholly autonomous subsidiaries with 400,000+ employees, operating with a corporate staff of approximately 30 people; the model scaled to a market capitalization exceeding $900B with no central operational oversight — the most extreme demonstration of federal decentralization in corporate history.

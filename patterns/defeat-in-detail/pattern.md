@@ -16,7 +16,7 @@ events:
     outcome: Sardinia sued for peace within three days; Napoleon then reversed against Austria and drove Beaulieu back across the Po, winning the entire northern Italian campaign in under two weeks against a numerically superior coalition.
   - name: Jena-Auerstedt
     year: 1806
-    gem-role: applied — Prussia mobilized and marched to meet Napoleon without waiting for Russian reinforcement. Napoleon identified the window: the Prussian army was operating as a single mass, not yet integrated with Russian forces 400 miles away. He enveloped and destroyed two Prussian armies simultaneously at Jena and Auerstedt before a single Russian soldier arrived. Prussia capitulated in 33 days.
+    gem-role: "applied — Prussia mobilized and marched to meet Napoleon without waiting for Russian reinforcement. Napoleon identified the window: the Prussian army was operating as a single mass, not yet integrated with Russian forces 400 miles away. He enveloped and destroyed two Prussian armies simultaneously at Jena and Auerstedt before a single Russian soldier arrived. Prussia capitulated in 33 days."
     magnitude: 4
     practitioner: Napoleon Bonaparte
     outcome: Both Prussian army groups were destroyed in a single day; Prussia capitulated in 33 days, signing the Treaty of Tilsit (1807) and ceding half its territory — all before a single Russian soldier engaged.

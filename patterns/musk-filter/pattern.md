@@ -22,7 +22,7 @@ events:
     outcome: By applying a 5-step anti-process to rocket development, SpaceX achieved launch costs approximately 10x lower than incumbents; Falcon 9 became the world's most-launched orbital rocket and SpaceX captured the majority of the commercial launch market by the mid-2010s.
   - name: Karpathy loop incident
     year: 2026
-    gem-role: violated — agent applied loop automation (Step 5) without questioning whether the loop should exist (Step 1); result: token burn, no improvement
+    gem-role: "violated — agent applied loop automation (Step 5) without questioning whether the loop should exist (Step 1); result: token burn, no improvement"
     magnitude: 1
     practitioner: Nexus agent
     outcome: "The agent burned tokens running a circular loop that produced no real improvement to conventions.md, demonstrating the canonical failure mode: automation of an unvalidated process produces a faster version of a broken process."

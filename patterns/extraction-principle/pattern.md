@@ -40,6 +40,7 @@ events:
     outcome: Dennis Rader sent a floppy disk containing metadata pointing to "Dennis" at Christ Lutheran Church; he was arrested nine days later on February 25, 2005, ending a 31-year investigation
 lineage: scharff-1943 → hagmaier-1984 → granhag-sue-2006
 origin-earliest: scharff-1943
+origin-modern: granhag-2006
 origin-type: convergent
 ---
 

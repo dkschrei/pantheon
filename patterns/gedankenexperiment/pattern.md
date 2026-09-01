@@ -55,7 +55,7 @@ events:
     outcome: Hawking demonstrated that black holes must emit thermal radiation and have a temperature, connecting three previously separate branches of physics — thermodynamics, general relativity, and quantum mechanics; the result, published in Nature in 1974, is considered one of the most important theoretical physics discoveries of the 20th century.
   - name: Black hole information paradox
     year: 1976
-    gem-role: applied — Hawking followed the Gedankenexperiment to its hardest consequence: if black holes radiate thermally and eventually evaporate, the quantum information of everything that fell in is destroyed — violating unitarity, a bedrock principle of quantum mechanics; the contradiction forced three decades of theoretical physics and remains partially unresolved
+    gem-role: "applied — Hawking followed the Gedankenexperiment to its hardest consequence: if black holes radiate thermally and eventually evaporate, the quantum information of everything that fell in is destroyed — violating unitarity, a bedrock principle of quantum mechanics; the contradiction forced three decades of theoretical physics and remains partially unresolved"
     magnitude: 4
     practitioner: Stephen Hawking
     outcome: The paradox forced an entire generation of theoretical physicists — including Susskind, 't Hooft, and Maldacena — to develop new frameworks for reconciling quantum mechanics and gravity; it led directly to the holographic principle and AdS/CFT correspondence, reshaping theoretical physics for 30+ years.

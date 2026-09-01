@@ -52,6 +52,7 @@ events:
     outcome: Jensen Huang personally invited Steinberger to GTC to jointly announce NemoClaw, the enterprise wrapper built on OpenClaw; the solo engineer became the origin point of the category
 lineage: mao-guerrilla-1934 → ho-chi-minh-tet-1968 → kelleher-southwest-1971 → hastings-netflix-1997 → steinberger-openclaw-2024
 origin-earliest: mao-1934
+origin-modern: steinberger-2024
 origin-type: convergent
 ---
 

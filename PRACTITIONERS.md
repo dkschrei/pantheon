@@ -49,12 +49,24 @@ _✦ = authored gem (written from live practice)_
 |---------|-----|-------------|
 | [the-fugue](patterns/the-fugue/pattern.md) | 1695-1750 | Derived entire large-scale works — The Art of Fugue, The Well-Tempered Clavier, Goldberg Variations — from a single subject or bass line by systematically applying every contrapuntal transformation (inversion, augmentation, diminution, stretto, mirror) the formal system permits, never introducing new material until the seed was genuinely exhausted |
 
+## Hannibal Barca
+
+| Pattern | Era | Application |
+|---------|-----|-------------|
+| [cannae](patterns/cannae/pattern.md) | 247bc-183bc | Deployed his weakest troops at center in a convex arc at Cannae, invited 86,000 Romans to push through, and designed the battle geometry so the Roman advance closed the encirclement themselves — 47,000–70,000 Romans died in an afternoon executing their own doctrine perfectly |
+
 ## Jeff Bezos
 
 | Pattern | Era | Application |
 |---------|-----|-------------|
 | [eat-the-world](patterns/eat-the-world/pattern.md) | 1994-present | Saw that the internet was ready for retail distribution (books first), then expanded the bridge horizontally into every product category and cloud computing (AWS) |
 | [two-way-door](patterns/two-way-door/pattern.md) | 1994-present | Built Amazon into the world's largest e-commerce and cloud company by moving fast on reversible decisions and deliberating only on irreversible ones |
+
+## Amazon (Jeff Bezos)
+
+| Pattern | Era | Application |
+|---------|-----|-------------|
+| [build-the-machine](patterns/build-the-machine/pattern.md) | 2000-2006 | Built AWS cloud infrastructure to support Amazon's own retail operations; the internal logistics machine became a product — the infrastructure was the innovation |
 
 ## Otto von Bismarck
 
@@ -73,11 +85,13 @@ _✦ = authored gem (written from live practice)_
 | Pattern | Era | Application |
 |---------|-----|-------------|
 | [complementarity](patterns/complementarity/pattern.md) | 1913-1962 | Resolved the wave-particle paradox by refusing to choose — declared both descriptions necessary and mutually exclusive, depending on the experimental context |
+| [gedankenexperiment](patterns/gedankenexperiment/pattern.md) | 1913-1962 | Used thought experiments (complementarity arguments, double-slit reasoning) to define the limits of quantum measurement |
 
 ## Napoleon Bonaparte
 
 | Pattern | Era | Application |
 |---------|-----|-------------|
+| [defeat-in-detail](patterns/defeat-in-detail/pattern.md) | 1769-1821 | Drove between separated coalition armies — Austrian and Piedmontese in 1796, Austrian and Russian in 1805, Prussian and Russian in 1806 — destroying each before they could unite, winning wars he had no business winning numerically |
 | [schwerpunkt](patterns/schwerpunkt/pattern.md) | 1796-1815 | Applied Schwerpunkt at the operational level — most famously at Austerlitz (1805), where he deliberately weakened his right to bait the allied center off the Pratzen Heights, then struck the heights with concentrated force, hinging both allied wings into isolated destruction |
 
 ## George Boole
@@ -99,6 +113,24 @@ _✦ = authored gem (written from live practice)_
 | [shape-the-ground](patterns/shape-the-ground/pattern.md) | 1927-1997 | Translated Sun Tzu's terrain-shaping into the OODA loop — cycling faster through observation and orientation to collapse the adversary's decision space before engagement |
 | [the-ratchet ✦](patterns/the-ratchet/pattern.md) | 1927-1997 | OODA Loop at multiple tempos — fast tactical loop nested inside slow strategic reorientation; applied to fighter combat doctrine and military strategy |
 
+## Warren Buffett
+
+| Pattern | Era | Application |
+|---------|-----|-------------|
+| [the-moat](patterns/the-moat/pattern.md) | 1956-present | Built Berkshire Hathaway into a $900B+ enterprise by identifying and holding businesses with durable competitive advantages — See's Candies, Coca-Cola, American Express, Apple — rather than trading cheap assets |
+
+## Berkshire Hathaway (Warren Buffett)
+
+| Pattern | Era | Application |
+|---------|-----|-------------|
+| [federal-decentralization](patterns/federal-decentralization/pattern.md) | 1965-present | Acquired dozens of wholly autonomous subsidiary companies, intervening almost never in operations while maintaining tight centralized control over capital redeployment via annual reports, return metrics, and allocation decisions |
+
+## Michelangelo Buonarroti
+
+| Pattern | Era | Application |
+|---------|-----|-------------|
+| [subtraction](patterns/subtraction/pattern.md) | 1475-1564 | Sculpted the David from an abandoned damaged marble block; left the Prisoners deliberately unfinished to show figures emerging from stone — the ideal form already there, excess being removed |
+
 ## Santiago Ramón y Cajal
 
 | Pattern | Era | Application |
@@ -110,6 +142,12 @@ _✦ = authored gem (written from live practice)_
 | Pattern | Era | Application |
 |---------|-----|-------------|
 | [constraint-saturation](patterns/constraint-saturation/pattern.md) | 1981-present | Designs bridges and buildings by saturating structural problems with load, material, and fabrication constraints simultaneously, letting the form emerge from the constraint intersection |
+
+## John Carmack
+
+| Pattern | Era | Application |
+|---------|-----|-------------|
+| [scratch-build](patterns/scratch-build/pattern.md) | 1990-present | Rewrote 3D rendering engines from scratch across multiple generations to push the boundary of what was possible |
 
 ## Andrew Carnegie
 
@@ -128,6 +166,13 @@ _✦ = authored gem (written from live practice)_
 | Pattern | Era | Application |
 |---------|-----|-------------|
 | [copernican-inversion](patterns/copernican-inversion/pattern.md) | 1928-present | Inverted the question of language learning from "how does the child learn grammar from input?" to "what must be innately structured in the mind for grammar acquisition to be possible?" — producing universal grammar |
+
+## Winston Churchill
+
+| Pattern | Era | Application |
+|---------|-----|-------------|
+| [mobilize-the-language](patterns/mobilize-the-language/pattern.md) | 1874-1965 | Manufactured the will for Britain to fight alone after France fell — not through plans or facts but through six speeches in the summer of 1940 that performed collective resolution into existence before it existed |
+| [the-endurance](patterns/the-endurance/pattern.md) | 1940-1945 | After Dunkirk, immediately reframed catastrophic defeat as the opening of Britain's true fight — never grieved France publicly, declared survival and eventual victory the mission |
 
 ## Carl von Clausewitz
 
@@ -190,6 +235,7 @@ _✦ = authored gem (written from live practice)_
 | Pattern | Era | Application |
 |---------|-----|-------------|
 | [feynman-clarity ✦](patterns/feynman-clarity/pattern.md) | 1905-1955 | general relativity via thought experiments — plain-language mental models before mathematics |
+| [gedankenexperiment](patterns/gedankenexperiment/pattern.md) | 1895-1955 | Derived special relativity, general relativity, and the photon hypothesis by constructing thought experiments that forced contradictions between accepted principles |
 
 ## Epictetus
 
@@ -238,9 +284,11 @@ _✦ = authored gem (written from live practice)_
 
 | Pattern | Era | Application |
 |---------|-----|-------------|
+| [falsification](patterns/falsification/pattern.md) | 1918-1988 | Insisted that the first principle of science is "you must not fool yourself — and you are the easiest person to fool," operationalizing falsification as a personal discipline against self-deception |
 | [feynman-clarity ✦](patterns/feynman-clarity/pattern.md) | 1940-1988 | Manhattan Project debugging, Challenger investigation, physics education reform |
 | [masters-release ✦](patterns/masters-release/pattern.md) | 1950-1988 | Deliberately demystified physics through lectures and books — made the most complex ideas accessible to anyone, systematically dismantling the gatekeeping that made experts feel necessary |
 | [render-to-understand](patterns/render-to-understand/pattern.md) | 1918-1988 | Required himself to produce a one-page derivation of any result he claimed to understand — if he couldn't render it from first principles, he didn't understand it |
+| [scratch-build](patterns/scratch-build/pattern.md) | 1940-1988 | Re-derived physics from first principles rather than memorizing results — "What I cannot create, I do not understand" |
 
 ## F. Scott Fitzgerald
 
@@ -254,11 +302,18 @@ _✦ = authored gem (written from live practice)_
 |---------|-----|-------------|
 | [anomaly-isolation](patterns/anomaly-isolation/pattern.md) | 1881-1955 | Noticed mold killing bacteria on a contaminated petri dish — pursued the anomaly instead of discarding the plate, isolating penicillin |
 
+## Bent Flyvbjerg
+
+| Pattern | Era | Application |
+|---------|-----|-------------|
+| [outside-view](patterns/outside-view/pattern.md) | 1952-present | Applied reference class forecasting to infrastructure mega-projects (dams, tunnels, bridges, IT systems); showed that cost overruns and schedule slippage were not random but systematically predictable from the reference class — his method is now required for UK government infrastructure bids |
+
 ## Henry Ford
 
 | Pattern | Era | Application |
 |---------|-----|-------------|
 | [flow-line](patterns/flow-line/pattern.md) | 1908-1947 | Moving assembly line — reduced Model T assembly from 12.5 hours to 93 minutes by making the car move continuously through sequential stations |
+| [musk-filter ✦](patterns/musk-filter/pattern.md) | 1908-1927 | Model T production — systematically eliminated steps to hit $290 price point (from $825 at launch) |
 
 ## Benjamin Franklin
 
@@ -273,6 +328,12 @@ _✦ = authored gem (written from live practice)_
 |---------|-----|-------------|
 | [constraint-saturation](patterns/constraint-saturation/pattern.md) | 1948-1983 | Derived geodesic dome geometry by saturating structural design with constraints — maximum strength per unit material, uniform stress distribution, triangulated load paths — arriving at forms no architect had imagined |
 
+## Galileo Galilei
+
+| Pattern | Era | Application |
+|---------|-----|-------------|
+| [gedankenexperiment](patterns/gedankenexperiment/pattern.md) | 1590-1642 | Disproved Aristotelian physics through thought experiments — imagining two falling objects tied together proved heavier objects cannot fall faster |
+
 ## Marc Gallagher
 
 | Pattern | Era | Application |
@@ -285,6 +346,18 @@ _✦ = authored gem (written from live practice)_
 |---------|-----|-------------|
 | [the-combination](patterns/the-combination/pattern.md) | 1980-2000 | Made every software developer a stakeholder in the Windows platform rather than a rival — converting potential competitors into distribution partners through licensing and developer tools |
 
+## Paul Gauguin
+
+| Pattern | Era | Application |
+|---------|-----|-------------|
+| [grammar-theft](patterns/grammar-theft/pattern.md) | 1886-1903 | Appropriated Tahitian and Breton visual conventions — though primarily at the surface-style level rather than deep structural extraction, pioneering the cross-cultural import that Picasso would systematize |
+
+## Vo Nguyen Giap
+
+| Pattern | Era | Application |
+|---------|-----|-------------|
+| [the-fabian](patterns/the-fabian/pattern.md) | 1911-2013 | Kept the Viet Minh and later the NVA alive against French and American firepower for decades — accepting massive tactical casualties while denying the enemy strategic resolution, until political will in Paris and Washington collapsed |
+
 ## Frank and Lillian Gilbreth
 
 | Pattern | Era | Application |
@@ -296,6 +369,12 @@ _✦ = authored gem (written from live practice)_
 | Pattern | Era | Application |
 |---------|-----|-------------|
 | [the-gollum-effect ✦](patterns/the-gollum-effect/pattern.md) | Third Age | Held the One Ring for 500 years — gained longevity and acute perception, lost language, identity, relationships, sunlight, and eventually life; the ring outlasted every version of him it destroyed |
+
+## Benjamin Graham
+
+| Pattern | Era | Application |
+|---------|-----|-------------|
+| [the-moat](patterns/the-moat/pattern.md) | 1914-1956 | Pioneered intrinsic value calculation and margin-of-safety discipline (Buffett's foundation), though without the moat dimension — Graham focused on cheap price rather than competitive durability |
 
 ## Pär Anders Granhag
 
@@ -333,6 +412,18 @@ _✦ = authored gem (written from live practice)_
 |---------|-----|-------------|
 | [insurgents-advantage](patterns/insurgents-advantage/pattern.md) | 1997-present | A $40 Blockbuster late fee produced Netflix — not a video retail expert, which is precisely why he could see past the late fee model; Blockbuster's 9,000 stores were the anchor that made the threat invisible until too late |
 
+## Stephen Hawking
+
+| Pattern | Era | Application |
+|---------|-----|-------------|
+| [gedankenexperiment](patterns/gedankenexperiment/pattern.md) | 1965-2018 | Collided general relativity with quantum mechanics at extreme physical boundaries — black hole event horizons, singularities, the Big Bang — extracting Hawking radiation, the information paradox, and the no-boundary proposal |
+
+## Hemiunu
+
+| Pattern | Era | Application |
+|---------|-----|-------------|
+| [build-the-machine](patterns/build-the-machine/pattern.md) | 2580bc-2560bc | As Khufu's vizier and architect, designed the full logistics infrastructure — Nile branch canals, artificial harbors, worker village, 10-day supply cycles — before the Great Pyramid was built; the supply machine delivered 2.3 million blocks over 20 years |
+
 ## Erik Hollnagel
 
 | Pattern | Era | Application |
@@ -368,8 +459,28 @@ _✦ = authored gem (written from live practice)_
 | Pattern | Era | Application |
 |---------|-----|-------------|
 | [eat-the-world](patterns/eat-the-world/pattern.md) | 1984-2011 | Applied distribution-layer thinking to MP3 players (iPod+iTunes), smartphones (iPhone+App Store), and tablets — never first to the technology, always first to the usable bridge |
+| [grammar-theft](patterns/grammar-theft/pattern.md) | 1979-2011 | Imported the structural logic of calligraphy (proportional fonts), Bauhaus industrial design (form-follows-function), and Zen aesthetic (negative space, reduction to essence) into computing — each a grammar theft from outside the industry |
 | [schwerpunkt](patterns/schwerpunkt/pattern.md) | 1997-2011 | Returned to Apple, identified the center of gravity as a broken product line, cut 70% of products in 90 days, and struck the decisive node — one beautiful consumer computer (iMac) that restored brand identity and funded everything that followed |
 | [taste-gate](patterns/taste-gate/pattern.md) | 1976-2011 | Apple product line — killed 70% of products on return, reduced iPhone to one button, curated every detail of hardware/software/retail |
+
+## Martin Luther King Jr.
+
+| Pattern | Era | Application |
+|---------|-----|-------------|
+| [mobilize-the-language](patterns/mobilize-the-language/pattern.md) | 1929-1968 | Used "I Have a Dream" (1963) to perform the civil rights future into existence — not describing what he hoped for but declaring what was coming, in language so vivid it manufactured the belief that made it possible |
+
+## Daniel Kahneman
+
+| Pattern | Era | Application |
+|---------|-----|-------------|
+| [falsification](patterns/falsification/pattern.md) | 1934-2024 | Built a research program around demonstrating that human cognition systematically seeks confirmation; used falsification discipline to expose biases that confirmation-seeking minds cannot see on their own (primary gem → outside-view) |
+| [outside-view](patterns/outside-view/pattern.md) | 1934-2024 | Discovered the inside/outside view distinction by noticing that Israeli curriculum project teams systematically ignored base rates from comparable projects; spent his career showing that the outside view outpredicts expert intuition in nearly every domain |
+
+## Henry J. Kaiser
+
+| Pattern | Era | Application |
+|---------|-----|-------------|
+| [build-the-machine](patterns/build-the-machine/pattern.md) | 1940-1945 | Built the Richmond, CA shipyard before building Liberty Ships; invested in prefabrication infrastructure and modular hull sections so that assembly became a delivery problem, not an engineering problem — 18 ships per month at peak |
 
 ## Travis Kalanick
 
@@ -389,11 +500,29 @@ _✦ = authored gem (written from live practice)_
 |---------|-----|-------------|
 | [copernican-inversion](patterns/copernican-inversion/pattern.md) | 1724-1804 | Dissolved the rationalism-vs-empiricism deadlock by inverting the question — asking how objects must conform to cognition rather than how cognition conforms to objects — producing the Critique of Pure Reason |
 
+## Andrej Karpathy
+
+| Pattern | Era | Application |
+|---------|-----|-------------|
+| [scratch-build](patterns/scratch-build/pattern.md) | 2012-present | Reimplemented neural network training from scratch (micrograd, nanoGPT, llm.c) to achieve mastery and make deep learning accessible |
+
 ## Herb Kelleher
 
 | Pattern | Era | Application |
 |---------|-----|-------------|
 | [insurgents-advantage](patterns/insurgents-advantage/pattern.md) | 1967-2001 | Built Southwest Airlines into the most profitable carrier in US history by not knowing hub-and-spoke was required — no airline experience meant no inherited assumptions; the constraint forced point-to-point routing that every legacy carrier knew was impossible |
+
+## John Maynard Keynes
+
+| Pattern | Era | Application |
+|---------|-----|-------------|
+| [composition-trap](patterns/composition-trap/pattern.md) | 1883-1946 | Identified that individually rational thrift during recessions creates aggregate demand collapse; designed fiscal intervention at the national level to substitute for missing private demand — founding macroeconomics as a distinct discipline |
+
+## Gene Kranz
+
+| Pattern | Era | Application |
+|---------|-----|-------------|
+| [the-endurance](patterns/the-endurance/pattern.md) | 1933-present | Pivoted Apollo 13 from lunar landing to crew survival within hours of the oxygen tank explosion — all three astronauts returned alive |
 
 ## Thomas Kuhn
 
@@ -412,6 +541,12 @@ _✦ = authored gem (written from live practice)_
 | Pattern | Era | Application |
 |---------|-----|-------------|
 | [shape-the-ground](patterns/shape-the-ground/pattern.md) | 181-234 | Used Sun Tzu's shaping principles to sustain Shu Han against vastly superior Wei forces through deception, positioning, and psychological manipulation |
+
+## Abraham Lincoln
+
+| Pattern | Era | Application |
+|---------|-----|-------------|
+| [mobilize-the-language](patterns/mobilize-the-language/pattern.md) | 1809-1865 | Delivered the Gettysburg Address (1863) to reframe a devastating war from a conflict over union into a test of whether democratic self-government could survive — 272 words that changed the meaning of the Civil War while it was still being fought |
 
 ## Carl Linnaeus
 
@@ -448,6 +583,12 @@ _✦ = authored gem (written from live practice)_
 | Pattern | Era | Application |
 |---------|-----|-------------|
 | [complementarity](patterns/complementarity/pattern.md) | 1990-present | Built integrative thinking as a business strategy method — holding two opposing models until a creative resolution emerges that contains elements of both |
+
+## Quintus Fabius Maximus
+
+| Pattern | Era | Application |
+|---------|-----|-------------|
+| [the-fabian](patterns/the-fabian/pattern.md) | 280bc-203bc | After Cannae destroyed Roman armies, Fabius refused pitched battle with Hannibal for years — shadowing, cutting supply lines, attacking foragers — until Roman strength recovered and Hannibal's was bled |
 
 ## John McCarthy
 
@@ -491,11 +632,18 @@ _✦ = authored gem (written from live practice)_
 |---------|-----|-------------|
 | [the-combination](patterns/the-combination/pattern.md) | 1890-1913 | Applied the combination to steel (U.S. Steel, 1901), railroads, and banking — systematically merging rivals to eliminate the competition destroying margins across industrial America |
 
+## Wolfgang Amadeus Mozart
+
+| Pattern | Era | Application |
+|---------|-----|-------------|
+| [gestalt-first](patterns/gestalt-first/pattern.md) | 1756-1791 | Composed entire symphonies, concertos, and operas as a complete simultaneous whole internally before writing a single note — his manuscripts show almost no corrections because the work arrived fully formed |
+
 ## Charlie Munger
 
 | Pattern | Era | Application |
 |---------|-----|-------------|
 | [the-latticework](patterns/the-latticework/pattern.md) | 1948-2023 | Built a ~100-model toolkit spanning physics, biology, psychology, mathematics, economics, and engineering — applied as a convergence checklist before every major Berkshire Hathaway investment decision |
+| [the-moat](patterns/the-moat/pattern.md) | 1962-2023 | Convinced Buffett to abandon Graham's "cigar-butt" method and pay 3x book value for See's Candies in 1972 — the transaction that operationalized moat-first thinking at Berkshire |
 
 ## Miyamoto Musashi
 
@@ -508,6 +656,8 @@ _✦ = authored gem (written from live practice)_
 | Pattern | Era | Application |
 |---------|-----|-------------|
 | [andon-cord ✦](patterns/andon-cord/pattern.md) | 2003-present | Tesla manufacturing — adopted TPS principles including line-stop authority |
+| [build-the-machine](patterns/build-the-machine/pattern.md) | 2014-present | "The machine that makes the machine" — Gigafactory 1 was the primary engineering challenge of Model 3 production; Musk focused the company on manufacturing process design before focusing on vehicle design |
+| [musk-filter ✦](patterns/musk-filter/pattern.md) | 2002-present | SpaceX rocket cost reduction, Tesla Gigafactory design, Boring Company tunneling |
 
 ## John Von Neumann
 
@@ -527,6 +677,7 @@ _✦ = authored gem (written from live practice)_
 |---------|-----|-------------|
 | [andon-cord ✦](patterns/andon-cord/pattern.md) | 1950-1990 | Toyota Production System — any worker stops the entire line on detecting a defect |
 | [flow-line](patterns/flow-line/pattern.md) | 1950-1990 | Extended flow into one-piece-flow and pull systems at Toyota, eliminating inter-station inventory |
+| [musk-filter ✦](patterns/musk-filter/pattern.md) | 1950-1990 | Toyota muda elimination — remove waste before optimizing remaining steps |
 | [ohno-circle](patterns/ohno-circle/pattern.md) | 1947-1990 | Toyota Production System — stood on factory floors for entire shifts observing waste before allowing any process change |
 | [the-ratchet ✦](patterns/the-ratchet/pattern.md) | 1912-1990 | Toyota Production System — alternated Kaizen (continuous daily improvement) with Kaikaku (radical redesign) to build the world's most efficient manufacturing system |
 
@@ -536,17 +687,35 @@ _✦ = authored gem (written from live practice)_
 |---------|-----|-------------|
 | [constraint-saturation](patterns/constraint-saturation/pattern.md) | 1928-1994 | Predicted protein secondary structures (alpha helix, beta sheet) and molecular geometries across thousands of compounds by saturating problems with every known physical constraint until only one structure survived |
 
+## Pericles
+
+| Pattern | Era | Application |
+|---------|-----|-------------|
+| [mobilize-the-language](patterns/mobilize-the-language/pattern.md) | 495bc-429bc | Delivered the Funeral Oration (431 BC) to reframe Athens's war dead from tragic losses into noble contributors to a civilization worth dying for — converting grief into pride and sustaining Athenian will for a 27-year war |
+
 ## Charlotte Perriand
 
 | Pattern | Era | Application |
 |---------|-----|-------------|
 | [material-honesty](patterns/material-honesty/pattern.md) | 1927-1999 | Furniture design — tubular steel and bentwood used for what they naturally do (bend, support, flex) rather than forced into shapes that deny their properties |
 
+## Pablo Picasso
+
+| Pattern | Era | Application |
+|---------|-----|-------------|
+| [grammar-theft](patterns/grammar-theft/pattern.md) | 1901-1973 | Systematically reverse-engineered the structural logic of alien formal systems (African masks, Iberian sculpture, Cézanne's geometry) and imposed them as constraints on Western academic painting — inventing Cubism and cycling through 7 distinct periods by exhausting one structural system before stealing the next |
+
 ## Plato
 
 | Pattern | Era | Application |
 |---------|-----|-------------|
 | [vessel-and-soul ✦](patterns/vessel-and-soul/pattern.md) | 428bc-348bc | Theory of Forms — separated permanent ideal archetypes (Forms) from their ephemeral material instances; the Form of Justice persists forever, any particular just act decays |
+
+## Karl Popper
+
+| Pattern | Era | Application |
+|---------|-----|-------------|
+| [falsification](patterns/falsification/pattern.md) | 1902-1994 | Solved the demarcation problem by showing that what separates science from pseudoscience is not verification but vulnerability to refutation — then applied this as a universal epistemology |
 
 ## Dieter Rams
 
@@ -587,6 +756,12 @@ _✦ = authored gem (written from live practice)_
 |---------|-----|-------------|
 | [premeditatio](patterns/premeditatio/pattern.md) | 4bc-65 | Systematically pre-rehearsed exile, poverty, and death throughout his career as Rome's wealthiest philosopher-statesman — enabling composed action when Nero actually ordered each of these upon him |
 
+## Ernest Shackleton
+
+| Pattern | Era | Application |
+|---------|-----|-------------|
+| [the-endurance](patterns/the-endurance/pattern.md) | 1874-1922 | Pivoted from crossing Antarctica to bringing 27 men home alive when Endurance sank — all survived, making "not a single man lost" the achievement |
+
 ## Claude Shannon
 
 | Pattern | Era | Application |
@@ -606,6 +781,12 @@ _✦ = authored gem (written from live practice)_
 |---------|-----|-------------|
 | [work-as-done ✦](patterns/work-as-done/pattern.md) | 1998-present | Wrote down Toyota's mapping method for the first time with the sequence made non-negotiable — the current-state map is drawn from observation before any future-state map is allowed |
 
+## Alfred Sloan
+
+| Pattern | Era | Application |
+|---------|-----|-------------|
+| [federal-decentralization](patterns/federal-decentralization/pattern.md) | 1920-1956 | Rebuilt General Motors from near-bankruptcy into the world's largest corporation by granting full operational autonomy to each car division while centralizing capital allocation and financial oversight |
+
 ## Socrates
 
 | Pattern | Era | Application |
@@ -617,6 +798,18 @@ _✦ = authored gem (written from live practice)_
 | Pattern | Era | Application |
 |---------|-----|-------------|
 | [insurgents-advantage](patterns/insurgents-advantage/pattern.md) | 2024-present | Solo engineer against a well-resourced AI policy apparatus; built what he personally needed, open-sourced before incumbents could absorb it, ended up on stage with Jensen Huang announcing NemoClaw; absence of institutional constraints was the speed advantage |
+
+## Igor Stravinsky
+
+| Pattern | Era | Application |
+|---------|-----|-------------|
+| [grammar-theft](patterns/grammar-theft/pattern.md) | 1910-1951 | Extracted the rhythmic grammar of Russian folk music (Petrushka, Rite of Spring), then later the formal structures of Baroque counterpoint (neoclassical period), then serial technique from Schoenberg — exhausting each structural system and moving to the next |
+
+## Nassim Nicholas Taleb
+
+| Pattern | Era | Application |
+|---------|-----|-------------|
+| [antifragility](patterns/antifragility/pattern.md) | 1960-present | Structured his trading positions, intellectual portfolio, and personal life to profit from disorder — made substantial returns during Black Monday 1987 and the 2008 crisis by holding convex option positions the market chronically mispriced |
 
 ## Frederick Winslow Taylor
 
@@ -630,6 +823,12 @@ _✦ = authored gem (written from live practice)_
 | Pattern | Era | Application |
 |---------|-----|-------------|
 | [mind-forge](patterns/mind-forge/pattern.md) | 1856-1943 | Designed the AC induction motor, Tesla coil, and hundreds of inventions entirely in mental simulation before physical construction |
+
+## Philip Tetlock
+
+| Pattern | Era | Application |
+|---------|-----|-------------|
+| [outside-view](patterns/outside-view/pattern.md) | 1954-present | Ran the Good Judgment Project forecasting tournament; found that the best forecasters ("superforecasters") systematically start with base rates from the reference class before adjusting for case-specific features — a protocol he calls "outside-in" |
 
 ## Linus Torvalds
 
@@ -664,6 +863,18 @@ _✦ = authored gem (written from live practice)_
 | [render-to-understand](patterns/render-to-understand/pattern.md) | 1452-1519 | Dissected 30+ human corpses and drew every muscle, tendon, and valve not to create art but to force mechanistic understanding — his anatomical drawings of the heart's chambers preceded Harvey's discovery of blood circulation by 100 years |
 | [the-latticework](patterns/the-latticework/pattern.md) | 1478-1519 | Maintained interlocking notebooks across anatomy, hydraulics, optics, and mechanics — used observations from each domain to stress-test conclusions in others; his flying machine designs were constrained by bird anatomy, air physics, and material strength simultaneously |
 
+## George Washington
+
+| Pattern | Era | Application |
+|---------|-----|-------------|
+| [the-fabian](patterns/the-fabian/pattern.md) | 1732-1799 | Retreated across New Jersey with 3,000 men rather than fight a battle he would lose, preserved the Continental Army through Valley Forge, and kept the Revolution alive until British political will collapsed — despite losing more battles than he won |
+
+## Jack Welch
+
+| Pattern | Era | Application |
+|---------|-----|-------------|
+| [federal-decentralization](patterns/federal-decentralization/pattern.md) | 1981-2001 | Ran GE's 350,000-person empire as federated business units, each owning its own P&L, while the corporate center controlled capital via strategic reviews and insisted each unit be |
+
 ## Donald Wheeler
 
 | Pattern | Era | Application |
@@ -681,7 +892,8 @@ _✦ = authored gem (written from live practice)_
 | Pattern | Era | Application |
 |---------|-----|-------------|
 | [insurgents-advantage](patterns/insurgents-advantage/pattern.md) | 1927-1949 | Built the People's Republic of China from a defeated revolutionary force by refusing to fight the Nationalist army on conventional terms — guerrilla doctrine, population as terrain, exhaust the incumbent's advantage through time |
+| [the-fabian](patterns/the-fabian/pattern.md) | 1893-1976 | Codified the Fabian logic as protracted war doctrine — trade space for time, avoid annihilation, build base areas, let the adversary's reach exceed its grasp until the correlation of forces inverts |
 
 ---
 
-_Total: 109 practitioners · 130 pattern appearances_
+_Total: 142 practitioners · 177 pattern appearances_

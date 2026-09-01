@@ -18,6 +18,8 @@ dispatcher would break working gems to satisfy a lint.
 """
 import re
 import sys
+
+import yaml
 from pathlib import Path
 
 REPO_ROOT = Path(sys.argv[1]) if len(sys.argv) > 1 else Path(__file__).parent.parent
@@ -71,38 +73,22 @@ _✦ = authored gem (written from live practice)_
 
 
 def first_trigger(text):
-    """First entry of the frontmatter `trigger:` list.
-
-    Deliberately NOT yaml.safe_load. 18 pattern files carry a quoted phrase
-    inside an unquoted flow list — e.g. `trigger: [theory feels too comfortable,
-    "all the data supports it", ...]` — which is not valid YAML. A YAML parse
-    drops all 18 to "—", and the previous generator did exactly that behind a
-    bare except. Splitting on the first comma outside quotes reads every file
-    correctly and fixing the frontmatter is tracked separately.
-    """
+    """First entry of the frontmatter `trigger:` list."""
     fm = re.match(r"^---\s*\n(.*?)\n---\s*\n", text, re.DOTALL)
     if not fm:
         return "—"
-    line = re.search(r"^trigger:\s*(.+)$", fm.group(1), re.MULTILINE)
-    if not line:
+    try:
+        data = yaml.safe_load(fm.group(1)) or {}
+    except yaml.YAMLError:
+        # Unreachable while tests/validate-schema.sh enforces a strict parse.
+        # Reported rather than swallowed: the previous generator hid exactly
+        # this behind a bare except and silently blanked 18 gems' triggers.
+        print(f"  WARNING: unparseable frontmatter — run tests/validate-schema.sh", file=sys.stderr)
         return "—"
-    value = line.group(1).strip().lstrip("[")
-    out, quote = [], None
-    for ch in value:
-        if quote:
-            if ch == quote:
-                quote = None
-            else:
-                out.append(ch)
-        elif ch == '"':
-            # Only double quotes quote. Apostrophes appear inside words
-            # ("isn't", "don't") and must not open a quoted run.
-            quote = ch
-        elif ch in ",]":
-            break
-        else:
-            out.append(ch)
-    return "".join(out).strip() or "—"
+    triggers = data.get("trigger")
+    if isinstance(triggers, list):
+        triggers = triggers[0] if triggers else None
+    return str(triggers).strip() if triggers else "—"
 
 
 rows, skipped = [], []
