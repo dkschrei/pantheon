@@ -129,7 +129,11 @@ const domainColor = (d) => ({
 const STORAGE_KEY = "pantheon_openrouter_key";
 
 export default function GemRunner() {
-  const [apiKey, setApiKey] = useState(() => localStorage.getItem(STORAGE_KEY) || import.meta.env.VITE_OPENROUTER_API_KEY || "");
+  // NO build-time key fallback. Vite inlines any VITE_* variable into the
+  // public bundle, so setting VITE_OPENROUTER_API_KEY would publish that key
+  // to every visitor. The key is the visitor's own, entered below and kept in
+  // their localStorage. See SECURITY.md.
+  const [apiKey, setApiKey] = useState(() => localStorage.getItem(STORAGE_KEY) || "");
   const [keyInput, setKeyInput] = useState("");
   const [customApproaches, setCustomApproaches] = useState(() => {
     try { return JSON.parse(localStorage.getItem("pantheon_custom_approaches") || "[]"); } catch { return []; }
